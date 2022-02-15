@@ -185,9 +185,8 @@ label route_01p02:
  hide GBody
  hide GAngry
  with dissolve
- #sc "Hi, [anna.]"
 
- jump demo01
+ jump PandC
  return
 
 label m31:
