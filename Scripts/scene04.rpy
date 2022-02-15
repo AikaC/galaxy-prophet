@@ -1,8 +1,15 @@
-﻿label route_01:
+label route_01:
+
+ show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
+ with dissolve
+
  anna "What do we do now?"
 
- hide ABody
- hide AHappy
+ show Anna ACMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  show GBody
  show GHappy
  with dissolve
@@ -10,32 +17,30 @@
  grandma "Now we need to go back to the sacred temple."
  grandma "That’s where our answers await us…{p}At least, I believe so."
 
- hide GBody
- hide GHappy
- show ABody
- show ATedio
+ show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Couldn’t they just have called you instead of bringing me here then?"
 
- hide ABody
- hide ATedio
- show Twins Body
- show LD
- show YL
+ hide GBody
+ hide GHappy
+
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins ClosedHappyEyes_Yvvy LaughingYvvy ClosedMouth_Lucy
  with dissolve
 
  yvvy "Hehe…"
 
- hide LD
- show LL
+ show Twins ClosedHappyEyes_Lucy LaughingLucy ClosedMouth_Yvvy
  with dissolve
 
  lucy "Not funny this way."
 
- hide Twins Body
- hide LL
- hide YL
+ hide Twins
  show GBody
  show GAngry
  with dissolve
@@ -51,6 +56,7 @@
  hide GBody
  hide GClosedEyes
  hide BGGrandma
+ show bgblack
  with dissolve
 
  jump route_01menu
@@ -61,29 +67,36 @@ label route_01menu:
  if extra == True:
 
   show BGExtra
-  show ABody
-  show AWorried
+  show Anna AOMouth_Worried onlayer over_screens:
+   size (245,318.5)
+   left
   with dissolve
 
   anna "By the way..." 
 
-  hide ABody
-  hide AWorried
+  hide Anna onlayer over_screens
+  window hide
   with dissolve
 
   menu:
    "Where are we?":
+    window show
     jump m31
    "The queen’s right hand?":
+    window show
     jump ancient_dragon
    "You linked your life to a tree?":
+    window show
     jump tree_barrier
    "Travel between galaxies?":
+    window show
     jump friend
    "Why do we understand each other?":
+    window show
     jump translator
    "Let’s just go":
     hide BGExtra
+    window show
     jump route_01p02
 
  else:
@@ -104,74 +117,64 @@ label route_01p02:
 
  grandma "Can you see the tree?"
 
- show ABody
- show AHappy
+ show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Yes... {w}I didn’t notice when I first arrived."
  anna "But it's gorgeous."
 
- hide ABody
- hide AHappy
+ show Anna ACMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  show GBody
  show GHappy
  with dissolve
 
  grandma "It is, indeed."
 
+ hide Anna onlayer over_screens
  hide GBody
  hide GHappy
  with dissolve
 
  a "[anna]."
 
- show ABody
- show AWorried
+ show Anna AOMouth_Worried
  with dissolve
 
  anna "Who is that?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show LD
- show YD
+ hide Anna
+ show Twins
  with dissolve
 
  yvvy "What?"
  lucy "No one’s here."
 
- hide Twins Body
- hide LD
- hide YD
+ hide Twins
  with dissolve
 
  a "[anna]!"
 
- show ABody
- show ATedio
+ show Anna
  with dissolve
 
  anna "..."
 
- hide ATedio
- show AEmpty
+ show Anna AEyes_Empty
  with dissolve
  pause
 
- hide ABody
- hide AEmpty
- show Twins Body
- show LD
- show YD
+ hide Anna
+ show Twins
  with dissolve
  
  yvvy "Wait, [anna]!"
  lucy "Where are you going, girl?"
 
- hide Twins Body
- hide LD
- hide YD
+ hide Twins
  show GBody
  show GAngry
  with dissolve
@@ -189,15 +192,17 @@ label route_01p02:
 
 label m31:
 
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "This doesn’t look even a tiny bit like home…"
  anna "What is this place?"
 
- hide ABody
- hide AWorried
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  show GBody
  show GHappy
  with dissolve
@@ -206,17 +211,17 @@ label m31:
 
  hide GBody
  hide GHappy
- show Twins Body
- show LL
- show YL
+ show Twins ClosedHappyEyes_Yvvy LaughingYvvy ClosedHappyEyes_Lucy ClosedMouth_Lucy
  with dissolve
 
  yvvy "We have a lot of travellers here."
+
+ show Twins DefaultLucy ClosedMouth_Yvvy
+ with dissolve
+
  lucy "But none of them look like you."
 
- hide Twins Body
- hide LL
- hide YL
+ hide Twins
  show GBody
  show GHappy
  with dissolve
@@ -225,85 +230,80 @@ label m31:
 
  hide GBody
  hide GHappy
- show Twins Body
- show LL
- show YL
+ show Twins ClosedHappyEyes_Yvvy LaughingYvvy ClosedHappyEyes_Lucy ClosedMouth_Lucy
  with dissolve
 
  yvvy "Galaxy M-31!"
- lucy "We’re inside a star!"
 
- hide Twins Body
- hide LL
- hide YL
- show ABody
- show AWorried
+ show Twins LaughingLucy ClosedMouth_Yvvy
  with dissolve
+
+ lucy "We’re inside a star!"
 
  anna "{color=F4C2C2}{i}Andromeda? So I’m not in another dimension?{\i}"
  anna "{color=F4C2C2}{i}How did I get so far?{\i}"
 
- hide ABody
- hide AWorried
+ hide Twins
+ hide Anna onlayer over_screens
  with dissolve
 
+ window hide
  jump route_01menu
  return
 
 label ancient_dragon:
 
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "You told me about queen Selyna."
  anna "But you didn’t say anything about the other one."
 
- hide ABody
- hide AWorried
- show Twins Body
- show LD
- show YD
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins ClosedMouth_Lucy
  with dissolve
 
  yvvy "Just thinking about him gives me chills."
+
+ show Twins ClosedMouth_Yvvy DefaultLucy
+ with dissolve
+
  lucy "He’s the last one of his kind."
 
- hide YD
- show YA
+ show Twins AngryEyes_Yvvy ClosedMouth_Lucy DefaultYvvy
  with dissolve
 
  yvvy "The reason why we decided to make the secret temple secret in the first place."
 
- hide LD
- show LA
+ show Twins AngryEyes_Lucy ClosedMouth_Yvvy DefaultLucy
  with dissolve
 
  lucy "Don’t go near him!"
 
- hide Twins Body
- hide YA
- hide LA
+ hide Twins
  show GBody
  show GAngry
  with dissolve
 
  grandma "Braxton was with us when the prophecy was first known."
  grandma "Oh well, he was here way before our existence."
- grandma "He told me once that his type was named “Ancient Dragon” and it was one of the first living beings to be on this star."
+ grandma "He told me once that his type was named “Ancient Dragon”..."
+ grandma "... and it was one of the first living beings to be on this star."
 
- hide GBody
- hide GAngry
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "But you said before that he and the queen must not know about the tree."
 
- hide ABody
- hide AWorried
- show GBody
- show GAngry
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  grandma "That’s because later on he turned against us."
@@ -321,7 +321,8 @@ label ancient_dragon:
  with dissolve
 
  grandma "All he could do was erase Braxton memories, but that cost his life in exchange."
- grandma "Even though the ancient dragon doesn't remember us anymore, that fight somehow was marked in his being."
+ grandma "Even though the ancient dragon doesn't remember us anymore,"
+ grandma "that fight somehow was marked in his being."
  grandma "So he never approached us again."
 
  hide GAngry
@@ -332,22 +333,26 @@ label ancient_dragon:
 
  hide GBody
  hide GClosedEyes
+ hide Anna onlayer over_screens
  with dissolve
 
+ window hide
  jump route_01menu
  return
 
 label tree_barrier:
 
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "I know you said that's a story for another day, but I can't take that off of my mind."
  anna "You linked your life to a tree?"
 
- hide ABody
- hide AWorried
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  show GBody
  show GAngry
  with dissolve
@@ -364,27 +369,32 @@ label tree_barrier:
 
  hide GBody
  hide GClosedEyes
+ hide Anna onlayer over_screens
  with dissolve
 
+ window hide
  jump route_01menu
  return
 
 label friend:
 
- show ABody
- show AAngry
+ show Anna AEyes_Angry AOMouth_Angry onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "You said it’s possible to travel between galaxies…"
 
- hide AAngry
- show AWorried
+ show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Can I go home?"
 
- hide ABody
- hide AWorried
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  show GBody
  show GAngry
  with dissolve
@@ -397,54 +407,57 @@ label friend:
 
  grandma "But I do have a friend who can help you later, if that’s what you really want."
 
- hide GBody
- hide GHappy
- show ABody
- show AHappy
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Really?!"
+
+ show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  anna "Thank you very much!"
 
- hide ABody
- hide AHappy
+ hide GBody
+ hide GHappy
+ hide Anna onlayer over_screens
  with dissolve
 
+ window hide
  jump route_01menu
  return
 
 label translator:
 
- show ABody
- show ATedio
+ show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "We clearly don’t speak the same language."
 
- hide ATedio
- show AWorried
+ show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "How do we understand each other?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YD
- show LA
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins AngryEyes_Lucy LaughingLucy ClosedMouth_Yvvy
  with dissolve
 
  lucy "There you go with this \“language\” thing again…"
 
- hide YD
- show YA
+ show Twins ClosedMouth_Lucy AngryEyes_Yvvy LaughingYvvy
  with dissolve
 
  yvvy "What is that?"
 
- hide Twins Body
- hide YA
- hide LA
+ hide Twins
  show GBody
  show GAngry
  with dissolve
@@ -461,8 +474,10 @@ label translator:
 
  hide GBody
  hide GHappy
+ hide Anna onlayer over_screens
  with dissolve
 
+ window hide
  jump route_01menu
  return
 
