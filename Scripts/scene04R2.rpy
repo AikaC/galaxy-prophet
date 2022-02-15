@@ -1,13 +1,11 @@
-﻿label route_02:
+label route_02:
 
  if extra == True:
 
   play music "audio/YL.ogg" fadeout 1.0
 
   show BGExtra
-  show Twins Body
-  show YD
-  show LD
+  show Twins ClosedMouth_Lucy
   with dissolve
 
   jump star
@@ -24,168 +22,171 @@ label star:
 
  yvvy "Hey, [anna]."
 
- hide Twins Body
- hide YD
- hide LD
- show ABody
- show AWorried
+ show Twins ClosedMouth_Yvvy
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Yes?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YD
- show LD
+ show Twins DefaultLucy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  lucy "Where are you from?"
 
- hide Twins Body
- hide YD
- hide LD
- show ABody
- show AHappy
+ show Twins ClosedMouth_Lucy
+ show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Well, I’m from the Earth."
 
- hide ABody
- hide AHappy
- show Twins Body
- show YD
- show LD
+ show Twins DefaultYvvy
+ show Anna ACMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  yvvy "Earth? {w}Never heard about it."
+
+ show Twins DefaultLucy ClosedMouth_Yvvy
+ with dissolve
+
  lucy "What kind of star is that? {w}Is it too far away?"
 
- hide Twins Body
- hide YD
- hide LD
- show ABody
- show AWorried
+ show Twins ClosedMouth_Lucy
+ show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Star!? We’re in a star!?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YL
- show LD
+ show Twins ClosedHappyEyes_Yvvy DefaultYvvy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  yvvy "Of course, dummy."
 
- hide LD
- show LL
+ show Twins ClosedHappyEyes_Lucy DefaultLucy ClosedMouth_Yvvy
  with dissolve
 
  lucy "Where else should we be?"
 
- hide Twins Body
- hide YL
- hide LL
- show ABody
- show AWorried
+ show Twins ClosedMouth_Lucy
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "On a planet…?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YA
- show LA
+ show Twins DefaultEyes_Lucy DefaultEyes_Yvvy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  yl "..."
+
+ show Twins AngryEyes_Yvvy DefaultYvvy
+ with dissolve
+
  yvvy "{color=F4C2C2}{i}Are you sure we should take her to granny Paithyn?"
  yvvy "{color=F4C2C2}{i}She mats with the second part of-"
+
+ show Twins AngryEyes_Lucy DefaultLucy ClosedMouth_Yvvy
+ with dissolve
+
  lucy "{color=F4C2C2}{i}Shh… {w}She might hear you!"
  lucy "{color=F4C2C2}{i}Let’s just make what grandma said first."
 
- hide Twins Body
- hide YA
- hide LA
- show ABody
- show AWorried
+ show Twins ClosedMouth_Lucy
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Ahh… Hello...?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YL
- show LL
+ show Twins DefaultEyes_Yvvy DefaultYvvy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  yvvy "Yeah…{w} A planet.{p}I’ve heard about it before…"
+
+ show Twins DefaultEyes_Lucy DefaultLucy ClosedMouth_Yvvy
+ with dissolve
+
  lucy "It’s far away from here. "
+
+ show Twins DefaultYvvy ClosedMouth_Lucy
+ with dissolve
+
  yvvy "Hundreds of galaxies away."
 
- hide Twins Body
- hide YL
- hide LL
- show ABody
- show AWorried
+ show Twins ClosedMouth_Yvvy
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "And where are we?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YD
- show LD
+ show Twins ClosedHappyEyes_Lucy DefaultLucy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  lucy "Galaxy M-13."
 
- hide Twins Body
- hide YD
- hide LD
- show ABody
- show AWorried
+ show Twins ClosedMouth_Lucy
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "That far!?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YD
- show LD
+ show Twins ClosedHappyEyes_Yvvy DefaultYvvy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  yvvy "You know this place?"
 
- hide Twins Body
- hide YD
- hide LD
- show ABody
- show AWorried
+ show Twins DefaultEyes_Lucy DefaultEyes_Yvvy ClosedMouth_Yvvy
+ show Anna AEyes_Happy AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "We call it the Andromeda galaxy…"
  #anna "That means…"
  anna "Lucy, Yvvy"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YD
- show LD
+ show Twins DefaultLucy DefaultYvvy
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  yl "Yes?"
 
- hide Twins Body
- hide YD
- hide LD
+ hide Twins
+ hide Anna onlayer over_screens
+ window hide
  with dissolve
 
  jump menu_provisorio
@@ -200,21 +201,22 @@ label star:
 label menu_provisorio: 
 menu:
  "The castle?":
+  window show
   jump castle
  "The last king?":
+  window show
   jump last_king
- "Queen\'s menial?":
-  jump menial
  "Nevermind...":
 
-  show ABody
-  show ATedio
+  window show
+  show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
+   size (245,318.5)
+   left
   with dissolve
 
   anna "Let’s just keep going."
 
-  hide ABody
-  hide ATedio
+  hide Anna onlayer over_screens
   with dissolve
 
   jump meet_Paithyn
@@ -223,70 +225,76 @@ menu:
 
 label castle:
 
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "You worked in the castle?"
  anna "How was there?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show LD
- show YD
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins
  with dissolve
 
  lucy "It was quite peaceful."
+
+ show Twins ClosedHappyEyes_Yvvy
+ with dissolve
+
  yvvy "Right?"
+
+ show Twins DefaultEyes_Yvvy
+ with dissolve
+
  yvvy "That’s why our job was to make things funnier."
 
- hide Twins Body
- hide LD
- hide YD
- show ABody
- show AWorried
+ show Anna AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "How so?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show LL
- show YD
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins ClosedHappyEyes_Lucy LaughingLucy
  with dissolve
 
  lucy "With music!"
 
- hide YD
- show YL
+ show Twins ClosedHappyEyes_Yvvy LaughingYvvy
  with dissolve
 
  yvvy "Wanna see?"
 
- hide Twins Body
- hide LL
- hide YL
- show ABody
- show AHappy
+ show Twins ClosedMouth_Lucy ClosedMouth_Yvvy
+ show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "I do."
 
- hide ABody
- hide AHappy
- show Twins Body
- show LD
- show YD
+ show Anna AEyes_Tedio ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins DefaultEyes_Yvvy DefaultYvvy
  with dissolve
 
  yvvy "Then you’ll have to come back later."
+
+ show Twins DefaultEyes_Lucy DefaultLucy
+ with dissolve
+
  lucy "We’ll be waiting."
 
- hide Twins Body
- hide LD
- hide YD
+ hide Twins
+ hide Anna onlayer over_screens
+ window hide
  with dissolve
 
  jump menu_provisorio
@@ -294,18 +302,18 @@ label castle:
 
 label last_king:
 
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Did you see the last king frequently?"
  anna "How was he?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show YA
- show LA
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ show Twins AngryEyes_Yvvy AngryEyes_Lucy
  with dissolve
 
  yvvy "Don’t say that in the past!"
@@ -313,43 +321,14 @@ label last_king:
  yvvy "We still communicate in secret."
  lucy "He’s like a father to us."
 
- hide Twins Body
- hide YA
- hide LA
+ hide Twins
+ hide Anna onlayer over_screens
+ window hide
  with dissolve
  
  jump menu_provisorio
  return
 
-label menial:
-
- show ABody
- show AWorried
- with dissolve
-
- anna "You told me about queen Selyna."
- anna "But you didn’t say anything about the other one."
-
- hide ABody
- hide AWorried
- show Twins Body
- show LD
- show YD
- with dissolve
-
- yvvy "Just thinking about him gives me chills."
- lucy "He’s the last one of his kind."
- yvvy "The reason why we decided to make the secret temple secret in the first place."
- lucy "Don’t go near him!"
-
- hide Twins Body
- hide LD
- hide YD
- with dissolve
-
-
- jump menu_provisorio
- return
 #label no_way:
 #
 # $ extra == False
@@ -368,16 +347,12 @@ label meet_Paithyn:
 
  show BGPaithyn
  hide BGGrandma
- show Twins Body
- show LD
- show YD
+ show Twins
  with dissolve
 
  yl "We're here."
 
- hide Twins Body
- hide LD
- hide YD
+ hide Twins
  show PBody
  show PHappy
  with dissolve
@@ -385,26 +360,25 @@ label meet_Paithyn:
  paithyn "Long time no see."
  paithyn "Khaleesi told me you were coming."
 
- hide PBody
- hide PHappy
- show ABody
- show AWorried
+ show Anna AOMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Who?"
 
- hide ABody
- hide AWorried
- show Twins Body
- show LD
- show YD
+ show Anna ACMouth_Worried onlayer over_screens:
+  size (245,318.5)
+  left
+ 
+ hide PBody
+ hide PHappy
+ show Twins
  with dissolve
 
  yl "Grandma."
 
- hide Twins Body
- hide LD
- hide YD
+ hide Twins
  show PBody
  show PHappy
  with dissolve
@@ -412,18 +386,16 @@ label meet_Paithyn:
  paithyn "And you must be [anna]."
  paithyn "It's a pleasure to meet you."
 
- hide PBody
- hide PHappy
- show ABody
- show AHappy
+ show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  anna "Nice to meet you too."
 
- hide ABody
- hide AHappy
- show PBody
- show PHappy
+ show Anna ACMouth_Happy onlayer over_screens:
+  size (245,318.5)
+  left
  with dissolve
 
  paithyn "Khaleesi told me that you want to go back, home."
