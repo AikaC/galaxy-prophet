@@ -186,7 +186,7 @@ label route_01p02:
  hide GAngry
  with dissolve
 
- jump PandC
+ call screen bar_nav
  return
 
 label m31:
@@ -252,6 +252,7 @@ label m31:
 
 label ancient_dragon:
 
+ $ ancientDragon == True
  show Anna AOMouth_Worried onlayer over_screens:
   size (245,318.5)
   left
