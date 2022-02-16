@@ -535,6 +535,19 @@ style return_button:
     yalign 1.0
     yoffset -30
 
+## Point and click screen ################################################################
+##
+## This screen creates a button for the point and click game
+screen bar_nav():
+  add "arvore brilha"
+  $pc = True
+  modal True
+  
+  imagebutton auto "locker_%s":
+   focus_mask True
+   hovered SetVariable("screen_tooltip", "???")
+   unhovered SetVariable("screen_tooltip", "")
+   action Jump("talk_tree")
 
 ## About screen ################################################################
 ##
