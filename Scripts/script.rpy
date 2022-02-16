@@ -18,6 +18,7 @@ $ anna = "", #F076B5
 label start:
  
  hide Last onlayer over_screens
+ pc = False
 
  $ anna = renpy.input("Please, type your name.")
  $ anna = anna.strip()
