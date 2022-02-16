@@ -343,7 +343,7 @@ label meet_Paithyn:
  play music "audio/SWIntro.ogg" fadeout 1.0
  queue  music "audio/SWLoop.ogg"
 
- $ extra == False
+ $ extra == True
 
  show BGPaithyn
  hide BGGrandma
@@ -400,12 +400,20 @@ label meet_Paithyn:
 
  paithyn "Khaleesi told me that you want to go back, home."
  paithyn "I can try helping you, but here's the thing..."
- paithyn "The dev only had time to make the game until here."
- paithyn "So you’ve reached the end of the demo."
- paithyn "Why don't you try another route in the meantime?"
- paithyn "There’s also secret scenes that tell more about this universe's story."
- paithyn "Try to find them"
- paithyn "See you soon."
+ paithyn "Opening a portal to another dimension is really tricky."
+ paithyn "You'll have to collect some ingredients by yourself."
+ paithyn "That's because we also need you energy inlaid in the plants."
+ anna "How do I do that?"
+ paithyn "No worries, you just need to spend some time with it."
+ paithyn "The time you'll take to collect everything and come back here is enough."
+ anna "Ok! Easy Peasy!"
+ paithyn "Good!{w} I'll need these ingredients."
+ #lista de ingredientes
+ anna "What?"
+ paithyn "Lucy and Yvvy will have to stay."
+ paithyn "Good luck!"
+ anna "Wait what are thos-{w} and they left..."
+ anna "Alright! Time to go home!"
 
- jump credits
+ jump minion
  return
