@@ -1,6 +1,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define grandma = Character("Grandma", color="#652B46")
+define grandma = Character("Grandma", color="#652B46")#Khaleesi
 define lucy = Character("Lucy", color="#280D08")
 define paithyn = Character("Paithyn", color="#23681D")
 define sc = Character("Sacred Tree", color = "#CC8105")
