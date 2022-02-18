@@ -539,7 +539,7 @@ style return_button:
 ##
 ## This screen creates a button for the point and click game
 screen bar_nav():
-  add "arvore brilha"
+  add "TreeBG"
   $pc = True
   modal True
   
