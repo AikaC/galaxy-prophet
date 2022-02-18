@@ -44,6 +44,7 @@ image BGExtra = "BG_Extra.png"
 image BGPaithyn = "PaythHouse.jpg"
 image Last = "creditos.jpg"
 image MENU = "choice_menu.png"
+image TreeBG = "pandc.png"
 #Grandma
 image GAngry = "ch_Grandma/AngryGrandma.png"
 image GBody = "ch_Grandma/GrandmaBody.png"
