@@ -1,8 +1,8 @@
 ﻿label talk_tree:
 
- if moral < 80
+ if moral < 80:
   jump grandma_again
- elif
+ elif:
   pass
 
  sc "Hi there, [anna]."
