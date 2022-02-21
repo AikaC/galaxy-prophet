@@ -1,8 +1,8 @@
 ﻿label minion:
- if key == True
+ if key == True:
   ana "Grandma...?{w} Yvvy, Lucy? {w}Where are you?"
   $key = False
- if key == False
+ if key == False:
   #anna se esbarra com o minion/efeito de tela tremendo
   c "You..."
   anna "Me?"
@@ -33,10 +33,10 @@
    $ moral -= 10
    jump castle_TalkQueen
   "Run away.":
-   if extra = True
+   if extra = True:
     $ extra == False
     jump back_Paithyn
-   if extra = False
+   if extra = False:
     jump prision
  return
 
