@@ -2,7 +2,7 @@
 
  if moral < 80:
   jump grandma_again
- elif:
+ else:
   pass
 
  sc "Hi there, [anna]."
