@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -159,7 +159,6 @@ style say_dialogue:
     xpos gui.dialogue_xpos
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
-
 
 ## Input screen ################################################################
 ##
@@ -545,6 +544,8 @@ screen bar_nav():
   
   imagebutton auto "locker_%s":
    focus_mask True
+   xpos 0.35
+   ypos 0.3
    hovered SetVariable("screen_tooltip", "???")
    unhovered SetVariable("screen_tooltip", "")
    action Jump("talk_tree")
