@@ -105,7 +105,11 @@ label back_Paithyn:
  yvvy "Off we go!"
  lucy "To grandpa!"
  grandma "Not this time.{w} I need you both here."
+ yvvy "Booo..."
+ lucy "Not fun!"
  grandma "[anna] can go on her own. Is not far away and the road is as safe as the ancient tree."
  anna "Alright. See you soon!"
+ 
+ jump training
 
  return
