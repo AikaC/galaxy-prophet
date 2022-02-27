@@ -1,0 +1,44 @@
+label training:
+ anna "What a crazy day I am having..."
+ anna "First, I somehow land in a star from another galaxy,"
+ anna "just to find out is all part of a prophecy."
+ if pc == true:
+  anna "and then, a talking tree that were supposed to sleep forever wakes up and talk to me."
+ else:
+  pass
+ anna "And on top of that, an ancient guardian appears from nowhere..."
+ anna "and I almost got arrested."
+ anna "..."
+ anna "aha"
+ anna "ahahaha"
+ anna "I think I'm freaking out."
+ anna "You can wake up now [anna]."
+ 
+ if moral < 75:
+  jump prision
+ else:
+  pass
+ 
+ inco "I'm afraid to ruin your hope."
+ inco "But this is not a dream."
+ inco "You must be [anna], our future savior."
+ inco "It's a pleasure to meet you, my name is Ivan."
+ ivan "I am also a guardian of the sacred tree."
+ anna "news {i}do{/i} travel fast here."
+ anna "Nice to meet you, Ivan."
+ anna "But I'm still in doubt about the /'future savior/' part"
+ ivan "Only the time will tell us that."
+ ivan "For now we should only do what we can to prevent the worst."
+ anna "About that..."
+ anna "Why I'm here anyway?"
+ ivan "They sent you here to train with me."
+ ivan "Have you ever trained before, [anna]?"
+ anna "Wait...{w} Are you serious?"
+ anna "Does videogame count?"
+ ivan "Im deadly serious."
+ ivan "If the queen already knows about you, it is better to know how to defend yourself."
+ ivan "I don't know what style of fight {i}videogame{/i} is but it must be useful for something."
+ anna "No, nevermind..."
+ anna "Let's just start already."
+ ivan "Very well..."
+ #passagem de tempo, gêmas vêm visitar após alguns meses
