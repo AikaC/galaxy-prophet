@@ -2,222 +2,211 @@ label route_02:
 
  if extra == True:
 
-  play music "audio/YL.ogg" fadeout 1.0
+  #play music "audio/YL.ogg" fadeout 1.0
 
-  show BGExtra
-  show Twins ClosedMouth_Lucy
-  with dissolve
+  #show BGExtra
+  #show Twins ClosedMouth_Lucy
+  #with dissolve
 
   jump star
 
  else:
-  show bgblack
-  hide BGGrandma
-  with dissolve
+  #show bgblack
+  #hide BGGrandma
+  #with dissolve
 
   jump meet_Paithyn
  return
 
 label star:
 
- yvvy "Hey, [anna]."
+ chY "Ei, [anna]."
 
- show Twins ClosedMouth_Yvvy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Yvvy
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Yes?"
+ anna "Sim?"
 
- show Twins DefaultLucy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins DefaultLucy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- lucy "Where are you from?"
+ chL "De onde você é?"
 
- show Twins ClosedMouth_Lucy
- show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Lucy
+ #show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Well, I’m from the Earth."
+ anna "Bem, eu sou da Terra."
 
- show Twins DefaultYvvy
- show Anna ACMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins DefaultYvvy
+ #show Anna ACMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- yvvy "Earth? {w}Never heard about it."
+ chY "Terra? {w}Nunca ouvi falar."
 
- show Twins DefaultLucy ClosedMouth_Yvvy
- with dissolve
+ #show Twins DefaultLucy ClosedMouth_Yvvy
+ #with dissolve
 
- lucy "What kind of star is that? {w}Is it too far away?"
+ chL "Que tipo de estrela é essa? {w}É muito longe?"
 
- show Twins ClosedMouth_Lucy
- show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Lucy
+ #show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Star!? We’re in a star!?"
+ anna "Estrela?! Estamos em uma estrela?!"
 
- show Twins ClosedHappyEyes_Yvvy DefaultYvvy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedHappyEyes_Yvvy DefaultYvvy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- yvvy "Of course, dummy."
+ chY "Claro que sim, bobinha."
 
- show Twins ClosedHappyEyes_Lucy DefaultLucy ClosedMouth_Yvvy
- with dissolve
+ #show Twins ClosedHappyEyes_Lucy DefaultLucy ClosedMouth_Yvvy
+ #with dissolve
 
- lucy "Where else should we be?"
+ chL "Onde mais poderíamos estar?"
 
- show Twins ClosedMouth_Lucy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Lucy
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "On a planet…?"
+ anna "Em um planeta…?"
 
- show Twins DefaultEyes_Lucy DefaultEyes_Yvvy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins DefaultEyes_Lucy DefaultEyes_Yvvy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- yl "..."
+ chYL "..."
 
- show Twins AngryEyes_Yvvy DefaultYvvy
- with dissolve
+ #show Twins AngryEyes_Yvvy DefaultYvvy
+ #with dissolve
 
- yvvy "{color=F4C2C2}{i}Are you sure we should take her to granny Paithyn?"
- yvvy "{color=F4C2C2}{i}She mats with the second part of-"
+ chY "{color=F4C2C2}*sussurra*{i}Tem certeza que devemos levar ela para a vovó Paithyn?"
+ chY "{color=F4C2C2}*sussurra*{i}Ela bate com a segunda parte da-"
 
- show Twins AngryEyes_Lucy DefaultLucy ClosedMouth_Yvvy
- with dissolve
+ #show Twins AngryEyes_Lucy DefaultLucy ClosedMouth_Yvvy
+ #with dissolve
 
- lucy "{color=F4C2C2}{i}Shh… {w}She might hear you!"
- lucy "{color=F4C2C2}{i}Let’s just make what grandma said first."
+ chL "*sussurra*{color=F4C2C2}{i}Shh… {w}Ela vai te ouvir!"
+ chL "*sussurra*{color=F4C2C2}{i}Vamos so fazer o que a vovó pediu primeiro."
 
- show Twins ClosedMouth_Lucy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Lucy
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Ahh… Hello...?"
+ anna "Ahh… Alô...?"
 
- show Twins DefaultEyes_Yvvy DefaultYvvy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins DefaultEyes_Yvvy DefaultYvvy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- yvvy "Yeah…{w} A planet.{p}I’ve heard about it before…"
+ chY "É…{w} Um planeta.{p}Já ouvi falar antes…"
 
- show Twins DefaultEyes_Lucy DefaultLucy ClosedMouth_Yvvy
- with dissolve
+ #show Twins DefaultEyes_Lucy DefaultLucy ClosedMouth_Yvvy
+ #with dissolve
 
- lucy "It’s far away from here. "
+ chL "É bem longe daqui. "
 
- show Twins DefaultYvvy ClosedMouth_Lucy
- with dissolve
+ #show Twins DefaultYvvy ClosedMouth_Lucy
+ #with dissolve
 
- yvvy "Hundreds of galaxies away."
+ chY "Centenas de galáxias distantes."
 
- show Twins ClosedMouth_Yvvy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Yvvy
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "And where are we?"
+ anna "E onde estamos?"
 
- show Twins ClosedHappyEyes_Lucy DefaultLucy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedHappyEyes_Lucy DefaultLucy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- lucy "Galaxy M-13."
+ chL "Galáxia M-13."
 
- show Twins ClosedMouth_Lucy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Lucy
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "That far!?"
+ anna "Longe assim?!"
 
- show Twins ClosedHappyEyes_Yvvy DefaultYvvy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedHappyEyes_Yvvy DefaultYvvy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- yvvy "You know this place?"
+ chY "Você conhece esse lugar?"
 
- show Twins DefaultEyes_Lucy DefaultEyes_Yvvy ClosedMouth_Yvvy
- show Anna AEyes_Happy AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins DefaultEyes_Lucy DefaultEyes_Yvvy ClosedMouth_Yvvy
+ #show Anna AEyes_Happy AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "We call it the Andromeda galaxy…"
- #anna "That means…"
+ anna "A gente chama aqui de galáxia de Andrômeda."
  anna "Lucy, Yvvy"
 
- show Twins DefaultLucy DefaultYvvy
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins DefaultLucy DefaultYvvy
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- yl "Yes?"
+ chYL "Yes?"
 
- hide Twins
- hide Anna onlayer over_screens
- window hide
- with dissolve
+ #hide Twins
+ #hide Anna onlayer over_screens
+ #window hide
+ #with dissolve
 
- jump menu_provisorio
-
- #menu:
- # "There’s no way back?":
- #  jump no_way
- # "Can I go back home?":
- #  jump a_way
- return
- 
-label menu_provisorio: 
 menu:
- "The castle?":
+ "Vocês trabalharam no castelo?":
   window show
   jump castle
- "The last king?":
+ "Falem mais sobre o rei.":
   window show
   jump last_king
- "Nevermind...":
+ "Deixa para lá...":
 
-  window show
-  show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
-   size (245,318.5)
-   left
-  with dissolve
+  #window show
+  #show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
+  # size (245,318.5)
+  # left
+  #with dissolve
 
-  anna "Let’s just keep going."
+  anna "Vamos continuar."
 
-  hide Anna onlayer over_screens
-  with dissolve
+  #hide Anna onlayer over_screens
+  #with dissolve
 
   jump meet_Paithyn
  
@@ -225,195 +214,186 @@ menu:
 
 label castle:
 
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AOMouth_Worried onlayer over_screens:
+ #size (245,318.5)
+ #left
+ #with dissolve
 
- anna "You worked in the castle?"
- anna "How was there?"
+ #anna "You worked in the castle?"
+ anna "Como era lá?"
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins
- with dissolve
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #show Twins
+ #with dissolve
 
- lucy "It was quite peaceful."
+ chL "Era bem pacífico."
 
- show Twins ClosedHappyEyes_Yvvy
- with dissolve
+ #show Twins ClosedHappyEyes_Yvvy
+ #with dissolve
 
- yvvy "Right?"
+ chY "Não era?"
 
- show Twins DefaultEyes_Yvvy
- with dissolve
+ #show Twins DefaultEyes_Yvvy
+ #with dissolve
 
- yvvy "That’s why our job was to make things funnier."
+ chY "Nosso trabalho era deixar as coisas mais divertidas."
 
- show Anna AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AOMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "How so?"
+ anna "De que forma?"
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins ClosedHappyEyes_Lucy LaughingLucy
- with dissolve
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #show Twins ClosedHappyEyes_Lucy LaughingLucy
+ #with dissolve
 
- lucy "With music!"
+ chL "Com música!"
 
- show Twins ClosedHappyEyes_Yvvy LaughingYvvy
- with dissolve
+ #show Twins ClosedHappyEyes_Yvvy LaughingYvvy
+ #with dissolve
 
- yvvy "Wanna see?"
+ chY "Quer ouvir?"
 
- show Twins ClosedMouth_Lucy ClosedMouth_Yvvy
- show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Twins ClosedMouth_Lucy ClosedMouth_Yvvy
+ #show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "I do."
+ anna "Sim!"
 
- show Anna AEyes_Tedio ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins DefaultEyes_Yvvy DefaultYvvy
- with dissolve
+ #show Anna AEyes_Tedio ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #show Twins DefaultEyes_Yvvy DefaultYvvy
+ #with dissolve
 
- yvvy "Then you’ll have to come back later."
+ chY "Então você terá que nos visitar mais uma vez."
 
- show Twins DefaultEyes_Lucy DefaultLucy
- with dissolve
+ #show Twins DefaultEyes_Lucy DefaultLucy
+ #with dissolve
 
- lucy "We’ll be waiting."
+ chL "Estaremos esperando."
 
- hide Twins
- hide Anna onlayer over_screens
- window hide
- with dissolve
+ #hide Twins
+ #hide Anna onlayer over_screens
+ #window hide
+ #with dissolve
 
- jump menu_provisorio
+ jump meet_Paithyn
  return
 
 label last_king:
 
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Did you see the last king frequently?"
- anna "How was he?"
+ anna "Vocês viam o último rei com frequência?"
+ anna "Como ele era?"
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins AngryEyes_Yvvy AngryEyes_Lucy
- with dissolve
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #show Twins AngryEyes_Yvvy AngryEyes_Lucy
+ #with dissolve
 
- yvvy "Don’t say that in the past!"
- lucy "The king is still alive, he’s just imprisoned."
- yvvy "We still communicate in secret."
- lucy "He’s like a father to us."
+ chY "Não diga isso no passado!"
+ chl "O rei ainda está vivo, só está preso."
+ chY "Ainda nos falamos em segredo."
+ chL "Ele é como um pai para nós."
 
- hide Twins
- hide Anna onlayer over_screens
- window hide
- with dissolve
+ #hide Twins
+ #hide Anna onlayer over_screens
+ #window hide
+ #with dissolve
  
- jump menu_provisorio
+ jump meet_Paithyn
  return
-
-#label no_way:
-#
-# $ extra == False
-# return
-
-#label a_way:
-# $ extra == False
-# return
 
 label meet_Paithyn:
 
- play music "audio/SWIntro.ogg" fadeout 1.0
- queue  music "audio/SWLoop.ogg"
+ #play music "audio/SWIntro.ogg" fadeout 1.0
+ #queue  music "audio/SWLoop.ogg"
 
  $ extra == True
 
- show BGPaithyn
- hide BGGrandma
- show Twins
- with dissolve
+ #show BGPaithyn
+ #hide BGGrandma
+ #show Twins
+ #with dissolve
 
- yl "We're here."
+ chYL "Chegamos."
 
- hide Twins
- show PBody
- show PHappy
- with dissolve
+ #hide Twins
+ #show PBody
+ #show PHappy
+ #with dissolve
 
- paithyn "Long time no see."
- paithyn "Khaleesi told me you were coming."
+ chP "Há quanto tempo."
+ chP "Khaleesi me disse que você viriam."
 
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Who?"
+ anna "Quem?"
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ #show Anna ACMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
  
- hide PBody
- hide PHappy
- show Twins
- with dissolve
+ #hide PBody
+ #hide PHappy
+ #show Twins
+ #with dissolve
 
- yl "Grandma."
+ chYL "Vovó."
 
- hide Twins
- show PBody
- show PHappy
- with dissolve
+ #hide Twins
+ #show PBody
+ #show PHappy
+ #with dissolve
 
- paithyn "And you must be [anna]."
- paithyn "It's a pleasure to meet you."
+ chP "E voce deve ser [anna]."
+ chP "É um prazer te conhecer."
 
- show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Nice to meet you too."
+ anna "Igualmente."
 
- show Anna ACMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna ACMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- paithyn "Khaleesi told me that you want to go back, home."
- paithyn "I can try helping you, but here's the thing..."
- paithyn "Opening a portal to another dimension is really tricky."
- paithyn "You'll have to collect some ingredients by yourself."
- paithyn "That's because we also need you energy inlaid in the plants."
- anna "How do I do that?"
- paithyn "No worries, you just need to spend some time with it."
- paithyn "The time you'll take to collect everything and come back here is enough."
- anna "Ok! Easy Peasy!"
- paithyn "Good!{w} I'll need these ingredients."
+ chP "Khaleesi me disse que você quer voltar para casa."
+ chP "Posso tentar te ajudar mas..."
+ chP "Abrir um portal entre galáxias é bem complicado."
+ chP "Voce deverá coletar alguns ingredientes por conta própria."
+ chP "Isso rque também iremos precisar da sua própria energia infundida nas plantas."
+ anna "Como eu faço isso?"
+ chP "Essa parte é fácil, você só precisa passar um temp sozinha com os ingredientes."
+ chP "O tempo que vi levar para oletar tudo e voltar aqui é o suficiente."
+ anna "Ok! Mole, mole!"
+ chP "Bom!{w} Eu vou precisar destes ingredientes."
  #lista de ingredientes
- anna "What?"
- paithyn "Lucy and Yvvy will have to stay."
- paithyn "Good luck!"
- anna "Wait what are thos-{w} and they left..."
- anna "Alright! Time to go home!"
+ anna "O quê?"
+ chP "Lucy e Yvvy terão que ficar."
+ chP "Boa sorte!"
+ anna "Espera o que são es-{w} e se foram..."
+ anna "Belza! Hora de fazer as malas!"
 
- jump minion
+ #jump minion
  return
