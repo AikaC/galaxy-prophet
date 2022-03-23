@@ -1,39 +1,30 @@
 ﻿label minion:
- if key == True:
-  ana "Grandma...?{w} Yvvy, Lucy? {w}Where are you?"
-  $key = False
- if key == False:
+ if key = True:
+  anna "Vovó...?{w} Yvvy, Lucy? {w}Onde vocês estão?"
+  $key == False
+ if key = False:
   #anna se esbarra com o minion/efeito de tela tremendo
-  c "You..."
-  anna "Me?"
-  c "I've never seen you around before."
-  anna "I'm... just a visitor."
-  c "Any new visitors must report-"
-  c "!"
-
-  window hide
-  show Colar at colar_foco onlayer over_screens
-  with dissolve
-  pause
-
-  hide Colar onlayer over_screens
-  window show
-
-  c "That is..."
+  chNull "Você..."
+  anna "Eu?"
+  chNull "Nunca te vi por aqui antes."
+  anna "Eu... estou só de visita."
+  chNull "Todos os visitantes devem se reportar-"
+  chNull "!"
+  chNull "Isso é..."
   if ancientDragon = True:
-   c "Uhg... My head."
-   anna "{color=F4C2C2}Hold on a minute!"
-   anna "{color=F4C2C2}Is he... Braxton, the ancient dragon?"
+   chNull "Uhg... Minha cabeça."
+   anna "{color=F4C2C2}Espera um segundinho!"
+   anna "{color=F4C2C2}Ele é... Braxton, o dragão ancião?"
    $ ancientDragon == False
   else:
    pass
-  c "Come with me. We need to report to the queen."
+  chNull "Venha comigo. Precisamos nos reportar à rainha."
 
  menu:
-  "Uh... sure.":
+  "Uh... Tá.":
    $ moral -= 10
    jump castle_TalkQueen
-  "Run away.":
+  "Fugir.":
    if extra = True:
     $ extra == False
     jump back_Paithyn
@@ -43,73 +34,71 @@
 
 label back_Paithyn:
 
- paithyn "Welcome back!"
- paithyn "How was it?"
- anna "Easy Peasy!"
- paithyn "Good to know."
- #lucy "The caldron is ready!
- yvvy "Time to mix everything!"
+ chP "Bem vinda de volta!"
+ chP "Como foi?"
+ anna "Mole como gelatina!"
+ chP "Bom saber."
+ chL "O caldeirão está pronto!
+ chY "Hora de mexer tudo!"
  #cutscene caldeirao, ingredientes girando
- paithyn "Now,{w} drink this."
- paithyn "How do you feel?"
- anna "I feel..."
- lucy "You feel..."
- yvvy "You feel..."
- anna "nothing"
- yl "Ugh..."
- anna "How was it supposed to work?"
- paithyn "This tea is made with magical ingredients with dreamy properties..."
- paithyn "You were supposed to dream vividly about your home,"
- paithyn "so I would be able to cast a spell and send you back."
- paithyn "If the tea didn't work,"
- paithyn "That means a powerful energy is keeping you here."
- paithyn "How did you come here?"
- anna "I have no idea."
- anna "Sorry..."
- paithyn "You don't need to be."
- paithyn "We will find a way somehow."
- paithyn "The bad news is..."
- paithyn "If you can't go back now with my power..."
- paithyn "That probably means that you're somehow part of the prophecy."
- yvvy "Back to grandma, it seems!"
- lucy "You're stuck with us for a little while [anna]!"
+ chP "Agora,{w} beba isso."
+ chP "Como se sente?"
+ anna "Eu sinto..."
+ chL "Se sente..."
+ chY "Se sente..."
+ anna "nada"
+ chYL "Ugh..."
+ anna "Como isso deveria funcionar?"
+ chP "Esse chá é feito com ingredientes mágicos de propriedades dos sonhos..."
+ chP "Era para você ter tido um sonho lúcido da sua casa,"
+ chP "Assim eu conseguiria lançar um feitiço e te mandar para casa."
+ chP "Se o chá não funcionou,"
+ chP "... quer dizer que uma energia poderosa está te mantendo aqui."
+ chP "Como você chegou aqui?"
+ anna "Não faço ideia."
+ chP "Vamos achar alguma solução."
+ chP "A má notícia para você é que..."
+ chP "Se você não consegue volta usando o meu poder..."
+ chP "Isso quer dizer quer você é parte da profecia de alguma forma."
+ chY "De volta à vovó pelo que parece!"
+ chL "Parece que você se prendeu com a gente por um tempo, [anna]!"
 
  show BGGrandma
- hide BGPaithyn
- with dissolve
+ #hide BGPaithyn
+ #with dissolve
 
- $intel = 1
- grandma "Hello, how was the journey?"
- lucy "Nothing new..."
- yvvy "Boring..."
- anna "The spell did'nt work."
- anna "Miss Paithyn said it was likely because of the prophecy."
- grandma "I see..."
- anna "I also saw someone while picking the ingredients"
- yl "Who?"
+ $intel == 1
+ chG "Olá, como foi a jornada?"
+ chL "Nada de novo..."
+ chY "Entediante..."
+ anna "O feitiço não funcionou."
+ anna "A senhora Paithyn disse que era porque eu faço parte da profecia."
+ chG "Entendo..."
+ anna "E também me enconrei com lguém enquanto colhia os ingredientes."
+ chYL "Quem?"
  if ancientDragon = True:
   anna "Braxton."
   $ ancientDragon == False
   pass
  else:
-  anna "Someone who worked for the queen."
-  yvvy "Oh no! It can be just one creature"
-  lucy "How was he like?"
-  anna "A guard with long hair and scary eyes."
-  yl "That's Braxton!"
+  anna "Alguém que trabalhava para a rainha."
+  chY "Oh não! Só pode ser uma criatura."
+  chL "Como ele era?"
+  anna "Um guarda de cabelo comprido e olhos assustadores."
+  chYL "É o Braxton!"
   pass
- yvvy "Why haven't you told us that?"
- lucy "Better! What have {i}you{/i} told {i}him?{/i}"
- anna "Nothing... I just run away."
- grandma "Our better choice now that he saw you is sending you to Ivan."
- yvvy "Off we go!"
- lucy "To grandpa!"
- grandma "Not this time.{w} I need you both here."
- yvvy "Booo..."
- lucy "Not fun!"
- grandma "[anna] can go on her own. Is not far away and the road is as safe as the ancient tree."
- anna "Alright. See you soon!"
+ chY "Por que não nos disse isse antes?"
+ chL "Ou melhor! O que {i}você{/i} disse para {i}ele?{/i}"
+ anna "Nada... Eu só fugi."
+ chG "Agora que ele te viu, nossa melhor escolha é te mandar para Ivan imediatamente."
+ chY "Partiu!"
+ chL "Para o vovô!"
+ chG "Não dessa vez.{w} Preciso de vocês duas aqui."
+ chY "Booo..."
+ chL "Sem graça!"
+ chG "[anna] pode ir sozinha. Não é longe daqui e o caminho é tão seguro quanto o templo secreto."
+ anna "Tudo bem. Vejo vocês mais tarde!"
  
- jump training
+ #jump training
 
  return
