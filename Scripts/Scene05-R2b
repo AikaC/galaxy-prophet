@@ -1,0 +1,8 @@
+label talk_tree2:
+ if pc = False:
+  #call screen bar_nav
+  return
+ else:
+  $ pc == True
+  pass
+ sc "insira texto aqui"
