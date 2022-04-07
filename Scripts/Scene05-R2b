@@ -1,8 +1,14 @@
 label talk_tree2:
- if pc = False:
+ if pc == False:
   #call screen bar_nav
   return
  else:
   $ pc == True
   pass
- sc "insira texto aqui"
+ if rota2 == True:
+ sc "As engrenagens do universo funcionam por leis desconhecidas até por mim."
+ sc "É verdade, temos o direito de escolha e o livre arbítrio sobre nossas ações."
+ sc "Mesmo assim, algumas coisas acontecem simplesmente porque devem acontecer."
+ sc "Não se pode fugir do destino. {w}Pode-se tomar o caminho mais longo,{w=0.3} fugir jamais."
+ anna "O que isso quer dizer?"
+ sc "Tentou voltar para casa não foi?"
