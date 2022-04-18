@@ -1,0 +1,101 @@
+label historia_rei:
+ #barulho de baque
+ chNull "Alguém está aí?"
+ anna "Sua majestade? É você?"
+ chR "Já fazem alguns anos que não me chamam assim."
+ chR "Quem está falando?"
+ anna "meu nome é [anna], Yvvy e Lucy me enviaram para te salvar."
+ chR "Eu já disse a elas que isso não é necessário..."
+ anna "Na verdade, elas não foram as únicas..."
+ anna "... A árvore sagrada também me instruiu a te encontrar."
+ chR "A árvore sagrada?"
+ anna "É uma longa história.{p}Vamos te soltar primeiro e então te conto tudo."
+ #minijogo point and click, abrir a porta da cela
+ chR "Entendo."
+ chR "Então a profecia finalmente começou a andar."
+ anna "Você sabe alguma coisa sobre isso."
+ chR "Não muito mais que você, com certeza."
+ chR "Você disse que Selyna não faz parte da profecia, certo?"
+ anna "Ao que parece..."
+ chR "Mas seu primeiro dever era me encontrar."
+ chR "Então talvez saber o que aconteceu entre eu e ela possa te ajudar em alguma coisa."
+ chR "Vamos andando por aqui, poucas pessoas conhecem essa passagem."
+ chR "Eu te conto tudo no caminho."
+ 
+ #cutscene start
+ chR "A história na verdade não começa com Selyna, e sim com a irmã dela."
+ chR "Quando jovem, eu tinha muito o costume de viajar para galáxias distantes."
+ chR "Certo dia, parei em um lugar que me fascinou bastante."
+ chR "Terra, era o nome do lugar, como fui descobrir mais tarde."
+ chR "Era incrível como um lugar sem magia conseguiu se desenvolver tanto."
+ chR "As pessoas, despertaram meu interesse também."
+ chR "O lado negativo, principalmente."
+ chR "Eu não entendia como eles podiam ser tão individualistas mesmo tendo tanto à sua volta."
+ chR "Meu lado curioso despertou e eu comecei a visitar a Terra com mais frequência."
+ chR "Foi então que conheci a linda Camélia."
+ chR "Uma dançarina de rua cativante."
+ chR "Passei a vê-la com mais frequência do que diva, admito."
+ chR "E com o tempo, começamos a nos relacionar, mesmo quando nós dois sabíamos que era um relacionamento passageiro."
+ chR "A irmã dela, Selyna era claramente contra isso tudo."
+ chR "Eu deveria tê-la ouvido, mas estava cego de paixão."
+ chR "Um dia as duas tiveram um grande desentendimento."
+ chR "As coisas saíram de controle..."
+ chR "... E o destino tomou a vida de Camélia."
+ chR "Selyna se culpou e me culpou pelo ocorrido."
+ chR "Ela jurou vingança e disse que iria até os confins dos universos atrás de mim."
+ chR "E parece que conseguiu."
+ chR "Até hoje quando fecho os olhos, vejo Camélia sorrindo para mim."
+ chR "Eu não te culparia se você também achasse que a culpa foi minha."
+ 
+ menu:
+  "Foi apenas um acidente":#sim
+    jump castle_ataque
+    return
+  "Concordo com Selyna":#não
+    jump minion2
+    return
+ 
+ label castle_ataque:
+  chL "Garota! Aqui!"
+  chY "Vossa majestade! Fico feliz que esteja bem!"
+  chI "Devemos deixar os cumprimentos para mais tarde."
+  chI "Vamos sair daqui antes que-"
+  chGR "Alto lá!"
+  chI "Macacos me mordam!"
+  chGR "Em nome da rainha Selyna, ordeno que devolvam os prisioneiros."
+  chL "Não vai rolar..."
+  chY "Desculpa, falou alguma coisa? Não consigo ouvir dessa distância."
+  chI "Preparem-se, eles estão vindo."
+  jump Luta
+  return
+  
+ label Luta:
+  
+  #minijogo luta, ultima opção impossível de vence jump casaMinion
+  return
+  
+label minion2:
+
+ chB "Eita! Temos uma estrela fugitiva aqui."
+ chB "Ouvi dizer que a rainha Selyna está atrás de você."
+ chB "Ela ficaria muito feliz em descobrir sobre sua visita repentina."
+ chB "Agora, eu poderia também te ajudar com a sua fuga."
+ chB "Claro, tudo por um preço."
+ 
+ menu:#Com tempo
+  "correr":
+    jump castle_TalkQueen
+    return
+   "atacar":
+    $ moral -=5
+    jump casaMinion
+    return
+    
+label BadEnding:
+ chS "Ótimo! Acredito que vamos nos divertir muito de agora em diante!"
+ anna "Como assim?"
+ #Cutscene:
+ #selyna toma posse da mente de anna
+ #Anna luta contra as gêmeas
+ #Bad Ending
+ return
