@@ -1,0 +1,39 @@
+label casaMinion:
+ anna "E então... {w}O que você quer?"
+ chB "Respostas."
+ anna "Acho que você está perguntando para a pessoa errada."
+ anna "Ando em busca de respostas desde que pisei nessas terras."
+ chB "Talvez."
+ chB "Mas algo me diz que você faz parte delas."
+ anna "Algo?"
+ chB "Esse colar, por exemplo.{p}Onde o conseguiu?"
+ anna "De novo isso?"
+ chB "De novo?"
+ chB "Quem mais te perguntou sobre ele?"
+ if ancientDragon == True:
+  anna "Khalessi. {w}Sua antiga companheira, se lembra dela?"
+  chB "Kha-{w=0.5}lessi?"
+  #efeito dor de cabeça
+  anna "Muito tempo atrás vocês eram companheiros."
+  #efeito dor de cabeça
+  anna "Protetores de uma árvore sagrada."
+  #efeito dor de cabeça
+  chB "Chega!"
+  anna "O que aconteceu com você?"
+  anna "..."
+  anna "\'suspira\'"
+ else:
+  pass
+ anna "É só um objeto comum de onde venho."
+ anna "Não fiz nada de especial para consegui-lo."
+ anna "Era só isso que queria perguntar?"
+ anna "Não podia ter feito isso no castelo?"
+ chB "Preferiria ter ficado nas masmorras?"
+ anna "{i}Touché."
+ chB "Descanse por hora. {w}Seu dia foi cansativo, tenho certeza."
+ anna "Muito bem. Boa noite, então."
+ chB "E eu não tentaria fugir se fosse você."
+ anna "..."
+ 
+ #dia seguinte
+ return
