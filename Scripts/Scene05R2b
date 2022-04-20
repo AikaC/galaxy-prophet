@@ -1,0 +1,102 @@
+label talk_tree2:
+ if pc == False:
+  #call screen bar_nav
+  return
+ else:
+  $ pc = False
+  pass
+ chAS "As engrenagens do universo funcionam por leis desconhecidas até por mim."
+ chAS "É verdade, temos o direito de escolha e o livre arbítrio sobre nossas ações."
+ chAS "Mesmo assim, algumas coisas acontecem simplesmente porque devem acontecer."
+ chAS "Não se pode fugir do destino. {w}Pode-se tomar o caminho mais longo,{w=0.3} fugir jamais."
+ anna "O que isso quer dizer?"
+ chAS "Tentou voltar para casa não foi?"
+ chAS "Você tem um papel importante a cumprir aqui antes de tomar a ecolha de voltar para sua casa..."
+ chAS "... Ou fazer daqui, o seu lar. {w}Consegue perceber isso?"
+ 
+ menu:
+  "Não...":
+    anna "Isso tudo parece complicado demais para mim..."
+    anna "No fim das contas eu faço mesmo parte da profecia?"
+    anna "Eu sou realmente a salvadora? Quem decidiu isso?"
+    anna "Com certeza não foi a minha decisão."
+    anna "Ninguém pode me obrigar a nada!"
+    chAS "*Suspira* É uma pena você não conseguir ver a situação como um todo."
+    chAS "Vamos tomar o caminho mais longo então..."
+    $ moral -= 5
+    $ prision = True
+    jump prision
+    return
+  "Acho que sim...":
+    anna "E no fim das contas eu faço mesmo parte da profecia?"
+    anna "Eu sou realmente a salvadora?"
+    chAS "Aprecio a sua curiosidade, {w}mas está me fazendo as perguntas erradas."
+    chAS "Seu objetivo aqui comigo hojé é outro, não é mesmo?"
+    anna "Sim!{p} O rei!"
+    anna "A rainha Selyna é /'o mal/' citado na profecia?{w} Eu devo derrotá-la?"
+    chAS "A profecia é mais complexa que isso."
+    chAS "A rainha estrangeira não faz parte dela, isso eu posso te dizer."
+    chAS "Mas é verdade que seu caminho deve se cruzar com o dela algum dia."
+    chAS "Procure o rei sob uma pedra, é lá que você vai o encontrar."
+    anna "/'Sob uma pedra/'?"
+    chAS "Boa sorte [anna]."
+    anna "Espera, eu-"
+    if moral == 100:
+     $ moral += 5
+     $ prision = False
+     jump castle
+    else:
+     $ prision = False
+     jump castle
+     return
+
+label prision:
+ chNull "Alto lá!"
+ chNull "Sua presença está sendo requisitada diante da rainha!"
+ chNull "Qualquer tipo de fuga será contado como traição, sua punição seria a morte!"
+ jump castle_TalkQueen
+ return
+
+label castle:
+ chL "Conseguiu falar com a árvore?"
+ anna "Sim."
+ chY "O que ela disse?"
+ anna "Que a rainha não faz parte da profecia..."
+ anna "Mas eu devo procurar o rei sob uma pedra."
+ chL "Sob uma pedra? Como a profecia?"
+ chY "\'Lute contra a loucura que uma vez ajudou certo viajante sob uma pedra.\'"
+ chL "[anna] é uma viajante..."
+ chY "E o rei está sob uma pedra... {w=1}nas masmorras."
+ chL "Acho que finalmente estamos chegando em algum lugar!"
+ anna "Ainda assim, a rainha..."
+ chY "Um passo de cada vez."
+ chL "Primeiro vamos salvar o rei."
+ anna "E como vamos entrar lá?"
+ chY "Deixe os disfarces comigo!"
+ chY "A rainha costuma deixar sua guarda baixa durante a noite."
+ chL "Vamos entrar lá e pegar o rei antes que alguém consiga sequer notar alguma coisa."
+ #mapa com as respostas do quiz.
+ chL "Mas por via das dúvidas, por favor lembre-se desse mapa."
+
+ #cenário castelo, todas estão disfarçadas
+ chGR "Tudo está como o usual, minha rainha."
+ chGR "Nada a relatar por hoje também."
+ chS "Ótimo. {w}Dispensados, voltem aos seus postos."
+ chS "Não quero ser incomodada essa noite."
+ chGR "Sim, senhora."
+ chY "{color=F4C2C2}\*Sussurra\* As masmorras são por aqui."
+ chL "Eles deixam o rei na cela mais distante."
+ chYL "Consegue se lembrar do mapa que recebeu?"
+
+ menu:
+  "Sim":
+   chL "Ótimo."
+   chY "Que os jogos comecem!"
+   chYL "Hehehe"
+   return
+  "Não":
+   #mapa com as respostas do quiz.
+   chL "Lembre-se bem disso, por favor."
+   chY "Estamos aqui para te ajudar, mas nunca se sabe o que pode acontecer."
+   chYL "Vamos nessa."
+   return
