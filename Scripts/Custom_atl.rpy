@@ -1,15 +1,19 @@
+# cor pensamento : {color=F4C2C2}
+
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
-define grandma = Character("Grandma", color="#652B46")#Khaleesi
-define ivan = Character("Ivan")
-define lucy = Character("Lucy", color="#280D08")
-define paithyn = Character("Paithyn", color="#23681D")
-define sc = Character("Sacred Tree", color = "#CC8105")
-define yvvy = Character("Yvvy", color="#312E60")
-define yl = Character ("Yvvy and Lucy", color="2F1037")
-define a = Character("???", color="#652B46")
-define b = Character("???", color="#312E60")
-define c = Character("???", color="#2F1037")
+define chNull = Character("???")
+define chG = Character("Vovó")#Khaleesi
+define chP = Character("Paithyn")
+define chI = Character("Ivan")
+define chL = Character("Lucy")
+define chY = Character("Yvvy")
+define chYL = Character ("Yvvy e Lucy")
+define chAS = Character("Árvore Sagrada")
+define chB = Character("Braxton")
+define chGR = Character("Guarda Real")
+define chS = Character("Rainha Selyna")
+define chR = Character("Rei")
 
 # lista de animações
 transform rodando:
@@ -18,12 +22,6 @@ transform rodando:
         rotate 0 zoom 1
         linear 20.0 rotate 360.0 zoom .2
 
-transform colar_foco:
- block:
-        zoom 2.0
-        xalign 0.5 yalign 0.5
-        linear 1.0 yalign 0.5
-
 transform floating:
  block:
         xalign 0.5 yalign 0.5
@@ -31,38 +29,53 @@ transform floating:
         linear 1.0 yalign 0.5
         repeat
 
+#lista de posições
+transform trueright:
+ xalign 1.1 yalign 1.3
+
+#Lista de cutscenes
+image star = Movie(play="00_BG/star_bg.ogv")
+
 #lista de imagens
-#Anna
-image ABody = "ch_Anna/AnnaBody500x650.png"
-image ARope = "ch_Anna/AnnaRope.png"
-image ATedio = "ch_Anna/AnnaTedio.png"
-image AWorried = "ch_Anna/AnnaWorried.png"
-image Colar = "ch_Anna/AnnaBody2.png"
 
 #BG
-image BGGrandma = "GrandmaHouse.jpg"
+image BGGrandma:
+ "00_BG/GrandmaHouse.png" with Dissolve(0.5, alpha=True)
+ zoom 0.4
+
+
 image BGExtra = "BG_Extra.png"
-image BGPaithyn = "PaythHouse.jpg"
+
+image BGPaithynA:
+ "00_BG/PaythHouseA.png"
+ zoom 0.4
+image BGPaithynB:
+ "00_BG/PaythHouseB.png" with Dissolve(0.5, alpha=True)
+ zoom 0.4
+
 image Last = "creditos.jpg"
-image MENU = "choice_menu.png"
 image TreeBG = "pandc.png"
+
+image BGctscn01:
+ "00_BG/ctscn_Nothing"
+ zoom 0.4
+
 #Grandma
-image GAngry = "ch_Grandma/AngryGrandma.png"
-image GBody = "ch_Grandma/GrandmaBody.png"
+image GAngry = "Khalessi/AngryGrandma.png"
+image GBody = "Khalessi/Body.png"
 image GClosedEyes = "ch_Grandma/CEyesGrandma.png"
-image GHappy = "ch_Grandma/HappyGrandma.png"
+image GHappy = "Khalessi/HappyGrandma.png"
 #Paithyn
 image PBody = "Paithyn900x700.png"
 image PHappy = "PaithynHappy.png"
-#Twins
-image LA = "ch_Twins/AngryLucy.png"
-image YA = "ch_Twins/AngryYvvy.png"
-image LD = "ch_Twins/DefaultLucy.png"
-image YD = "ch_Twins/DefaultYvvy.png"
-image LL = "ch_Twins/LaughingLucy.png"
+
+image Colar:
+ "00_BG/Pingente.png"
+ zoom 3.0
 
 image arvore brilha:
- "C01.jpg"
+ "00_BG/C01.jpg"
+ zoom 0.4
 
 image BG01:
  "cutscenefundo.png"
@@ -85,77 +98,79 @@ image textc2:
 #Anna
 layeredimage Anna:
  always:
-  "ch_Anna/AnnaBody500x650.png"
+  "Anna/Body.png"
 
  group eyes:
-  attribute AEyes_Worried default:
-   "ch_Anna/AEyes_Worried.png"
+  attribute AEyes_Open default:
+   "Anna/AEyes_Open.png"
   attribute AEyes_Angry:
-   "ch_Anna/AEyes_Angry.png"
+   "Anna/AEyes_Angry.png"
   attribute AEyes_Empty:
    "ch_Anna/AnnaTranse.png"
   attribute AEyes_Happy:
    "ch_Anna/AEyes_Happy.png"
   attribute AEyes_Tedio:
-   "ch_Anna/AEyes_Tedio.png"
+   "Anna/AEyes_Tedio.png"
 
  group mouth:
-  attribute ACMouth_Worried default:
-   "ch_Anna/ACMouth_Worried.png"
-  attribute AOMouth_Worried:
-   "ch_Anna/AOMouth_Worried.png"
-  attribute ACMouth_Happy:
-   "ch_Anna/ACMouth_Happy.png"
+  attribute AMouth_Worried default:
+   "Anna/AMouth_Worried.png"
   attribute AOMouth_Happy:
    "ch_Anna/AOMouth_Happy.png"
-  attribute AOMouth_Angry:
-   "ch_Anna/AOMouth_Angry.png"
+  attribute ACMouth:
+   "Anna/ACMouth.png"
 
  group acessories:
   attribute none default:
-   "ch_Anna/None.png"
+   "None.png"
   attribute rope:
    "ch_Anna/AnnaRope.png"
 
-#Twins
-layeredimage Twins:
+#Lucy
+layeredimage Lucy:
  always:
-  "ch_Twins/TwinsBody.png"
-
- group YEyes:
-  attribute DefaultEyes_Yvvy default:
-   "ch_Twins/DefaultEyes.png"
-  attribute AngryEyes_Yvvy:
-   "ch_Twins/AngryEyes.png"
-  attribute ClosedHappyEyes_Yvvy:
-   "ch_Twins/ClosedHappyEyes.png"
-
- group YMouth:
-  attribute DefaultYvvy default:
-   "ch_Twins/DefaultMouth.png"
-  attribute LaughingYvvy:
-   "ch_Twins/Laughing.png"
-  attribute ClosedMouth_Yvvy:
-   "ch_Twins/ClosedMouth.png"
+  "LY/BodyLucy.png"
+  xzoom -1
 
  group LEyes:
   attribute DefaultEyes_Lucy default:
-   "ch_Twins/DefaultEyes.png"
+   "LY/DefaultEyes.png"
    xzoom -1
-  attribute ClosedHappyEyes_Lucy:
-   "ch_Twins/ClosedHappyEyes.png"
+  attribute ClosedEyes_Lucy:
+   "LY/EyesClosed.png"
    xzoom -1
   attribute AngryEyes_Lucy:
-   "ch_Twins/AngryEyes.png"
+   "LY/EyesAngry.png"
    xzoom -1
 
  group LMouth:
-  attribute DefaultLucy default:
-   "ch_Twins/DefaultMouth.png"
+  attribute DefaultMouth_Lucy default:
+   "LY/DefaultMouth.png"
    xzoom -1
   attribute LaughingLucy:
-   "ch_Twins/Laughing.png"
+   "LY/Laughing.png"
    xzoom -1
   attribute ClosedMouth_Lucy:
-   "ch_Twins/ClosedMouth.png"
+   "LY/ClosedMouth.png"
    xzoom -1
+
+#Yvvy
+layeredimage Yvvy:
+ always:
+  "LY/BodyYvvy.png"
+
+ group YEyes:
+  attribute DefaultEyes_Yvvy default:
+   "LY/DefaultEyes.png"
+  attribute ClosedEyes_Yvvy:
+   "LY/EyesClosed.png"
+  attribute AngryEyes_Yvvy:
+   "LY/EyesAngry.png"
+
+ group YMouth:
+  attribute DefaultMouth_Yvvy default:
+   "LY/DefaultMouth.png"
+  attribute LaughingYvvy:
+   "LY/Laughing.png"
+  attribute ClosedMouth_Yvvy:
+   "LY/ClosedMouth.png"
