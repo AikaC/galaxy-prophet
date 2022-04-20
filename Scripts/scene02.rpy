@@ -1,236 +1,222 @@
 label to_grandma:
 
- show GBody
- show GAngry
- with dissolve
+ show GBody at left
+ show GAngry at left
+ with moveinleft
 
- grandma "So..."
- grandma "Anyone cares to explain what is going on?"
+ chG "Então..."
+ chG "Alguém pode me explicar o que está acontecendo?"
 
  hide GBody
  hide GAngry
- show ABody
- show ATedio
- show ARope
+ show Anna AEyes_Tedio at trueright
+ #show ARope
  with dissolve
 
- anna "I-"
+ anna "Eu-"
 
- hide ABody
- hide ATedio
- hide ARope
- show Twins ClosedMouth_Yvvy
- with dissolve
+ hide Anna
+ show Lucy at left
+ with moveinleft
 
- lucy "We were at the secret temple and {i}this thing{/i}..."
+ chL "Estávamos no templo secreto e {i}essa coisa{/i}..."
  
- show Anna AEyes_Tedio AOMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Lucy
+ show Anna AEyes_Tedio at trueright
  with dissolve
 
- anna "Girl… I’m a girl…"
+ anna "Garota... sou uma garota..."
 
- show Anna AEyes_Tedio ACMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Anna
+ show Lucy at left
+ with moveinleft
 
- lucy "What’s a girl?"
+ chL "O que é uma garota?"
 
- show Twins DefaultYvvy ClosedMouth_Lucy
+ hide Lucy
+ show Yvvy at right
+ with moveinright
+
+ chY "Enfim, {i} essa garota{/i} apareceu literalmente do nada."
+
+ hide Yvvy
+ show Colar at truecenter
+
+ chY "E olha isso!"
+
+ hide Colar
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- yvvy "Anyway, {i} this girl{/i} showed up from literally nowhere."
-
- show Twins AngryEyes_Lucy DefaultLucy ClosedMouth_Yvvy
- with dissolve
-
- lucy "And look at this!"
-
- hide Twins
- hide Anna onlayer over_screens
- with dissolve
- window hide
- show Colar at colar_foco onlayer over_screens
- pause
-
- hide Colar onlayer over_screens
- window show
- show GBody
- show GAngry
- with dissolve
-
-
- grandma "Now…{w} That’s a rare sight."
- grandma "How did you get this, child?"
+ chG "Agora...{w} Essa é uma visão rara."
+ chG "Onde conseguiu isso, criança?"
 
  hide GBody
  hide GAngry
- window hide
- show MENU
  with dissolve
 
  menu:
-  "No, me first.":
+  "Não, eu primeiro.":
    $ moral -= 5
-   hide MENU
-   window show
    jump first
-  "I bought it.":
-   hide MENU
-   window show
+  "Eu comprei.":
    jump store
-  "…":
+  "...":
    $ moral -= 10
-   hide MENU
-   window show
    jump release
 
 label first:
  
- show Anna AEyes_Angry AOMouth_Angry rope onlayer over_screens:
-  size (245,318.5)
-  left
-
- anna "I want some answers first."
-
- show Anna ACMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins ClosedHappyEyes_Yvvy LaughingYvvy
+ show Anna AEyes_Angry at trueright
  with dissolve
 
- yvvy "{i}The girl{\i} has courage."
+ anna "Eu quero algumas respostas primeiro."
 
- show Twins ClosedMouth_Yvvy ClosedHappyEyes_Lucy LaughingLucy
+ hide Anna
+ show Yvvy at right
+ with moveinright
+
+ chY "{i}A garota{\i} tem coragem."
+
+ hide Yvvy
+ show Lucy at left
+ with moveinleft
+
+ chL "Devemos reconhecer isso."
+
+ hide Lucy
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- lucy "I have to acknowledge that."
+ chG "..."
 
- hide Twins
- show GBody
- show GAngry
- with dissolve
+ #hide GAngry
+ #show GClosedEyes
+ #with dissolve
 
- grandma "…"
+ chG "Justo. {w}O que quer saber?"
 
+ hide GBody
  hide GAngry
- show GClosedEyes
+ show Anna at trueright
  with dissolve
 
- grandma "Fair enough. {w}What do you want to know?"
+ anna "Quem é essa rainha má que vocês falam o tempo todo?"
 
- show Anna AOMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Anna
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
 
- anna "Who is this evil queen that you always talk about?"
+ chY "Fala baixo..."
 
- hide GBody
- hide GClosedEyes
- show Anna ACMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins AngryEyes_Yvvy AngryEyes_Lucy
+ hide Yvvy
+ show Lucy AngryEyes_Lucy at left
+ with moveinleft
+
+ chL "Eles podem te ouvir..."
+
+ hide Lucy
+ show GBody at left
+ show GHappy at left
  with dissolve
 
- yvvy "Lower..."
- lucy "They might hear you..."
+ chG "Não se preocupem, estamos a salvo aqui."
 
- hide Twins
- show GBody
- show GHappy
- with dissolve
-
- grandma "Don't worry, we are safe here."
- grandma "I don't recommend keeping using the word \"evil\" to describe her, though."
-
- hide GBody
  hide GHappy
- show Twins AngryEyes_Yvvy AngryEyes_Lucy ClosedMouth_Lucy
- with dissolve
+ show GAngry at left
 
- yvvy "Even though she {b}is {/b}the evil queen."
- lucy "..."
-
- hide Twins
- show GBody
- show GAngry
- with dissolve
-
- grandma "Not long ago, a creature appeared in our world, just like you."
- grandma "I am not aware of the details..."
- grandma "But she managed to conquer the throne after sealing a deal with her current right hand."
+ chG "Mas eu não recomendo continuar o uso da palavra \"má\" para descrevê-la."
 
  hide GBody
  hide GAngry
- show Twins AngryEyes_Yvvy AngryEyes_Lucy ClosedMouth_Yvvy
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
+
+ chY "Mesmo que ela {b}seja {/b}a rainha má."
+
+ hide Yvvy
+ show Lucy AngryEyes_Lucy ClosedMouth_Lucy at left
+ with moveinleft
+
+ chL "..."
+
+ hide Lucy
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- lucy "We've been scared of her since then."
-
- show Twins DefaultYvvy ClosedMouth_Lucy
- with dissolve
-
- yvvy "You must be our hero who came to defeat the evil that plague us."
- 
- show Twins DefaultLucy ClosedMouth_Yvvy DefaultEyes_Lucy
- with dissolve
-
- lucy "But that's odd, she didn't do anything yet. Why are you here?"
-
- show Twins ClosedMouth_Lucy DefaultEyes_Yvvy
- show Anna AEyes_Tedio AOMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
- 
- anna "That's what I'm dying to know..."
-
- show Anna ACMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins DefaultYvvy
- with dissolve
-
- yvvy "Wait, please don't die..."
-
- show Twins ClosedMouth_Yvvy DefaultLucy
- with dissolve
-
- lucy "... Yet."
-
- show Twins ClosedMouth_Lucy
- show Anna AEyes_Tedio AOMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
-
- anna "Anyway, if you say she didn’t do anything yet, then why call her the evil queen?"
-
- show Twins DefaultLucy
- show Anna ACMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins
- with dissolve
- 
- lucy "Because she threw the real king in the dungeon."
-
- show Twins DefaultYvvy ClosedMouth_Lucy
- yvvy "He didn't deserve that."
-
- hide Twins
- show GBody
- show GAngry
- with dissolve
-
- grandma "I will explain everything."
- grandma "You two, please release {i}the girl{/i} now."
+ chG "Não muito tempo atrás, uma criatura aparaceu no nosso mundo, assim como você."
+ chG "Não sei os detalhes..."
+ chG "Mas ela conseguiu conquistar o trono depois de um acordo com o atual ajudante dela."
 
  hide GBody
  hide GAngry
- hide Anna onlayer over_screens
+ show Lucy at left
+ with moveinleft
+
+ chL "Temos medo dela desde então."
+
+ hide Lucy
+ show Yvvy at right
+ with moveinright
+
+ chY "Você deve ser a heroína que veio nos salvar do mal que nos assombra."
+ 
+ hide Yvvy
+ show Lucy AngryEyes_Lucy at left
+ with dissolve
+
+ chL "Mas isso é estranho, ela não fez nada ainda. Por que você está aqui?"
+
+ hide Lucy
+ show Anna AEyes_Tedio at trueright
+ with dissolve
+ 
+ anna "Estou morrendo de vontade de saber também..."
+
+ hide Anna
+ show Yvvy at right
+ with moveinright
+
+ chY "Calma, por favor, não morra..."
+
+ hide Yvvy
+ show Lucy at left
+ with moveinleft
+
+ chL "... ainda."
+
+ hide Lucy
+ show Anna at trueright
+ with dissolve
+
+ anna "Enfim, se você disse que ela não fez nada ainda..."
+ anna "Por que a chamam de rainha má?"
+
+ hide Anna
+ show Lucy AngryEyes_Lucy at left
+ with moveinleft
+ 
+ chL "Porque ela jogou o rei de verdade na masmorra."
+
+ hide Lucy
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
+
+ chY "Ele não merecia isso."
+
+ hide Yvvy
+ show GBody at left
+ show GAngry at left
+ with dissolve
+
+ chG "Eu vou explicar tudo."
+ chG "Vocês duas, por favor, soltem {i}a garota{/i} agora."
+
+ hide GBody
+ hide GAngry
  with dissolve
 
  jump prophecy
@@ -239,81 +225,61 @@ label first:
 
 label store:
 
- show Anna AOMouth_Worried rope onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna at trueright
  with dissolve
 
- anna "I bought it at a store. It’s a pretty popular item where I live."
+ anna "Eu comprei em uma loja. É um item bem comum onde vivo."
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins ClosedMouth_Lucy
+ hide Anna
+ show Yvvy at right
+ with moveinright
+
+ chY "Comprou? Loja? {i}Essa garota{/i} é estranha."
+
+ hide Yvvy
+ show Anna AEyes_Tedio ACMouth at trueright
  with dissolve
 
- yvvy "Bought? Store? {i}This girl{/i} is weird."
+ anna "..."
 
- show Twins ClosedMouth_Yvvy
- show Anna AEyes_Tedio onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna AMouth_Worried at trueright
+
+ anna "Estamos mesmo falando o mesmo idioma?"
+
+ hide Anna
+ show Lucy at left
+ with moveinleft
+
+ chL "O que é um idioma?"
+
+ hide Lucy
+ show Anna AEyes_Tedio at trueright
  with dissolve
 
- anna "…"
+ anna "Já posso ir para casa?"
 
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Anna
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
 
- anna "Are we really speaking the same language?"
+ chY "Não! Precisamos saber mais sobre a profecia primeiro!"
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins DefaultLucy
+ hide Yvvy
+ show Anna at trueright
  with dissolve
 
- lucy "What’s a language?"
+ anna "Que profecia?"
 
- show Twins ClosedMouth_Lucy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Anna
+ show GBody at left
+ show GHappy at left
  with dissolve
 
- anna "Can I go home already?"
-
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins DefaultYvvy AngryEyes_Yvvy
- with dissolve
-
- yvvy "No! We need to know more about the prophecy first!"
-
- show Twins ClosedMouth_Yvvy
- show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
-
- anna "What prophecy?"
-
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- hide Twins
- show GBody
- show GHappy
- with dissolve
-
- grandma "I'm going to explain everything."
- grandma "You two… Release {i}the girl{/i}."
+ chG "Eu vou explicar tudo."
+ chG "Vocês duas... Soltem {i}a garota{/i}."
 
  hide GBody
  hide GHappy
- hide Anna onlayer over_screens
  with dissolve
 
  jump prophecy
@@ -321,43 +287,51 @@ label store:
  return
 
 label release:
- show Twins ClosedMouth_Lucy AngryEyes_Yvvy
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
+
+ chY "Por que você não está dizendo nada?"
+
+ hide Yvvy
+ show Lucy AngryEyes_Lucy at left
+ with moveinleft
+
+ chL "Você trabalha para a rainha?"
+
+ hide Lucy
+ show Yvvy AngryEyes_Yvvy at right
  with dissolve
 
- yvvy "Why are you not saying anything?"
+ chY "O ajudante da rainha te enviou aqui para encontrar nosso templo secreto?"
 
- show Twins DefaultLucy AngryEyes_Lucy
+ hide Yvvy
+ show Lucy at left
  with dissolve
 
- lucy "Do you work for the queen?"
- yvvy "Did the queen’s menial send you to find our secret temple?"
+ chL "Oh, não! E se eles já descobriram?"
 
- show Twins DefaultEyes_Lucy
+ hide Lucy
+ show Yvvy at right
  with dissolve
 
- lucy "Oh, no! What if they already know about it?"
+ chY "E se eles já estiverem vindo?"
 
- show Twins DefaultEyes_Yvvy
+ hide Yvvy
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- yvvy "What if they are already coming?"
+ chG "Acalmem-se, as duas!"
+ chG "Tenho certeza que esse não é o caso... {w}Provavelmente..."
 
- hide Twins
- show GBody
- show GAngry
- with dissolve
+ #hide GAngry
+ #show GClosedEyes
+ #with dissolve
 
- grandma "Calm down, you two!"
- grandma "I’m sure that is not the case… {w}Probably…"
-
- hide GAngry
- show GClosedEyes
- with dissolve
-
- grandma "First off… Release {i}the girl{/i}."
+ chG "Antes de tudo... Soltem {i}a garota{/i}."
 
  hide GBody
- hide GClosedEyes
+ hide GAngry
  with dissolve
 
  jump prophecy
