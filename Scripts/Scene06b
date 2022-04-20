@@ -11,6 +11,7 @@ label casaMinion:
  chB "De novo?"
  chB "Quem mais te perguntou sobre ele?"
  if ancientDragon == True:
+  $ ancientDragon = False
   anna "Khalessi. {w}Sua antiga companheira, se lembra dela?"
   chB "Kha-{w=0.5}lessi?"
   #efeito dor de cabeça
@@ -22,6 +23,7 @@ label casaMinion:
   anna "O que aconteceu com você?"
   anna "..."
   anna "\'suspira\'"
+  pass
  else:
   pass
  anna "É só um objeto comum de onde venho."
@@ -35,5 +37,44 @@ label casaMinion:
  chB "E eu não tentaria fugir se fosse você."
  anna "..."
  
- #dia seguinte
+ #cutscene passagem de tempo
+ anna "E então..."
+ chB "Então o quê?"
+ anna "Sou sua prisioneira ou sua convidada?"
+ chB "Isso vai depender de você."
+ chB "Eu ainda acredito que você tenha as resposta que procuro."
+ anna "O que te faz ter tanta certeza?"
+ chB "Esse colar."
+ chB "Ele pode não ser especial para você..."
+ chB "Mas tem alguma coisa me incomodando."
+ if ancientDragon == False:
+  anna "Talvez você só não goste dessa cor?"
+  chB "Não, não é isso."
+  anna "Qual o problema desse lugar? Todo mundo leva ironia a sério!"
+  chB "\'Ironia\'?"
+  anna "Sinceramente, eu já não sei mais o que fazer."
+  anna "Quer minhas informações?"
+  anna "Aqui está o que sei:"
+  #cutscene passagem de tempo
+  chB "Não faz sentido."
+  anna "Eu sei! Tentei dizer isso para todo mundo!"
+  anna "Mas todos parecem acreditar que eu tenho algum papel nisso!"
+  chB "Não. {w}Não isso."
+  chB "Não faz sentido uma árvore dessas existir por tanto tempo e eu não ter nenhum conhecimento."
+  chB "Me leve até lá."
+  anna "Eu não posso."
+  chB "Isso não foi um pedido."
+  anna "E isso não foi uma recusa voluntária."
+  anna "A árvore tem uma barreira contra você, ou alguma coisa assim."
+  chB "{i}Contra mim?{/i} Acho impossível."
+  anna "Já conseguiu chegar nela alguma vez?"
+  chB "Não..."
+  chB "Mas também nunca tentei."
+  chB "Me leve até lá."
+  anna "Como quiser, ó grandioso dragão."
+  jump TreeFalse
+  return
+ if ancientDragon == True:
+  $ ancientDragon = False
+  return
  return
