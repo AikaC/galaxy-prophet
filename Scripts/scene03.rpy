@@ -1,84 +1,89 @@
 label prophecy:
 
- show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna AEyes_Tedio at trueright
  with dissolve
 
- anna "Thank you for releasing me."
+ anna "Obrigada por me soltarem."
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins AngryEyes_Lucy AngryEyes_Yvvy
+ hide Anna
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
+
+ chL "Ainda estamos de olho."
+
+ hide Yvvy
+ show Lucy AngryEyes_Lucy at left
+ with moveinleft
+
+ chY "Você é muito suspeita."
+
+ hide Lucy
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- lucy "We are still watching you."
- yvvy "You are too suspicious."
-
- hide Twins
- show GBody
- show GAngry
- with dissolve
-
- grandma "Lucy, Yvvy. {i}The girl{/i} is a guest now."
- grandma "Please, behave yourselves."
+ chG "Lucy, Yvvy. {i}A garota{/i} é uma convidada agora."
+ chG "Por favor, comportem-se."
 
  hide GBody
  hide GAngry
- show Twins
+ show Yvvy at right
+ show Lucy at left
  with dissolve
 
- yl "Yes, grandma…"
+ chYL "Sim, vovó..."
 
- hide Twins
+ hide Yvvy
+ hide Lucy
  show GBody
  show GHappy
  with dissolve
 
- grandma "So, {i}girl{/i}-"
-
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ chG "Então, {i}garota{/i}-"
+ 
+ hide GBody
+ hide GHappy
+ show Anna at trueright
  with dissolve
 
  anna "[anna]."
 
- hide GBody
- hide GHappy
+ hide Anna
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins AngryEyes_Lucy AngryEyes_Yvvy
+ chY "Você é uma \“garota\” ou uma \“[anna]\”?"
+
+ hide Yvvy
+ show Lucy AngryEyes_Lucy at left
+ with moveinleft
+
+ chL "Poderia, por favor se decidir, {i}querida convidada?{/i}"
+
+ hide Lucy
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- yvvy "Are you a \“Girl\” or a \“[anna]\”?"
- lucy "Could you please make up your mind, {i}dear guest?{/i}"
-
- hide Twins
- show GBody
- show GAngry
- with dissolve
-
- grandma "..."
+ chG "..."
 
  hide GBody
  hide GAngry
- show Twins
+ show Yvvy at right
+ show Lucy at left
  with dissolve
 
- yl "Sorry, grandma…"
+ chYL "Desculpa, vovó..."
 
- hide Twins
+ hide Yvvy
+ hide Lucy
  show GBody
  show GHappy
  with dissolve
 
- grandma "So... [anna]."
+ chG "Então... [anna]."
 
- stop music fadeout 1.0
+ #stop music fadeout 1.0
 
  hide GBody
  hide GHappy
@@ -86,368 +91,370 @@ label prophecy:
 
  #cutscene start
 
- play music "audio/CutsceneIntro.ogg"
- queue music "audio/CutsceneLoop.ogg"
+ #play music "audio/CutsceneIntro.ogg"
+ #queue music "audio/CutsceneLoop.ogg"
 
- grandma "Countless ages ago when this place didn’t have much to see…"
- grandma "A shiny being appeared during a moonless night and said..."
+ chG "Incontáveis eras atrás quando ainda não tinha muito o que ver por aqui..."
+ chG "Um ser brilhante apareceu durante uma noite sem lua e disse..."
 
- show BG01 onlayer over_screens
- show textc onlayer over_screens
- window hide
- with dissolve
- pause
+ #show BG01 onlayer over_screens
+ #show textc onlayer over_screens
+ #window hide
+ #with dissolve
+ #pause
 
- hide BG01 onlayer over_screens
- hide textc onlayer over_screens
- window show
+ #hide BG01 onlayer over_screens
+ #hide textc onlayer over_screens
+ #window show
 
- grandma "Before we could even react, it’s light blinded us"
- grandma "And the sacred tree appeared in that same spot"
- grandma "As if it always had been there."
- grandma "We tried to ask for the meaning of that."
- grandma "Warlocks and fairies came from distance trying to help."
- grandma "But nothing else happened."
- grandma "We decided then to wait."
- grandma "Families started to grow,"
- grandma "clans turned into villages,"
- grandma "kingdoms were brought to life,"
- grandma "but the tree remained in silence."
- grandma "When we were almost giving up…"
- grandma "A new sign showed up."
+ chG "Antes que sequer pudéssemos reagir, uma luz nos cegou."
+ chG "E a árvore sagrada a pareceu naquele mesmo lugar."
+ chG "Como se ela sempre estivesse lá."
+ chG "Tentamos perguntar o significado de tudo aquilo."
+ chG "Feiticeiros e fadas vieram de longe tentar ajudar."
+ chG "Mas nada mais aconteceu."
+ chG "Então decidimos esperar."
+ chG "Famílias começaram a crescer, {w}clãs se tornaram vilas..."
+ chG "reinos foram trazidos à vida, {w}mas a árvore continuou em silêncio."
+ chG "Quando estávamos quase desistindo... {w}Um novo sinal apareceu."
 
- stop music fadeout 1.0
+ #stop music fadeout 1.0
 
  #cutscene end
  
  play music "audio/AnnaArp.ogg"
  queue music "audio/AnnaLoop.ogg"
 
- show GBody
- show GHappy
- with dissolve
+ show GBody at left
+ show GAngry at left
+ with moveinleft
 
- grandma "Not so much time after, we learned that our kingdom had a new queen."
- grandma "I can’t go too far from the tree since the guardians linked their lifespan with the temple at some point."
+ chG "Não muito tempo depois, descobrimos que nosso reino possuía uma nova soberana que tomou o lugar do antigo rei."
+ chG "Eu não posso ir muito longe da árvore já que os guardiões lincaram a energia vital com o templo secreto."
+
+ hide GAngry
+ show GHappy at left
+
+ chG "Mas isso é história para outro dia."
 
  hide GHappy
- show GClosedEyes
- with dissolve
+ show GAngry at left
 
- grandma "But that’s history for another day."
-
- hide GClosedEyes
- show GAngry
- with dissolve
-
- grandma "Will you help us?"
+ chG "Vai nos ajudar?"
 
  hide GBody
  hide GAngry
- window hide
- hide Anna onlayer over_screens
  with dissolve
 
  menu:
-  "How can you be so sure?":
+  "Como pode ter tanta certeza?":
    $extra = True
-   window show
    jump so_sure
-  "Yes":
+  "Sim":
    if moral == 100:
-    window show
     jump yhelp
    else:
     $moral += 10
-    window show
     jump yhelp
-  "No":
+  "Não":
    $moral -= 10
-   window show
    jump nhelp
  return
 
 label so_sure:
  
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna at trueright
  with dissolve
 
- anna "Despite the oddly fitting time, I don’t see how the new queen is related to this prophecy."
- anna "How long has she been ruling this place?"
+ anna "Apesar dessa coincidência de tempo, não vejo a relação da rainha com a profecia."
+ anna "Há quanto tempo ela reina aqui?"
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins
+ hide Anna
+ show Yvvy at right
+ with moveinright
+
+ chY "Meia geração até agora..."
+
+ hide Yvvy
+ show Anna AEyes_Angry at trueright
  with dissolve
 
- yvvy "Half generation for now…"
+ anna "Ela já fez algo de ruim {b}depois{/b} de pegar a coroa?"
 
- show Twins ClosedMouth_Yvvy ClosedMouth_Lucy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Anna
+ show Lucy at left
+ with moveinleft
+
+ chL "Ainda não..."
+
+ hide Lucy
+ show Yvvy AngryEyes_Yvvy at right
+ with moveinright
+
+ chY "Aprisionar o rei já não é ruim o bastante?"
+
+ hide Yvvy
+ show Anna at trueright
  with dissolve
 
- anna "Has she done something evil after taking the crown?"
+ anna "É... {w}Mas eu não vejo um período sombrio saindo só disso."
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins DefaultLucy
+ hide Anna
+ show Yvvy at right
+ show Lucy at left
  with dissolve
 
- lucy "Not yet…"
+ chYL "Isso nós podemos explicar."
 
- show Twins ClosedMouth_Lucy AngryEyes_Yvvy DefaultYvvy
+ hide Yvvy
  with dissolve
 
- yvvy "Isn’t locking the old king evil enough?"
+ chL "Nós servíamos ao antigo rei, então estávamos lá quando tudo aconteceu."
 
- show Twins ClosedMouth_Yvvy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Lucy
+ show Yvvy at right
  with dissolve
 
- anna "It is… {w}But I don’t see a dark era coming from just this."
+ chY "Mas ainda não sabemos como a rainha Selyna e aquela criatura terrível terminaram juntos."
 
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins DefaultEyes_Yvvy DefaultYvvy DefaultEyes_Lucy DefaultLucy
+ hide Yvvy
  with dissolve
 
- yl "This we can explain."
- lucy "We served the last king, so we were there when everything happened."
- yvvy "We still don’t know how queen Selyna and that awful creature ended together, though."
-
- hide Twins
- hide Anna onlayer over_screens
-
- stop music fadeout 1.0
+ #stop music fadeout 1.0
 
  #cutscene start
 
  
- play music "audio/CutsceneIntro.ogg"
- queue music "audio/CutsceneLoop.ogg"
+ #play music "audio/CutsceneIntro.ogg"
+ #queue music "audio/CutsceneLoop.ogg"
 
- lucy "It all started with a surprise attack."
- yvvy "And I’m gonna tell you, we were really surprised."
- lucy "You’re right, sis. Not cute at all."
- yvvy "I don't know how an outsider made a deal with such a powerful creature,"
- yvvy "but they managed to conquer the castle in no time."
- lucy "We didn’t have that much protection anyways..."
- lucy "... since it’s not common to enter others houses..."
- yvvy "… Or castles… "
- lucy "Without being invited."
- yvvy "Me and Lucy managed to hide on time,"
- lucy "But we saw everything."
- yvvy "We couldn’t hear well though…"
+ chL "Tudo começou com um ataque surpresa."
+ chY "E vou te falar, a gente ficou mesmo supreendido."
+ chL "Verdade, irmã. Nem um pouco legal."
+ chY "Não sei como alguém de fora fez um acordo com uma criatura tão temível,"
+ chY "mas eles conseguiram conquistar o castelo em pouco tempo."
+ chL "Não estávamos tão protegidos assim..."
+ chL "... já que não é comum entra na casa dos outros..."
+ chY "... Ou castelo dos outros... "
+ chL "... sem ser convidado."
+ chY "Eu e Lucy conseguimos nos esconder a tempo,"
+ chL "Mas ouvimos tudo."
+ chY "Só não conseguimos ouvir direito..."
 
- show BG01 onlayer over_screens
- show textc2 onlayer over_screens
- window hide
- with dissolve
- pause
+ #show BG01 onlayer over_screens
+ #show textc2 onlayer over_screens
+ #window hide
+ #with dissolve
+ #pause
 
- hide BG01 onlayer over_screens
- hide textc2 onlayer over_screens
- window show
-
- lucy "It looked like queen Selyna and the last king already knew eachother."
-
+ #hide BG01 onlayer over_screens
+ #hide textc2 onlayer over_screens
+ #window show
  #cutscene end
 
- show Twins
+ show Lucy at left
+ with moveinleft
+
+ chL "Parece que a rainha Selyna e o antigo rei já se conheciam."
+
+ hide Lucy
+ show Yvvy at right
+ with moveinright
+
+ chY "Mas isso não seria uma surpresa."
+
+ hide Yvvy
+ show Lucy at left
  with dissolve
 
- yvvy "That wouldn’t be a surprise, though."
- lucy "True.{p}The last king used to travel to other galaxies a lot."
- yvvy "We don’t know how, before you ask."
+ chL "Verdade.{p}O antigo rei costumava andar muito por outras galáxias."
 
- show Twins AngryEyes_Lucy
+ hide Lucy
+ show Yvvy at right
  with dissolve
 
- lucy "Queen Selyna clearly has personal issues here to deal with."
+ chY "Não sabemos como, antes que você pergunte."
 
- show Twins AngryEyes_Yvvy
+ hide Yvvy
+ show Lucy at left
  with dissolve
 
- yvvy "Who knows what she is planning to do with the last king?"
+ chL "A rainha Selyna com certeza fez aquilo por vingança."
 
- show Twins DefaultEyes_Lucy
+ hide Lucy
+ show Yvvy at right
  with dissolve
 
- lucy "… Or even with us."
 
- show Twins DefaultEyes_Yvvy
+ chY "Quem sabe o que ela planeja fazer com o antigo rei?"
+
+ hide Yvvy
+ show Lucy at left
  with dissolve
 
- yl "Will you help us?"
+ chL "... Ou mesmo conosco."
 
- hide Twins
- window hide
+ show Yvvy at right
+ with dissolve
+
+ chYL "Vai nos ajudar?"
+
+ hide Yvvy
+ hide Lucy
  with dissolve
 
  menu:
-  "I'll help":
-   window show
+  "Sim.":
+   $ routeA = True
    jump yhelp
-  "I'm not helping":
-   window show
+  "Não.":
+   $ routeA = False
    jump nhelp
  return
 
 label yhelp:
 
- show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna at trueright
  with dissolve
 
- anna "Sure, why not?"
+ anna "Claro, por que não?"
 
- show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "It’s not like I can go back home that soon anyway."
+ anna "Não é como se eu conseguisse voltar para casa mesmo."
 
- show Anna AEyes_Tedio ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins ClosedHappyEyes_Yvvy LaughingYvvy
- with dissolve
+ hide Anna
+ show Yvvy at right
+ with moveinright
 
- yvvy "Thank you, [anna]."
+ chY "Obrigada, [anna]."
 
- show Twins ClosedHappyEyes_Lucy LaughingLucy
- with dissolve
+ hide Yvvy
+ show Lucy at left
+ with moveinleft
 
- lucy "You are a nice girl\/[anna] or whatever you want to be."
+ chL "Você uma garota\/[anna], ou sejá lá o que for, legal."
 
- show Twins ClosedMouth_Yvvy ClosedMouth_Lucy
- show Anna AEyes_Worried ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ hide Lucy
+ show Anna at trueright
+ with moveinright
 
- anna "…"
+ anna "..."
 
- show Twins ClosedMouth_Yvvy ClosedMouth_Lucy
- show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
+ #show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
+ # size (245,318.5)
+ # left
+ #with dissolve
 
- anna "Thanks?"
+ anna "Obrigada?"
 
- hide Twins
- hide Anna onlayer over_screens
+ hide Anna
  jump route_01
  return
 
 label nhelp:
 
- show Anna AEyes_Angry AOMouth_Angry onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna AEyes_Angry at trueright
  with dissolve
 
- anna "Why should I?"
- anna "You said yourselves \“I’m too early\”."
- anna "So, I’m clearly not the one you need."
+ anna "Porque eu deveria?"
+ anna "Vocês mesmas falaram \“cheguei cedo demais\”."
+ anna "Então eu claramente não sou quem vocês precisam."
 
- show Anna AEyes_Worried AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ show Anna AEyes_Open at trueright
 
- anna "I’m no warrior nor from this home."
+ anna "Não sou nenhuma guerreira nem nasci aqui."
 
- show Anna AEyes_Worried ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- show Twins
+ hide Anna
+ show Yvvy at right
+ with moveinright
+
+ chY "Isso é verdade mas..."
+
+ hide Yvvy
+ show Lucy at left
+ with moveinleft
+
+ chL "Tem que ter alguma coisa..."
+
+ hide Lucy
+ show Anna at trueright
  with dissolve
 
- yvvy "You’re right but…"
- lucy "There must be something…"
+ anna "Olha, eu sinto muito sobre a era sombria que vocês estão para enfrentar."
+ anna "Mas eu só quero voltar para a minha dimensão."
 
- show Twins ClosedMouth_Lucy ClosedMouth_Yvvy
- show Anna AOMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
+ hide Anna
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- anna "Look, I’m sorry for the dark era you’re about to face."
- anna "But I just want to go back to my dimension."
-
- show Anna ACMouth_Worried onlayer over_screens:
-  size (245,318.5)
-  left
- 
- hide Twins
- show GBody
- show GClosedEyes
- with dissolve
-
- grandma "If you are really part of this, there is no way home, child."
-
- anna "..."
-
- grandma "Sigh."
-
- hide GClosedEyes
- show GAngry
- with dissolve
-
- grandma "You may try talking with the other guardian."
- grandma "But don’t take it for granted."
-
- show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
-
- anna "Thank you very much!"
-
- show Anna ACMouth_Happy onlayer over_screens:
-  size (245,318.5)
-  left
- with dissolve
- 
- grandma "Yvvy, Lucy, take Anna to Paithyn."
+ chG "Se você é mesmo parte disso, não existe uma maneira de voltar, criança."
 
  hide GBody
  hide GAngry
- show Twins ClosedMouth_Lucy
+ show Anna ACMouth at trueright
  with dissolve
 
- yvvy "But…"
+ anna "..."
 
- show Twins ClosedMouth_Yvvy DefaultLucy
+ hide Anna
+ show GBody at left
+ show GAngry at left
  with dissolve
 
- lucy "Yes… Grandma."
+ chG "Suspira."
 
- show Twins AngryEyes_Lucy
+ #hide GClosedEyes
+ #show GAngry
+ #with dissolve
+
+ chG "Pode tentar falar com Paithyn."
+ chG "Ela é outra guardiã da árvore e é especialista em portais."
+ chG "Mas não tenha muitas esperanças."
+
+ hide GBody
+ hide GAngry
+ show Anna at trueright
  with dissolve
 
- lucy "{color=F4C2C2}{i}If [anna]’s really from the prophecy, she’s not going back."
+ anna "Obrigada, de verdade!"
 
- show Twins AngryEyes_Yvvy ClosedMouth_Lucy DefaultYvvy
+ hide Anna
+ show GBody at left
+ show GHappy at left
+ with dissolve
+ 
+ chG "Yvvy, Lucy, levem [anna] para Paithyn."
+
+ hide GBody
+ hide GHappy
+ show Yvvy at right
+ with moveinright
+
+ chY "Mas..."
+
+ hide Yvvy
+ show Lucy at left
+ with moveinleft
+
+ chL "Sim... Vovó."
+
+ show Lucy AngryEyes_Lucy at left
+
+ chL "{color=F4C2C2}*sussurro* {i}Se [anna] faz mesmo parte da profecia, ela não vai voltar."
+
+ hide Lucy
+ show Yvvy AngryEyes_Yvvy at right
  with dissolve
 
- yvvy "Ugh..."
- yvvy "Let’s go then."
+ chY "Ugh..."
+ chY "Então vamos."
 
- hide Twins
- hide Anna onlayer over_screens
+ hide Yvvy
  with dissolve
 
  jump route_02
