@@ -63,7 +63,9 @@ label training:
  chL "Já?!"
  anna "Só o básico..."
  anna "Viu?"
- #intel++, mostrar poder.
+ #mostrar poder.
+ $intel += 1
+
  chY "Uau!"
  chL  "Legal!"
  anna "De volta para a vovó?"
