@@ -11,6 +11,8 @@ init python:
 
 #flags
 default extra = False
+$fugabr = False
+$ancientDragon=False
 
 # choose main character name
 $ anna = "",
@@ -22,7 +24,7 @@ label start:
  #hide Last onlayer over_screens
  $pc = False
 
- $ anna = renpy.input("Por favor, escreva seu nome.")
+ $ anna = renpy.input("Meu nome é...")
  $ anna = anna.strip()
  if anna == "":
   $ anna = "Anna"
@@ -182,5 +184,4 @@ label start:
  jump to_grandma
 
  # This ends the game.
-
  return
