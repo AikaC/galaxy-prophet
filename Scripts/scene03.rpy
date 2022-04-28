@@ -35,8 +35,8 @@ label prophecy:
 
  hide Yvvy
  hide Lucy
- show GBody
- show GHappy
+ show GBody at left
+ show GHappy at left
  with dissolve
 
  chG "Então, {i}garota{/i}-"
