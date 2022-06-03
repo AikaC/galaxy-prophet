@@ -2,6 +2,7 @@ label to_grandma:
 
  show GBody at left
  show GAngry at left
+ show screen noframe_moral
  with moveinleft
 
  chG "Então..."
@@ -9,8 +10,7 @@ label to_grandma:
 
  hide GBody
  hide GAngry
- show Anna AEyes_Tedio at trueright
- #show ARope
+ show Anna AEyes_Tedio rope at trueright
  with dissolve
 
  anna "Eu-"
@@ -22,7 +22,7 @@ label to_grandma:
  chL "Estávamos no templo secreto e {i}essa coisa{/i}..."
  
  hide Lucy
- show Anna AEyes_Tedio at trueright
+ show Anna AEyes_Tedio rope at trueright
  with dissolve
 
  anna "Garota... sou uma garota..."
@@ -57,18 +57,18 @@ label to_grandma:
  with dissolve
 
  menu:
-  "Não, eu primeiro.":
-   $ moral -= 5
-   jump first
-  "Eu comprei.":
-   jump store
-  "...":
-   $ moral -= 10
-   jump release
+    "Não, eu primeiro.":
+       $ moral -= 5
+       jump first
+    "Eu comprei.":
+       jump store
+    "...":
+       $ moral -= 10
+       jump release
 
 label first:
  
- show Anna AEyes_Angry at trueright
+ show Anna AEyes_Angry rope at trueright
  with dissolve
 
  anna "Eu quero algumas respostas primeiro."
@@ -100,7 +100,7 @@ label first:
 
  hide GBody
  hide GAngry
- show Anna at trueright
+ show Anna rope at trueright
  with dissolve
 
  anna "Quem é essa rainha má que vocês falam o tempo todo?"
@@ -171,7 +171,7 @@ label first:
  chL "Mas isso é estranho, ela não fez nada ainda. Por que você está aqui?"
 
  hide Lucy
- show Anna AEyes_Tedio at trueright
+ show Anna AEyes_Tedio rope at trueright
  with dissolve
  
  anna "Estou morrendo de vontade de saber também..."
@@ -189,7 +189,7 @@ label first:
  chL "... ainda."
 
  hide Lucy
- show Anna at trueright
+ show Anna rope at trueright
  with dissolve
 
  anna "Enfim, se você disse que ela não fez nada ainda..."
@@ -220,120 +220,4 @@ label first:
  with dissolve
 
  jump prophecy
-
- return
-
-label store:
-
- show Anna at trueright
- with dissolve
-
- anna "Eu comprei em uma loja. É um item bem comum onde vivo."
-
- hide Anna
- show Yvvy at right
- with moveinright
-
- chY "Comprou? Loja? {i}Essa garota{/i} é estranha."
-
- hide Yvvy
- show Anna AEyes_Tedio ACMouth at trueright
- with dissolve
-
- anna "..."
-
- show Anna AMouth_Worried at trueright
-
- anna "Estamos mesmo falando o mesmo idioma?"
-
- hide Anna
- show Lucy at left
- with moveinleft
-
- chL "O que é um idioma?"
-
- hide Lucy
- show Anna AEyes_Tedio at trueright
- with dissolve
-
- anna "Já posso ir para casa?"
-
- hide Anna
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
-
- chY "Não! Precisamos saber mais sobre a profecia primeiro!"
-
- hide Yvvy
- show Anna at trueright
- with dissolve
-
- anna "Que profecia?"
-
- hide Anna
- show GBody at left
- show GHappy at left
- with dissolve
-
- chG "Eu vou explicar tudo."
- chG "Vocês duas... Soltem {i}a garota{/i}."
-
- hide GBody
- hide GHappy
- with dissolve
-
- jump prophecy
-
- return
-
-label release:
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
-
- chY "Por que você não está dizendo nada?"
-
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with moveinleft
-
- chL "Você trabalha para a rainha?"
-
- hide Lucy
- show Yvvy AngryEyes_Yvvy at right
- with dissolve
-
- chY "O ajudante da rainha te enviou aqui para encontrar nosso templo secreto?"
-
- hide Yvvy
- show Lucy at left
- with dissolve
-
- chL "Oh, não! E se eles já descobriram?"
-
- hide Lucy
- show Yvvy at right
- with dissolve
-
- chY "E se eles já estiverem vindo?"
-
- hide Yvvy
- show GBody at left
- show GAngry at left
- with dissolve
-
- chG "Acalmem-se, as duas!"
- chG "Tenho certeza que esse não é o caso... {w}Provavelmente..."
-
- #hide GAngry
- #show GClosedEyes
- #with dissolve
-
- chG "Antes de tudo... Soltem {i}a garota{/i}."
-
- hide GBody
- hide GAngry
- with dissolve
-
- jump prophecy
-
  return
