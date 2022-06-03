@@ -1,22 +1,93 @@
 label historia_rei:
  #barulho de baque
+
+ stop music fadeout 1.0
+
+ play music "audio/AnnaArp.ogg"
+ queue  music "audio/AnnaLoop.ogg"
+
+ show Masmorra
+ with dissolve
+
  chNull "Alguém está aí?"
+
+ show Anna at trueright
+ with dissolve
+    
  anna "Sua majestade? É você?"
+
+ hide Anna
+ show GR
+ with dissolve
+
  chR "Já fazem alguns anos que não me chamam assim."
  chR "Quem está falando?"
+
+ hide GR
+ show Anna at trueright
+ with dissolve
+
  anna "meu nome é [anna], Yvvy e Lucy me enviaram para te salvar."
+
+ hide Anna
+ show GR
+ with dissolve
+
  chR "Eu já disse a elas que isso não é necessário..."
+
+ hide GR
+ show Anna at trueright
+ with dissolve
+
  anna "Na verdade, elas não foram as únicas..."
  anna "... A árvore sagrada também me instruiu a te encontrar."
+
+ hide Anna
+ show GR
+ with dissolve
+
  chR "A árvore sagrada?"
+
+ hide GR
+ show Anna at trueright
+ with dissolve
+
  anna "É uma longa história.{p}Vamos te soltar primeiro e então te conto tudo."
  #minijogo point and click, abrir a porta da cela
+
+ hide Anna
+ with flashbulb
+
  chR "Entendo."
+
+ show GR
+ with dissolve
+
  chR "Então a profecia finalmente começou a andar."
- anna "Você sabe alguma coisa sobre isso."
+
+ hide GR
+ show Anna at trueright
+ with dissolve
+
+ anna "Você sabe alguma coisa sobre isso?"
+
+ hide Anna
+ show GR
+ with dissolve
+
  chR "Não muito mais que você, com certeza."
  chR "Você disse que Selyna não faz parte da profecia, certo?"
+
+ hide GR
+ show Anna at trueright
+ with dissolve
+
  anna "Ao que parece..."
+
+ hide Anna
+ show GR
+ with dissolve
+
  chR "Mas seu primeiro dever era me encontrar."
  chR "Então talvez saber o que aconteceu entre eu e ela possa te ajudar em alguma coisa."
  chR "Vamos andando por aqui, poucas pessoas conhecem essa passagem."
@@ -48,63 +119,105 @@ label historia_rei:
 
  #cutscene end
  chR "Eu não te culparia se você também achasse que a culpa foi minha."
+
+ hide GR
+ with dissolve
  
  menu:
   "Foi apenas um acidente":#sim
+    $ rei = True
     jump castle_ataque
     return
   "Concordo com Selyna":#não
     jump minion2
     return
  
- label castle_ataque:
-  chL "Garota! Aqui!"
-  chY "Vossa majestade! Fico feliz que esteja bem!"
-  chI "Devemos deixar os cumprimentos para mais tarde."
-  chI "Vamos sair daqui antes que-"
-  chGR "Alto lá!"
-  chI "Macacos me mordam!"
-  chGR "Em nome da rainha Selyna, ordeno que devolvam os prisioneiros."
-  chL "Não vai rolar..."
-  chY "Desculpa, falou alguma coisa? Não consigo ouvir dessa distância."
-  chI "Preparem-se, eles estão vindo."
-  jump Luta
-  return
+label castle_ataque:
+
+ show Castle01
+ show Lucy at left
+ with dissolve
+
+ stop music fadeout 1.0
+
+ play music "audio/YL.ogg"
+
+ chL "Garota! Aqui!"
+
+ hide Lucy
+ show Yvvy at right
+ with moveinright
+
+ chY "Vossa majestade! Fico feliz que esteja bem!"
+
+ hide Yvvy
+ show Ivan at left
+ with moveinleft
+
+ chI "Devemos deixar os cumprimentos para mais tarde."
+ chI "Vamos sair daqui antes que-"
+
+ hide Ivan
+ show GR
+ with dissolve
+
+ chGR "Alto lá!"
+
+ hide GR
+ show Ivan at left
+ with dissolve
+
+ chI "Macacos me mordam!"
+
+ hide Ivan
+ show GR
+ with dissolve
+
+ chGR "Em nome da rainha Selyna, ordeno que devolvam os prisioneiros."
+
+ hide GR
+ show Lucy at left
+ with moveinleft
+
+ chL "Não vai rolar..."
+
+ hide Lucy
+ show Yvvy at left
+ with dissolve
+
+ chY "Desculpa, falou alguma coisa? Não consigo ouvir dessa distância."
+
+ hide Yvvy
+ show Ivan at left
+ with dissolve
+
+ chI "Preparem-se, eles estão vindo."
+
+ hide Ivan
+ with dissolve
+ jump Luta
+ return
   
  label Luta:
 
   if rei == False:
-   #bg castelo
-   #pass
-  if rei == True:
-   #bg jardim
-   #pass
-  
-  #minijogo luta, ultima opção impossível de vence jump casaMinion
-  return
-  
-label minion2:
+   hide Castle01
+   show BGCastle
+   with dissolve
 
- chB "Eita! Temos uma estrela fugitiva aqui."
- chB "Ouvi dizer que a rainha Selyna está atrás de você."
- chB "Ela ficaria muito feliz em descobrir sobre sua visita repentina."
- chB "Agora, eu poderia também te ajudar com a sua fuga."
- chB "Claro, tudo por um preço."
- 
- menu:#Com tempo
-  "correr":
-    jump castle_TalkQueen
-    return
-   "atacar":
-    $ moral -=5
-    jump casaMinion
-    return
-    
-label B_E:
- chS "Ótimo! Acredito que vamos nos divertir muito de agora em diante!"
- anna "Como assim?"
- #Cutscene:
- #selyna toma posse da mente de anna
- #Anna luta contra as gêmeas
- #Bad Ending
- return
+   pass
+  if rei == True:
+   pass
+  
+  #minijogo luta, ultima opção impossível de vencer
+  show Braxton at left
+  with moveinleft
+
+  chB "Você não vai me escapar!"
+
+  hide Braxton
+  hide Castle01
+  with dissolve
+  
+  jump casaMinion
+  return
