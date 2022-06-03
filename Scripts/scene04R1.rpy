@@ -1,45 +1,75 @@
 label talk_tree:
 
+ $sc04 = False
+ 
  if moral < 80:
   jump grandma_again
  else:
   pass
 
- sc "Olá, [anna]."
+ stop music fadeout 1.0
 
+ play music "audio/SWIntro.ogg"
+ queue music "audio/SWLoop.ogg"
+
+ show ASbody at left
+ show AS_OMouth at left
+ with dissolve
+  
+ chAS "Olá, [anna]."
+
+ hide ASbody at left
+ hide AS_OMouth at left
  show Anna at trueright
  with moveinright
 
  anna "Quem é você?"
 
  hide Anna
+ show ASbody at left
+ show AS_OMouth at left
+ with dissolve
 
- sc "Quem eu sou não importa."
- sc "O que você precisa sabe é que estou aqui para ajudar."
- sc "{b}Nós{\b} estamos aqui para ajudar."
+ chAS "Quem eu sou não importa."
+ chAS "O que você precisa sabe é que estou aqui para ajudar."
+ chAS "{b}Nós{\b} estamos aqui para ajudar."
 
+ hide ASbody at left
+ hide AS_OMouth at left
  show Anna at trueright
  with moveinright
 
  anna "Nós?{w} O que você quer dizer?"
 
  hide Anna
+ show ASbody at left
+ show AS_OMouth at left
+ with dissolve
 
- sc "Quando a hora chegar, pegue a {i}chave{\i}."
- sc "O verdadeiro salvador saberá o que fazer."
+ chAS "Quando a hora chegar, pegue a {i}chave{\i}."
+ chAS "O verdadeiro salvador saberá o que fazer."
 
+ hide ASbody at left
+ hide AS_OMouth at left
  show Anna at trueright
  with moveinright
 
  anna "Que chave?"
 
+ show screen getKey
+
  hide Anna
  $ key = True
- #imagem da chave
+
+ stop music fadeout 1.0
+
+ play music "audio/AnnaArp.ogg"
+ queue  music "audio/AnnaLoop.ogg"
 
  show GBody at left
  show GHappy at left
- with moveinleft
+ hide screen getKey
+ with flashbulb
 
  chG "Bem vinda de volta."
 
