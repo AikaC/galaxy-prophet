@@ -83,51 +83,90 @@ label prophecy:
 
  chG "Então... [anna]."
 
- #stop music fadeout 1.0
+ stop music fadeout 1.0
 
  hide GBody
  hide GHappy
+ hide screen noframe_moral
  with dissolve
 
  #cutscene start
 
- #play music "audio/CutsceneIntro.ogg"
- #queue music "audio/CutsceneLoop.ogg"
+ play music "audio/CutsceneIntro.ogg"
+ queue music "audio/CutsceneLoop.ogg"
+
+ show BGctscn01 at zoom
+ with fade
 
  chG "Incontáveis eras atrás quando ainda não tinha muito o que ver por aqui..."
  chG "Um ser brilhante apareceu durante uma noite sem lua e disse..."
 
- #show BG01 onlayer over_screens
- #show textc onlayer over_screens
- #window hide
- #with dissolve
- #pause
+ show seirei at floating
+ with zoomin
 
- #hide BG01 onlayer over_screens
- #hide textc onlayer over_screens
- #window show
+ chNull "Uma era sombria está por vir.{p}Chame o salvador desse lar.{p}Lute contra a loucura que uma vez ajudou{p}Certo viajante sob uma pedra."
+
+ hide seirei
+ with zoomout
 
  chG "Antes que sequer pudéssemos reagir, uma luz nos cegou."
+
+ show BGctscn01
+ with flashbulb
+
  chG "E a árvore sagrada a pareceu naquele mesmo lugar."
+
+ show TreeCtscn
+ with zoomin
+
  chG "Como se ela sempre estivesse lá."
  chG "Tentamos perguntar o significado de tudo aquilo."
+
+ hide BGctscn01
+ hide TreeCtscn
+ show arvore brilha at move
+ with fade
+
  chG "Feiticeiros e fadas vieram de longe tentar ajudar."
  chG "Mas nada mais aconteceu."
  chG "Então decidimos esperar."
+
+ hide arvore brilha
+ show BGctscn01
+ show Templectscn
+ with fade
+
  chG "Famílias começaram a crescer, {w}clãs se tornaram vilas..."
+
+ show BGctscn02
+ with dissolve
+
  chG "reinos foram trazidos à vida, {w}mas a árvore continuou em silêncio."
  chG "Quando estávamos quase desistindo... {w}Um novo sinal apareceu."
 
- #stop music fadeout 1.0
+ hide BGctscn02
+ hide Templectscn
+ hide BGctscn01
+ hide BGGrandma
+ show Colar at truecenter
+ with dissolve
 
+ pause 1.0
+
+ stop music fadeout 1.0
+ hide Colar
+ 
+ with dissolve
  #cutscene end
  
  play music "audio/AnnaArp.ogg"
  queue music "audio/AnnaLoop.ogg"
 
+ show screen noframe_moral
+ show BGGrandma
  show GBody at left
  show GAngry at left
- with moveinleft
+ with fade
 
  chG "Não muito tempo depois, descobrimos que nosso reino possuía uma nova soberana que tomou o lugar do antigo rei."
  chG "Eu não posso ir muito longe da árvore já que os guardiões lincaram a energia vital com o templo secreto."
@@ -162,14 +201,16 @@ label prophecy:
  return
 
 label so_sure:
- 
+
  show Anna at trueright
+ show screen noframe_special
  with dissolve
 
  anna "Apesar dessa coincidência de tempo, não vejo a relação da rainha com a profecia."
  anna "Há quanto tempo ela reina aqui?"
 
  hide Anna
+ hide screen noframe_special
  show Yvvy at right
  with moveinright
 
@@ -217,41 +258,68 @@ label so_sure:
 
  chY "Mas ainda não sabemos como a rainha Selyna e aquela criatura terrível terminaram juntos."
 
+ hide screen noframe_moral
  hide Yvvy
  with dissolve
 
- #stop music fadeout 1.0
+ stop music fadeout 1.0
 
  #cutscene start
 
- 
- #play music "audio/CutsceneIntro.ogg"
- #queue music "audio/CutsceneLoop.ogg"
+ play music "audio/CutsceneIntro.ogg"
+ queue music "audio/CutsceneLoop.ogg"
+
+ show Castle01
+ with dissolve
 
  chL "Tudo começou com um ataque surpresa."
  chY "E vou te falar, a gente ficou mesmo supreendido."
  chL "Verdade, irmã. Nem um pouco legal."
+
+ show Silhueta at zoom
+ with dissolve
+
  chY "Não sei como alguém de fora fez um acordo com uma criatura tão temível,"
- chY "mas eles conseguiram conquistar o castelo em pouco tempo."
+ chY "mas a atual rainha e o dragão ancião conseguiram conquistar o castelo em pouco tempo."
+
+ show Silhueta at desaparece
+
  chL "Não estávamos tão protegidos assim..."
- chL "... já que não é comum entra na casa dos outros..."
- chY "... Ou castelo dos outros... "
- chL "... sem ser convidado."
+ chY "... já que não é comum entrar na casa dos outros..."
+ chL "... Ou castelo dos outros, sem ser convidado."
+
+ hide Castle01
+ show BGCastle
+ with dissolve
+
  chY "Eu e Lucy conseguimos nos esconder a tempo,"
- chL "Mas ouvimos tudo."
- chY "Só não conseguimos ouvir direito..."
 
- #show BG01 onlayer over_screens
- #show textc2 onlayer over_screens
- #window hide
- #with dissolve
- #pause
+ show Silhueta2
+ with dissolve
 
- #hide BG01 onlayer over_screens
- #hide textc2 onlayer over_screens
- #window show
+ chL "Mas ouvimos tudo... {w=0.5}Ou quase..."
+
+ show Silhueta3
+ with dissolve
+
+ chY "Nós não conseguimos ouvir direito..."
+
+ chS "... tempo... {w=0.2}sentiu saudades?"
+ chS "... lembranças... {w=0.2}minha irmã."
+
+ hide Silhueta2
+ hide Silhueta3
+ hide BGCastle
+ with dissolve
+
  #cutscene end
 
+ stop music fadeout 1.0
+ 
+ play music "audio/AnnaArp.ogg"
+ queue music "audio/AnnaLoop.ogg"
+
+ show screen noframe_moral
  show Lucy at left
  with moveinleft
 
@@ -306,67 +374,32 @@ label so_sure:
  menu:
   "Sim.":
    $ routeA = True
-   jump yhelp
+   if moral == 100:
+    jump yhelp
+   else:
+    $moral += 10
+    jump yhelp
   "Não.":
    $ routeA = False
+   $moral -= 10
    jump nhelp
  return
 
-label yhelp:
 
- show Anna at trueright
- with dissolve
-
- anna "Claro, por que não?"
-
- #show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
- # size (245,318.5)
- # left
- #with dissolve
-
- anna "Não é como se eu conseguisse voltar para casa mesmo."
-
- hide Anna
- show Yvvy at right
- with moveinright
-
- chY "Obrigada, [anna]."
-
- hide Yvvy
- show Lucy at left
- with moveinleft
-
- chL "Você uma garota\/[anna], ou sejá lá o que for, legal."
-
- hide Lucy
- show Anna at trueright
- with moveinright
-
- anna "..."
-
- #show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
- # size (245,318.5)
- # left
- #with dissolve
-
- anna "Obrigada?"
-
- hide Anna
- jump route_01
- return
-
-label nhelp:
+ stop music fadeout 1.0
 
  show Anna AEyes_Angry at trueright
  with dissolve
 
+ play music "audio/YL.ogg"
+ 
  anna "Porque eu deveria?"
  anna "Vocês mesmas falaram \“cheguei cedo demais\”."
  anna "Então eu claramente não sou quem vocês precisam."
 
  show Anna AEyes_Open at trueright
 
- anna "Não sou nenhuma guerreira nem nasci aqui."
+ anna "Não sou nenhuma guerreira, nem nasci aqui."
 
  hide Anna
  show Yvvy at right
@@ -445,7 +478,7 @@ label nhelp:
 
  show Lucy AngryEyes_Lucy at left
 
- chL "{color=F4C2C2}*sussurro* {i}Se [anna] faz mesmo parte da profecia, ela não vai voltar."
+ chL "*sussurro* {color=F4C2C2}{i}Se [anna] faz mesmo parte da profecia, ela não vai voltar."
 
  hide Lucy
  show Yvvy AngryEyes_Yvvy at right
