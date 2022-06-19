@@ -1,0 +1,258 @@
+﻿label castle_TalkQueen:
+ show BGCastle
+ with dissolve
+
+ stop music fadeout 1.0
+
+ play music "audio/SWIntro.ogg"
+ queue  music "audio/SWLoop.ogg"
+
+ if prision == False:
+    if rei == False:   
+       show Queen at left
+       with moveinleft
+ 
+       chS "Vejo que temos aqui uma estrela perdida."
+       chS "Um pequeno dragão me contou que você veio de um lugar distante..."
+       chS "E tudo o que quer é voltar para casa, estou correta?"
+
+       hide Queen
+       show Anna at trueright
+       with moveinright
+
+       anna "Sim, majestade."
+       anna "Uma maga tentou me ajudar, mas parece que há algo impedindo minha volta."
+
+       hide Anna
+       show Queen at left
+       with dissolve
+
+       chS "Algo te impedindo?"
+
+       hide Queen
+       show Anna at trueright
+       with dissolve
+
+       anna "Não sei explicar direito, nada disso é normal de onde eu vim."
+
+       hide Anna
+       show Queen at left
+       with dissolve
+
+       chS "Da Terra, imagino."
+
+       hide Queen
+       show Anna at trueright
+       with dissolve
+
+       anna "Como você-?"
+
+       hide Anna
+       show Queen at left
+       with dissolve
+
+       chS "Oh, sua aparência me diz muita coisa."
+       chS "Não existem muito assim por aqui."
+       chS "Nós somos iguais, posso ver."
+       chS "Há muito tempo não vejo alguém como eu, posso ser sua aliada se quiser."
+
+       hide Queen
+       show Anna at trueright
+       with dissolve
+
+       anna "Por que vossa majestade faria amizade com alguém como eu?"
+
+       hide Anna
+       show Queen at left
+       with dissolve
+
+       chS "Eu só posso imaginar as coisas que você tem ouvido sobre mim, mesmo estando aqui há pouco tempo."
+       chS "Posso te garantir que não sou essa tirana por completo."
+       chS "Eu tenho um papel a cumprir aqui antes de voltar para casa, não importa quanto tempo leve."
+       chS "Mas eu tenho um meio de te enviar de volta para Terra, com ou sem interferência externa."
+
+       hide Queen
+       show Anna at trueright
+       with dissolve
+
+       anna "..."
+       anna "O que você precisa que eu faça?"
+
+       hide Anna
+       show Queen at left
+       with dissolve
+
+       chS "Bom..."
+
+       hide Queen
+       with dissolve
+
+       pass
+    if rei == True:
+       show Queen at left
+       with dissolve
+
+       chS "Não sabia que estrelas perdidas davam tanto trabalho assim."
+       chS "\'[anna], A luz da escuridão\'. É como te chamam."
+       chS "Sabia disso?"
+       chS "Rumores correm soltos sobre como a viajante de um reino distante resolveu bravamente derrotar a tirana que se instalou nesse reino."
+       chS "É claro, não estariam dizendo isso se soubessem a verdadeira face do rei anterior."
+       chS "Eles deveriam é agradecer pela dor de cabeça que eu os impedi de ter."
+       chS "Tenho certeza que teve sua chance de conversar com o atigo rei nas masmorras..."
+       chS "... Mas permita-me contar minha versão do que está acontecendo."
+       chS "E então tenho certeza que poderá tomar uma decisão sensata a partir disso."
+
+       #hide Queen
+       #with dissolve
+
+       $ rei = False
+       pass
+    #Cutscene start
+    chS "Ainda me lembro claramente de como eram as coisas quando eu morava na Terra."
+    chS "Éramos só eu e minha irmã, Camélia."
+    chS "Não tinhamos muito, mas nos virávamos como dava."
+    chS "Eu sempre fui para o lado mais racional e ela, para o emocional."
+    chS "Isso é claro, refletia na forma como ganhávamos nosso sustento."
+    chS "Eu posso não entender muito de arte, mas garanto que Camélia era uma grande dançarina."
+    chS "Boa o suficiente até para atrair a atenção de um rei extragaláctico pelo visto."
+    chS "Quando eu tomei ciência da relação deles já era tarde demais."
+    chS "Camélia começou a se afundar em sonhos impossíveis."
+    chS "Eu tentei colocar algum juízo na cabeça dela, mas parecia impossível."
+    chS "Mas uma noite foi a gota d'água."
+    chS "Estávamos a ponto de perder nossa casa por causa de uma dívida deixada por nossos pais..."
+    chS "E tudo o que ela falava era \'Sua majestade isso, sua majestade aquilo\'..."
+    chS "Nós tivemos uma briga muito grande e ela saiu correndo na chuva."
+    chS "Minutos se passaram... e então horas, {w}e ela não voltava."
+    chS "Então eu resolvi ir atrás dela."
+    chS "Mas a cena que eu encontrei era o puro terror."
+    chS "A tão adorada majestade de Camélia estava curvada sobre seu corpo sem vida."
+
+    #cutscene end
+
+    #show Queen at left
+    #with dissolve
+
+    chS "Eu deveria ter sido mais assertiva naquela época, talvez toda essa tragédia poderia ser evitada."
+    chS "Mas infelizmente não podemos mudar o passado ou trazer os mortos de volta à vida..."
+    chS "... Mesmo com a magia dessa galáxia."
+    chS "Mas o que eu posso fazer é dar a devida punição a quem merece."
+    chS "Então, minha cara poeira estrelar, você tem duas opções:"
+    chS "Pode me ajudar, o que é vantajoso para nós duas,"
+    chS "ou pode ficar à mercê do destino."
+    chS "Qual vai ser?"
+
+    hide Queen
+    with dissolve
+
+    menu:
+     "Eu ajudo.":
+       jump B_E
+       return
+     "Não foi culpa do rei.":
+       chS "Sua opinião."
+       chS "Braxton!"
+       jump Luta
+       return
+    return
+    
+ elif prision == True:
+    show Queen at left
+    with moveinleft
+
+    chS "Fiquei sabendo que uma estrela perdida estava perambulando pelo meu reino sem permissão."
+    chS "\'[anna], A luz da escuridão\'. É como te chamam."
+    chS "Algo a dizer em sua defesa?"
+
+    hide Queen
+    show Anna at trueright
+    with dissolve
+    
+    anna "Eu não sei sobre o que está falando, majestade."
+
+    hide Anna
+    show Queen at left
+    with dissolve
+
+    chS "Então nega ter falado com uma suposta árvore sagrada cuja existência tem sido escondida de mim há décadas?"
+
+    hide Queen
+    show Anna at trueright
+    with dissolve
+    
+    anna "..."
+
+    hide Anna
+    show Queen at left
+    with dissolve
+
+    chS "Foi o que pensei."
+    chS "Guardas!"
+
+    play music "audio/YL.ogg" fadeout 1.0
+
+    hide Queen
+    show GR
+    with dissolve
+
+    chGR "Sim, vossa majestade!"
+
+    hide GR
+    show Queen at left
+    with dissolve
+
+    chS "Prendam a menina! Nossa convidada especial deverá desfrutar de nossa {i}hospitalidade."
+    
+    hide Queen
+    show GR
+    with dissolve
+    
+    chGR "Sim, senhora!"
+
+    hide GR
+    show Anna at trueright
+    with dissolve
+    
+    anna "O quê?! Não-"
+
+    hide Anna
+    hide BGCastle
+    show Masmorra
+    show Braxton at left
+    with dissolve
+    
+    chB "Obrigado pelo trabalho duro."
+    chB "Eu assumo daqui."
+
+    hide Braxton
+    show GR
+    with dissolve
+
+    chGR "Mas a rainha disse-"
+
+    hide GR
+    show Braxton at left
+    with dissolve
+
+    chB "A rainha deixou bem claro que devemos mostrar nossa hospitalidade."
+    chB "Ainda ousa questioná-la?"
+
+    hide Braxton
+    show GR
+    with dissolve
+
+    chGR "N-Não, senhor."
+    chGR "A prisioneira está sob seus cuidados então."
+
+    hide GR
+    show Braxton at left
+    with dissolve
+
+    chB "Ótimo! {p}Você... {w}continue andando."
+
+    $ prision = False
+
+    hide Braxton
+    with dissolve
+
+    jump casaMinion
+    return
