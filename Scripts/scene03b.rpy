@@ -1,15 +1,12 @@
 ﻿label yhelp:
 
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Claro, por que não?"
 
- #show Anna AEyes_Tedio AOMouth_Worried onlayer over_screens:
- # size (245,318.5)
- # left
- #with dissolve
-
+ show Anna AMA at trueright
+ 
  anna "Não é como se eu conseguisse voltar para casa mesmo."
 
  hide Anna
@@ -26,14 +23,11 @@
 
  hide Lucy
  show Anna at trueright
- with moveinright
+ with dissolve
 
  anna "..."
 
- #show Anna AEyes_Happy AOMouth_Happy onlayer over_screens:
- # size (245,318.5)
- # left
- #with dissolve
+ show Anna AHappy AMH at trueright
 
  anna "Obrigada?"
 
@@ -45,7 +39,7 @@ label nhelp:
 
  stop music fadeout 1.0
 
- show Anna AEyes_Angry at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
 
  play music "audio/YL.ogg"
@@ -54,7 +48,7 @@ label nhelp:
  anna "Vocês mesmas falaram \“cheguei cedo demais\”."
  anna "Então eu claramente não sou quem vocês precisam."
 
- show Anna AEyes_Open at trueright
+ show Anna AScared AMA at trueright
 
  anna "Não sou nenhuma guerreira, nem nasci aqui."
 
@@ -71,10 +65,10 @@ label nhelp:
  chL "Tem que ter alguma coisa..."
 
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
- anna "Olha, eu sinto muito sobre a era sombria que vocês estão para enfrentar."
+ anna "Olha, eu sinto muito sobre a \"era sombria\" que vocês estão para enfrentar."
  anna "Mas eu só quero voltar para a minha dimensão."
 
  hide Anna
@@ -82,11 +76,11 @@ label nhelp:
  show GAngry at left
  with dissolve
 
- chG "Se você é mesmo parte disso, não existe uma maneira de voltar, criança."
+ chG "Se você faz mesmo parte disso, não existe uma maneira de voltar, criança."
 
  hide GBody
  hide GAngry
- show Anna ACMouth at trueright
+ show Anna AScared at trueright
  with dissolve
 
  anna "..."
@@ -96,7 +90,7 @@ label nhelp:
  show GAngry at left
  with dissolve
 
- chG "Suspira."
+ chG "*Suspira.*"
 
  #hide GClosedEyes
  #show GAngry
@@ -108,7 +102,7 @@ label nhelp:
 
  hide GBody
  hide GAngry
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Obrigada, de verdade!"
