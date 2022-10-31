@@ -1,6 +1,6 @@
 label prophecy:
 
- show Anna AEyes_Tedio at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Obrigada por me soltarem."
@@ -43,7 +43,7 @@ label prophecy:
  
  hide GBody
  hide GHappy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "[anna]."
@@ -202,7 +202,7 @@ label prophecy:
 
 label so_sure:
 
- show Anna at trueright
+ show Anna AScared AMA at trueright
  show screen noframe_special
  with dissolve
 
@@ -217,7 +217,7 @@ label so_sure:
  chY "Meia geração até agora..."
 
  hide Yvvy
- show Anna AEyes_Angry at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Ela já fez algo de ruim {b}depois{/b} de pegar a coroa?"
@@ -235,7 +235,7 @@ label so_sure:
  chY "Aprisionar o rei já não é ruim o bastante?"
 
  hide Yvvy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "É... {w}Mas eu não vejo um período sombrio saindo só disso."
