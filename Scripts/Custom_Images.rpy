@@ -98,7 +98,7 @@ layeredimage Anna:
 
  group mouth:
   attribute AMouth_Worried default:
-   "Anna/AMouth_Worried.png"
+   "None.png"
   attribute AOMouth_Happy:
    "ch_Anna/AOMouth_Happy.png"
   attribute ACMouth:
