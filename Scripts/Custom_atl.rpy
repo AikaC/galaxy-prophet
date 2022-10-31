@@ -58,4 +58,4 @@ transform desaparece:
 
 #lista de posições
 transform trueright:
- xalign 1.1 yalign 1.3
+ xalign 1.0 yalign 1.3
