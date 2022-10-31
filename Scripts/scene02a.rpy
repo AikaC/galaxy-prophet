@@ -10,7 +10,7 @@ label to_grandma:
 
  hide GBody
  hide GAngry
- show Anna AEyes_Tedio rope at trueright
+ show Anna AMA rope at trueright
  with dissolve
 
  anna "Eu-"
@@ -22,7 +22,7 @@ label to_grandma:
  chL "Estávamos no templo secreto e {i}essa coisa{/i}..."
  
  hide Lucy
- show Anna AEyes_Tedio rope at trueright
+ show Anna AMA rope at trueright
  with dissolve
 
  anna "Garota... sou uma garota..."
@@ -68,7 +68,7 @@ label to_grandma:
 
 label first:
  
- show Anna AEyes_Angry rope at trueright
+ show Anna AAngry AMA rope at trueright
  with dissolve
 
  anna "Eu quero algumas respostas primeiro."
@@ -100,7 +100,7 @@ label first:
 
  hide GBody
  hide GAngry
- show Anna rope at trueright
+ show Anna AMA rope at trueright
  with dissolve
 
  anna "Quem é essa rainha má que vocês falam o tempo todo?"
@@ -171,7 +171,7 @@ label first:
  chL "Mas isso é estranho, ela não fez nada ainda. Por que você está aqui?"
 
  hide Lucy
- show Anna AEyes_Tedio rope at trueright
+ show Anna AAngry AMA rope at trueright
  with dissolve
  
  anna "Estou morrendo de vontade de saber também..."
@@ -189,7 +189,7 @@ label first:
  chL "... ainda."
 
  hide Lucy
- show Anna rope at trueright
+ show Anna AMA rope at trueright
  with dissolve
 
  anna "Enfim, se você disse que ela não fez nada ainda..."
