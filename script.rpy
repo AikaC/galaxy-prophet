@@ -66,7 +66,7 @@ label start:
  
  anna "..."
 
- show Anna at trueright
+ show Anna AScared at trueright
  with dissolve
 
  anna "Onde estou? {w} Como cheguei aqui?"
