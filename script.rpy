@@ -91,7 +91,7 @@ label start:
  chNull "Nunca vi uma criatura tão feia na minha vida!"
 
  hide Lucy
- show Anna at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
 
  anna "Como é!?"
@@ -125,7 +125,7 @@ label start:
  chNull "Shh... Eles podem nos ouvir!" #lucy
 
  hide Lucy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Quem?"
@@ -181,7 +181,7 @@ label start:
 
  hide Lucy
  hide Yvvy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Espera! Não-"
