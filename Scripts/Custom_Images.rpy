@@ -84,9 +84,9 @@ layeredimage Anna:
  always:
   "Anna/Body.png"
 
- group eyes:
-  attribute AEyes_Open default:
-   "Anna/AEyes_Open.png"
+ group face:
+  attribute AWorryFace default:
+   "Anna/ADefault.png"
   attribute AEyes_Angry:
    "Anna/AEyes_Angry.png"
   attribute AEyes_Empty:
