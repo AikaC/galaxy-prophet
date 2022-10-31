@@ -1,6 +1,6 @@
 ﻿label store:
 
- show Anna rope at trueright
+ show Anna AMA rope at trueright
  with dissolve
 
  anna "Eu comprei em uma loja. É um item bem comum onde vivo."
@@ -12,12 +12,12 @@
  chY "Comprou? Loja? {i}Essa garota{/i} é estranha."
 
  hide Yvvy
- show Anna AEyes_Tedio ACMouth at trueright
+ show Anna at trueright
  with dissolve
 
  anna "..."
 
- show Anna AMouth_Worried rope at trueright
+ show Anna AMA rope at trueright
 
  anna "Estamos mesmo falando o mesmo idioma?"
 
@@ -28,7 +28,7 @@
  chL "O que é um idioma?"
 
  hide Lucy
- show Anna AEyes_Tedio rope at trueright
+ show Anna AMA rope at trueright
  with dissolve
 
  anna "Já posso ir para casa?"
@@ -40,7 +40,7 @@
  chY "Não! Precisamos saber mais sobre a profecia primeiro!"
 
  hide Yvvy
- show Anna rope at trueright
+ show Anna AScared AMA rope at trueright
  with dissolve
 
  anna "Que profecia?"
