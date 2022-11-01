@@ -1,4 +1,4 @@
-﻿label TreeFalse:
+label TreeFalse:
      stop music fadeout 1.0
 
      play music "audio/chirp.ogg"
@@ -9,11 +9,14 @@
      chB "Por quanto tempo mais vamos caminhar?"
 
      hide Braxton
-     show Anna at trueright
+     show Anna AAngry AMA at trueright
      with moveinright
      
      anna "Primeiramente eu nem sou daqui,"
      anna "eu já acho incrível conseguir me guiar em um lugar que mal tive contato ainda."
+
+     show Anna AMA at trueright
+
      anna "\*sussurra\*{color=F4C2C2}É como se algo estivesse me puxando para lá..."
      anna "E algo me diz que já estamos chegando."
 
@@ -23,7 +26,7 @@
      anna "Braxton?{p}Braxton!"
      #braxton desmaiado
      if ancientDragon == True:
-         show Anna at trueright
+         show Anna AAngry AMA at trueright
          show screen noframe_RouteWarning
          with dissolve
 
@@ -38,7 +41,7 @@
          "Fugir":
              $fugabr = True
               
-             show Anna at trueright
+             show Anna AScared at trueright
              with dissolve
      
              anna "Se eu correr agora, talvez eu consiga voltar em segurança para a vovó..."
@@ -53,7 +56,7 @@
              return
          "Ajudar":
           
-             show Anna at trueright
+             show Anna AAngry at trueright
              with dissolve
      
              anna "Ótimo! Vai ser divertido arrastar ele até a cabana..."
@@ -87,7 +90,7 @@ label casaMinion2:
 
  chB "Ugh... O quê...?"
  
- show Anna at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
      
  anna "Você desmaiou, isso que aconteceu."
@@ -99,7 +102,7 @@ label casaMinion2:
  chB "Como?"
 
  hide Braxton
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
  
  anna "Deve ser a barreira protetora da árvore."
@@ -126,7 +129,7 @@ label casaMinion2:
  chB "Eu sinto que esse colar é uma chave fundamental para eu finalmente descobrir a peça que falta desse quebra-cabeça."
  
  hide Braxton
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
  
  anna "Chave?"
@@ -140,7 +143,7 @@ label casaMinion2:
      chB "Não no sentido literal."
 
      hide Braxton
-     show Anna at trueright
+     show Anna AAngry AMH at trueright
      with dissolve
  
      anna "Não, {w}talvez seja."
@@ -174,7 +177,7 @@ label casaMinion2:
      chB "E você também."
      
      hide Braxton
-     show Anna at trueright
+     show Anna AScared AMA at trueright
      with dissolve
  
      anna "Impossível!"
@@ -187,7 +190,7 @@ label casaMinion2:
      chB "E ainda assim, aqui está você."
      
      hide Braxton
-     show Anna at trueright
+     show Anna AScared AMA at trueright
      with dissolve
  
      anna "Então, eu realmente devo salvar os habitantes."
@@ -199,7 +202,7 @@ label casaMinion2:
      chB "Não, o seu papel é outro."
      
      hide Braxton
-     show Anna at trueright
+     show Anna AScared AMA at trueright
      with dissolve
  
      anna "Qual, então?"
@@ -212,7 +215,7 @@ label casaMinion2:
      chB "Vamos para a árvore sagrada."
      
      hide Braxton
-     show Anna at trueright
+     show Anna AWeird AMA at trueright
      with dissolve
  
      anna "Você não desiste mesmo, não é?"
@@ -224,7 +227,7 @@ label casaMinion2:
      chB "Não. {w}Mas dessa vez eu sei onde ela está."
 
      hide Braxton
-     show Anna at trueright
+     show Anna AScared AMA at trueright
      with dissolve
  
      anna "Ah é?"
@@ -266,5 +269,5 @@ label Final:
      hide ASbody at left
      hide AS_OMouth at left
      with dissolve
-     #cena crétidos
+     #cena créditos
      return
