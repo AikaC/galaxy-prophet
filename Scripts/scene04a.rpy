@@ -1,21 +1,20 @@
 label route_01:
 
- show Anna at trueright
- with moveinright
+ show Anna AScared AMA at trueright
 
  anna "O que a gente faz agora?"
 
  hide Anna
  show GBody at left
  show GHappy at left
- with moveinleft
+ with dissolve
 
  chG "Agora a gente volta para o Templo Secreto."
  chG "É onde nossas respostas nos esperam...{p}Pelo menos é o que eu espero."
 
  hide GBody
  hide GHappy
- show Anna AEyes_Tedio at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Então elas não poderiam só ter te chamado ao invés de me trazer aqui?"
@@ -24,7 +23,7 @@ label route_01:
  show Yvvy at right
  with moveinright
 
- chY "Hehe..."
+ chY "Tsk, tsk, tsk."
 
  hide Yvvy
  show Lucy at left
@@ -58,7 +57,7 @@ label route_01menu:
 
  if extra == True:
    show BGExtra
-   show Anna at trueright
+   show Anna AMH at trueright
    with dissolve
 
    anna "A propósito..."
@@ -95,10 +94,13 @@ label route_01p02:
 
  chG "Consegue ver a árvore?"
 
- show Anna at trueright
+ show Anna AMA at trueright
  with moveinright
 
  anna "Sim... {w}Não percebi da primeira vez que vi,"
+ 
+ show Anna AHappy AMH at trueright
+
  anna "... mas ela é linda."
 
  hide Anna
@@ -114,7 +116,7 @@ label route_01p02:
 
  chNull "[anna]."
 
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Quem está falando?"
@@ -136,14 +138,14 @@ label route_01p02:
 
  chNull "[anna]!"
 
- show Anna ACMouth at trueright
+ show Anna AScared at trueright
  with dissolve
 
  anna "..."
 
- #show Anna AEyes_Empty
- #with dissolve
- #pause
+ show Anna AEmpty at trueright
+ with dissolve
+ pause
 
  hide Anna
  show Yvvy at right
