@@ -26,7 +26,7 @@ label did_it:
 
  hide ASbody at left
  hide AS_OMouth at left
- show Anna at trueright
+ show Anna AWeird AMA at trueright
  with moveinright
 
  anna "O que isso quer dizer?"
@@ -47,7 +47,7 @@ label did_it:
  menu:
   "Não...":
 
-     show Anna at trueright
+     show Anna AAngry AMA at trueright
      with moveinright
 
      anna "Isso tudo parece complicado demais para mim..."
@@ -75,7 +75,7 @@ label did_it:
      jump prision
      return
   "Acho que sim...":
-     show Anna at trueright
+     show Anna AMA at trueright
      with moveinright
 
      anna "E no fim das contas eu faço mesmo parte da profecia?"
@@ -91,7 +91,7 @@ label did_it:
 
      hide ASbody at left
      hide AS_OMouth at left
-     show Anna at trueright
+     show Anna AScared AMA at trueright
      with dissolve
 
      anna "Sim!{p}O rei!"
@@ -109,7 +109,7 @@ label did_it:
 
      hide ASbody at left
      hide AS_OMouth at left
-     show Anna at trueright
+     show Anna AMA at trueright
      with dissolve
 
      anna "\'Sob uma pedra\'?"
@@ -123,7 +123,7 @@ label did_it:
 
      hide ASbody at left
      hide AS_OMouth at left
-     show Anna at trueright
+     show Anna AScared AMA at trueright
      with dissolve
 
      anna "Espera, eu-"
@@ -179,7 +179,7 @@ label castle:
  chL "Conseguiu falar com a árvore?"
 
  hide Lucy
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with moveinright
 
  anna "Sim."
@@ -191,7 +191,7 @@ label castle:
  chY "O que ela disse?"
 
  hide Yvvy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Que a rainha não faz parte da profecia..."
@@ -228,7 +228,7 @@ label castle:
  chL "Acho que finalmente estamos chegando em algum lugar!"
 
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
  
  anna "Ainda assim, a rainha..."
@@ -246,7 +246,7 @@ label castle:
  chL "Primeiro vamos salvar o rei."
 
  hide Lucy
- show Anna at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
 
  anna "E como vamos entrar lá?"
