@@ -2,7 +2,7 @@ label talk_tree:
 
  $sc04 = False
  
- if moral < 80:
+ if moral < 90:
   jump grandma_again
  else:
   pass
@@ -20,7 +20,7 @@ label talk_tree:
 
  hide ASbody at left
  hide AS_OMouth at left
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with moveinright
 
  anna "Quem é você?"
@@ -32,11 +32,11 @@ label talk_tree:
 
  chAS "Quem eu sou não importa."
  chAS "O que você precisa sabe é que estou aqui para ajudar."
- chAS "{b}Nós{\b} estamos aqui para ajudar."
+ chAS "{b}Nós{/b} estamos aqui para ajudar."
 
  hide ASbody at left
  hide AS_OMouth at left
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with moveinright
 
  anna "Nós?{w} O que você quer dizer?"
@@ -51,7 +51,7 @@ label talk_tree:
 
  hide ASbody at left
  hide AS_OMouth at left
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with moveinright
 
  anna "Que chave?"
@@ -87,7 +87,7 @@ label talk_tree:
  chL "O que aconteceu?"
 
  hide Lucy
- show Anna at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
 
  anna "A árvore me disse para pegar a chave quando a hora chegasse,"
@@ -106,10 +106,10 @@ label talk_tree:
  chY "[anna] {i}é{/i} nossa salvadora."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
- anna "Mas a árvore disse /'o salvador/' não eu."
+ anna "Mas a árvore disse \'o salvador\' não eu."
 
  hide Anna
  show GBody at left
@@ -129,7 +129,7 @@ label talk_tree:
  show Yvvy at right
  with dissolve
 
- chY "{i}E{/i} ela tem aquela coisa pendurada no pescoço... Quais são as chances?"
+ chY "{i}E{/i} ela tem aquela coisa amarrada no pescoço... Quais são as chances?"
 
  hide Yvvy
  show GBody at left
@@ -176,7 +176,7 @@ label grandma_again:
  chY "Mas o colar..."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with moveinright
 
  anna "Talvez eu não seja quem vocês precisem."
@@ -198,7 +198,7 @@ label grandma_again:
 
  hide GBody
  hide GHappy
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Obrigada."
