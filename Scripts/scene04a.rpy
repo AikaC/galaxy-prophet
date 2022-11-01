@@ -174,32 +174,3 @@ label route_01p02:
  $ sc05 = False
  call screen bar_nav
  return
-
-
- show Anna at trueright
- with moveinright
-
- anna "Eu sei que você disse que era história para outro dia, mas não consigo tirar isso da cabeça."
- anna "Você lincou sua vida com uma árvore?"
-
- hide Anna
- show GBody
- show GAngry
- with dissolve
-
- chG "Eu e mais dois amigos."
- chG "Criamos o templo secreto depois da morte do nosso amigo."
- chG "Para construir uma barreira que impedisse qualquer dano à árvore, nossa vida foi usada."
-
- #hide GAngry
- #show GClosedEyes
- #with dissolve
-
- chG "Iremos viver contanto que a árvore viva."
-
- hide GBody
- hide GAngry
- with dissolve
-
- jump route_01menu
- return
