@@ -6,7 +6,7 @@ label minion:
  with dissolve
 
  if key == True: 
-    show Anna at trueright
+    show Anna AScared AMA at trueright
     with moveinright
 
     anna "Vovó...?{w} Yvvy, Lucy? {w}Onde vocês estão?"
@@ -21,7 +21,7 @@ label minion:
     chNull "Você..."
 
     hide Braxton
-    show Anna at trueright
+    show Anna AScared AMA at trueright
     with moveinright
 
     anna "Eu?"
@@ -33,7 +33,7 @@ label minion:
     chNull "Nunca te vi por aqui antes."
 
     hide Braxton
-    show Anna at trueright
+    show Anna AAwkward AMH at trueright
     with moveinright
 
     anna "Eu... estou só de visita."
@@ -49,10 +49,14 @@ label minion:
        chNull "Uhg... Minha cabeça."
 
        hide Braxton
-       show Anna at trueright
-       with moveinright
+       show Anna AAngry at trueright
+       with dissolve
 
        anna "{color=F4C2C2}Espera um segundinho!"
+       
+       show Anna AScared at trueright
+       with dissolve
+
        anna "{color=F4C2C2}Ele é... Braxton, o dragão ancião?"
 
        hide Anna
@@ -107,7 +111,7 @@ label back_Paithyn:
  hide PHappy
  hide PMove
  hide screen noframe_secret
- show Anna at trueright
+ show Anna AAwkward AMH at trueright
  with moveinright
 
  anna "Mole como gelatina!"
@@ -148,7 +152,7 @@ label back_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
 
  anna "Eu sinto..."
@@ -166,7 +170,7 @@ label back_Paithyn:
  chY "Se sente..."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Nada."
@@ -180,7 +184,7 @@ label back_Paithyn:
 
  hide Yvvy
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Como isso deveria funcionar?"
@@ -201,7 +205,7 @@ label back_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Não faço ideia."
@@ -259,7 +263,7 @@ label back_Paithyn:
  chY "Entediante..."
  
  hide Yvvy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with moveinright
 
  anna "O feitiço não funcionou."
@@ -274,7 +278,7 @@ label back_Paithyn:
  
  hide GBody
  hide GAngry
- show Anna at trueright
+ show Anna AAwkward AMA at trueright
  with dissolve
 
  anna "E também me encontrei com alguém enquanto colhia os ingredientes."
@@ -288,7 +292,7 @@ label back_Paithyn:
  
  hide Yvvy
  hide Lucy
- show Anna
+ show Anna AScared AMA at trueright
  with dissolve
 
  if ancientDragon == True:
@@ -310,7 +314,7 @@ label back_Paithyn:
   chL "Como ele era?"
   
   hide Lucy
-  show Anna at trueright
+  show Anna AScared AMA at trueright
   with dissolve
 
   anna "Um guarda de cabelo comprido e olhos assustadores."
@@ -341,7 +345,7 @@ label back_Paithyn:
  chL "Ou melhor! O que {i}você{/i} disse para {i}ele?{/i}"
  
  hide Lucy
- show Anna at trueright
+ show Anna AAngry AMA at trueright
  with dissolve
 
  anna "Nada... Eu só fugi."
@@ -395,7 +399,7 @@ label back_Paithyn:
  
  hide GBody
  hide GHappy
- show Anna at trueright
+ show Anna AScared AMH at trueright
  with dissolve
 
  anna "Tudo bem. Vejo vocês mais tarde!"
