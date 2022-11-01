@@ -11,7 +11,7 @@ label historia_rei:
 
  chNull "Alguém está aí?"
 
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
     
  anna "Sua majestade? É você?"
@@ -24,7 +24,7 @@ label historia_rei:
  chR "Quem está falando?"
 
  hide GR
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "meu nome é [anna], Yvvy e Lucy me enviaram para te salvar."
@@ -36,7 +36,7 @@ label historia_rei:
  chR "Eu já disse a elas que isso não é necessário..."
 
  hide GR
- show Anna at trueright
+ show Anna AAwkward AMH at trueright
  with dissolve
 
  anna "Na verdade, elas não foram as únicas..."
@@ -49,7 +49,7 @@ label historia_rei:
  chR "A árvore sagrada?"
 
  hide GR
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "É uma longa história.{p}Vamos te soltar primeiro e então te conto tudo."
@@ -66,7 +66,7 @@ label historia_rei:
  chR "Então a profecia finalmente começou a andar."
 
  hide GR
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Você sabe alguma coisa sobre isso?"
@@ -79,7 +79,7 @@ label historia_rei:
  chR "Você disse que Selyna não faz parte da profecia, certo?"
 
  hide GR
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Ao que parece..."
