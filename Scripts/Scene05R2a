@@ -3,7 +3,7 @@ label training:
  play music "audio/chirp.ogg" fadeout 1.0 
 
  show BGExtra
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Que dia maluco..."
@@ -15,10 +15,22 @@ label training:
   pass
  anna "E ainda por cima, um guarda da rainha aparece do nada..."
  anna "e eu quase sou presa."
+
+ show Anna AScared at trueright
+
  anna "..."
+ 
+ show Anna AScared AMH at trueright
+
  anna "aha"
  anna "ahahaha"
+ 
+ show Anna AMA at trueright
+
  anna "Eu acho que vou surtar."
+ 
+ show Anna AAngry AMA at trueright
+
  anna "Já pode acordar, [anna]."
 
  hide Anna
@@ -40,13 +52,22 @@ label training:
  chI "Eu também sou um guardião da árvore sagrada."
 
  hide Ivan
- show Anna at trueright
- with moveinright
+ show Anna AAngry AMA at trueright
+ with dissolve
 
  anna "Eu não sou a-"
+ 
+ show Anna AMA at trueright
+
  anna "Ah... esquece."
  anna "As notícias se espalham {i}mesmo{/i} rápido por aqui."
+ 
+ show Anna AHappy AMH at trueright
+
  anna "Prazer em te conhecer, Ivan."
+
+ show Anna AMA at trueright
+
  anna "Pode me dizer o motivo de eu estar na sua casa?"
 
  hide Anna
@@ -60,10 +81,10 @@ label training:
  chI "Já praticou algum estilo de luta antes, [anna]?"
 
  hide Ivan
- show Anna at trueright
+ show Anna AWeird AMA at trueright
  with dissolve
 
- anna "Espera...{w} Isso é sério?"
+ anna "Espera... Isso é sério?"
  anna "Videogame conta?"
 
  hide Anna
@@ -74,7 +95,7 @@ label training:
  chI "Eu não conheço o estilo do {i}videogame{/i} mas deve ser útil para alguma coisa."
 
  hide Ivan
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Não, esquece..."
@@ -114,7 +135,7 @@ label training:
 
  hide Yvvy
  hide Lucy
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "O tempo voa rápido quando se está ocupado."
@@ -177,7 +198,7 @@ label training:
  chI "Você fez um trabalho excelente, [anna]."
 
  hide Ivan
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Obrigada."
@@ -195,7 +216,7 @@ label training:
  chL "Já?!"
 
  hide Lucy
- show Anna at trueright
+ show Anna AMH at trueright
  with dissolve
 
  anna "Só o básico..."
@@ -222,7 +243,7 @@ label training:
  chL  "Legal!"
 
  hide Lucy
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with moveinright
 
  anna "De volta para a vovó?"
@@ -246,13 +267,15 @@ label training:
  chL "Também precisamos conversar no caminho."
 
  hide Lucy
- show Anna at trueright
+ show Anna AWeird AMA at trueright
  with dissolve
 
  anna "Ok..."
  
  hide BGIvan
+ hide Anna
  show BGExtra
+ show Anna AMA at trueright
  with fade
  
  anna "Então... O que era?"
@@ -270,7 +293,7 @@ label training:
  chL "Isso quer dizer que a rainha Selyna também sabe sobre a profecia."
 
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Oh..."
@@ -282,7 +305,7 @@ label training:
  chL "Sim, \'oh...\'"
 
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Quão ruim isso é?"
@@ -325,7 +348,7 @@ label training:
  chY "Quando estivermos todos a salvo, poderemos planejar os próxios passos."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "\'Nós\' como em nós três?"
@@ -373,7 +396,7 @@ label training:
  chL "é só fazer o seu lance."
 
  hide Lucy
- show Anna at trueright
+ show Anna AAwkward AMH at trueright
  with dissolve
 
  anna "Ahã, o meu lance."
