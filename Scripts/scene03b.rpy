@@ -19,7 +19,7 @@
  show Lucy at left
  with moveinleft
 
- chL "Você uma boa garota\/[anna], ou sejá lá o que for."
+ chL "Você é uma boa garota\/[anna], ou sejá lá o que for."
 
  hide Lucy
  show Anna at trueright
