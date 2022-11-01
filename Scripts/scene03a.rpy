@@ -372,11 +372,7 @@ label so_sure:
 
  menu:
   "Sim.":
-   $ routeA = True
    jump yhelp
-   else:
-    $moral += 10
-    jump yhelp
   "Não.":
    $ routeA = False
    $moral -= 10
