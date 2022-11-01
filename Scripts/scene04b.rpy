@@ -1,9 +1,12 @@
 ﻿label m31:
 
- show Anna at trueright
+ show Anna AMA at trueright
  with moveinright
 
  anna "Aqui não parece nem um pouquinho com a minha casa..."
+ 
+ show Anna AScared AMA at trueright
+
  anna "O que é esse lugar?"
 
  hide Anna
@@ -49,21 +52,21 @@
  hide Lucy
  with dissolve
 
- anna "{color=F4C2C2}{i}Andrômeda? Então não estou em outra dimensão?{\i}"
+ anna "{color=F4C2C2}{i}Galáxia de Andrômeda? Então não estou em outra dimensão?{\i}"
  anna "{color=F4C2C2}{i}Como eu cheguei tão longe?{\i}"
 
- show Anna at trueright
+ show Anna AMA at trueright
  with moveinright
 
  anna "Parando para pensar..."
- anna "Nós clarammente não falamos o mesmo idioma."
+ anna "Nós claramente não falamos o mesmo idioma."
  anna "Como a gente se entende?"
 
  hide Anna
  show Lucy AngryEyes_Lucy at left
  with moveinleft
 
- chL "Lá vai você com esse negócio de /“idioma/” de novo..."
+ chL "Lá vai você com esse negócio de \"idioma\" de novo..."
 
  hide Lucy
  show Yvvy AngryEyes_Yvvy at right
@@ -78,10 +81,10 @@
 
  chG "Já que existem visitantes de várias galáxias..."
  chG "... os magos desse lugar criaram um feitiço que traduz tudo para uma palavra equivalente para os dois lados."
- chG "Mas isso nem sempre funciona, como esse /“idioma/” que você diz."
+ chG "Mas isso nem sempre funciona, como esse \"idioma\" que você diz."
 
  hide GAngry
- show GHappy
+ show GHappy at left
  
  chG "Não temos nada assim aqui, então para nós, é só um monte de sons."
 
@@ -98,7 +101,7 @@ label ancient_dragon:
  show screen noframe_dragonRoute
 
  $ ancientDragon = True
- show Anna at trueright
+ show Anna AMA at trueright
  with moveinright
 
  anna "Vocês me falaram sobre a rainha Selyna."
@@ -143,7 +146,7 @@ label ancient_dragon:
 
  hide GBody
  hide GAngry
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Mas vocês disseram antes que ele e a rainha não podem saber sobre a árvore."
@@ -188,7 +191,7 @@ label ancient_dragon:
 
 label tree_barrier:
 
- show Anna at trueright
+ show Anna AMA at trueright
  with moveinright
 
  anna "Eu sei que você disse que era história para outro dia, mas não consigo tirar isso da cabeça."
