@@ -1,6 +1,6 @@
 ﻿label castle_his:
 
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with moveinright
 
  anna "Como era lá?"
@@ -23,7 +23,7 @@
  chY "Nosso trabalho era deixar as coisas mais divertidas."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AMH at trueright
  with dissolve
 
  anna "De que forma?"
@@ -41,7 +41,7 @@
  chY "Quer ouvir?"
 
  hide Yvvy
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Sim!"
@@ -65,7 +65,7 @@
 
 label last_king:
 
- show Anna at trueright
+ show Anna AMA at trueright
  with moveinright
 
  anna "Vocês viam o último rei com frequência?"
@@ -130,7 +130,7 @@ label meet_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Quem?"
@@ -155,7 +155,7 @@ label meet_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Igualmente."
@@ -175,7 +175,7 @@ label meet_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Como eu faço isso?"
@@ -192,7 +192,7 @@ label meet_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Ok! Mole, mole!"
@@ -225,10 +225,13 @@ label meet_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Espera o que é is-{w} e se foram..."
+ 
+ show Anna AHappy AMH at truecenter
+
  anna "Beleza! Hora de fazer as malas!"
 
  $key = False
