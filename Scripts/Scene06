@@ -17,7 +17,7 @@ label castle_TalkQueen:
        chS "E tudo o que quer é voltar para casa, estou correta?"
 
        hide Queen
-       show Anna at trueright
+       show Anna AMA at trueright
        with moveinright
 
        anna "Sim, majestade."
@@ -30,7 +30,7 @@ label castle_TalkQueen:
        chS "Algo te impedindo?"
 
        hide Queen
-       show Anna at trueright
+       show Anna AScared AMA at trueright
        with dissolve
 
        anna "Não sei explicar direito, nada disso é normal de onde eu vim."
@@ -42,7 +42,7 @@ label castle_TalkQueen:
        chS "Da Terra, imagino."
 
        hide Queen
-       show Anna at trueright
+       show Anna AScared AMA at trueright
        with dissolve
 
        anna "Como você-?"
@@ -57,7 +57,7 @@ label castle_TalkQueen:
        chS "Há muito tempo não vejo alguém como eu, posso ser sua aliada se quiser."
 
        hide Queen
-       show Anna at trueright
+       show Anna AScared AMA at trueright
        with dissolve
 
        anna "Por que vossa majestade faria amizade com alguém como eu?"
@@ -72,7 +72,7 @@ label castle_TalkQueen:
        chS "Mas eu tenho um meio de te enviar de volta para Terra, com ou sem interferência externa."
 
        hide Queen
-       show Anna at trueright
+       show Anna AAngry AMA at trueright
        with dissolve
 
        anna "..."
@@ -164,7 +164,7 @@ label castle_TalkQueen:
     chS "Algo a dizer em sua defesa?"
 
     hide Queen
-    show Anna at trueright
+    show Anna AAwkward AMH at trueright
     with dissolve
     
     anna "Eu não sei sobre o que está falando, majestade."
@@ -176,7 +176,7 @@ label castle_TalkQueen:
     chS "Então nega ter falado com uma suposta árvore sagrada cuja existência tem sido escondida de mim há décadas?"
 
     hide Queen
-    show Anna at trueright
+    show Anna AScared at trueright
     with dissolve
     
     anna "..."
@@ -209,7 +209,7 @@ label castle_TalkQueen:
     chGR "Sim, senhora!"
 
     hide GR
-    show Anna at trueright
+    show Anna AScared AMA at trueright
     with dissolve
     
     anna "O quê?! Não-"
