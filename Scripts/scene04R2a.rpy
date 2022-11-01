@@ -22,13 +22,12 @@ label star:
 
  stop music fadeout 1.0
 
- play music "audio/SWIntro.ogg"
- queue  music "audio/SWLoop.ogg"
+ play music "audio/chirp.ogg"
 
  chY "Ei, [anna]."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AHappy AMH at trueright
  with moveinright
 
  anna "Sim?"
@@ -40,7 +39,7 @@ label star:
  chL "De onde você é?"
 
  hide Lucy
- show Anna at trueright
+ show Anna AMH at trueright
  with dissolve
 
  anna "Bem, eu sou da Terra."
@@ -58,7 +57,7 @@ label star:
  chL "Que tipo de estrela é essa? {w}É muito longe?"
 
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Estrela?! Estamos em uma estrela?!"
@@ -76,7 +75,7 @@ label star:
  chL "Onde mais poderíamos estar?"
 
  hide Lucy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Em um planeta...?"
@@ -102,7 +101,7 @@ label star:
 
  hide Yvvy
  hide Lucy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "Ahh... Alô...?"
@@ -126,7 +125,7 @@ label star:
  chY "Centenas de galáxias distantes."
 
  hide Yvvy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "E onde estamos?"
@@ -137,7 +136,7 @@ label star:
  chL "Galáxia M-13."
 
  hide Lucy
- show Anna at trueright
+ show Anna AScared AMA at trueright
  with dissolve
 
  anna "Longe assim?!"
@@ -149,7 +148,7 @@ label star:
  chY "Você conhece esse lugar?"
 
  hide Yvvy
- show Anna at trueright
+ show Anna AMA at trueright
  with dissolve
 
  anna "A gente chama aqui de galáxia de Andrômeda."
@@ -173,7 +172,7 @@ menu:
   jump last_king
  "Deixa para lá...":
 
-  show Anna at trueright
+  show Anna AMH at trueright
   with moveinright
 
   anna "Vamos continuar."
