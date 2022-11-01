@@ -190,8 +190,7 @@ label prophecy:
    $extra = True
    jump so_sure
   "Sim":
-   if moral == 100:
-    jump yhelp
+   jump yhelp
    else:
     $moral += 10
     jump yhelp
@@ -374,8 +373,7 @@ label so_sure:
  menu:
   "Sim.":
    $ routeA = True
-   if moral == 100:
-    jump yhelp
+   jump yhelp
    else:
     $moral += 10
     jump yhelp
