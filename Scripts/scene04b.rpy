@@ -1,10 +1,10 @@
-﻿label m31:
+label m31:
 
  show Anna AMA at trueright
  with moveinright
 
  anna "Aqui não parece nem um pouquinho com a minha casa..."
- 
+
  show Anna AScared AMA at trueright
 
  anna "O que é esse lugar?"
@@ -18,18 +18,19 @@
 
  hide GBody
  hide GHappy
- show Yvvy at right
+ show Yvvy LMY at trueright
  with dissolve
 
  chY "Nós recebemos muitos viajantes."
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
  with dissolve
 
  chL "Mas nenhum deles se parecem com você."
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GHappy at left
  with dissolve
@@ -38,18 +39,19 @@
 
  hide GBody
  hide GHappy
- show Yvvy at right
- with moveinright
+ show Yvvy LMY at trueright
+ with dissolve
 
  chY "Galáxia M-31!"
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
  with dissolve
 
  chL "Estamos dentro de uma estrela!"
 
  hide Lucy
+ hide Yvvy
  with dissolve
 
  anna "{color=F4C2C2}{i}Galáxia de Andrômeda? Então não estou em outra dimensão?{\i}"
@@ -63,18 +65,19 @@
  anna "Como a gente se entende?"
 
  hide Anna
- show Lucy AngryEyes_Lucy at left
- with moveinleft
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Lá vai você com esse negócio de \"idioma\" de novo..."
 
- hide Lucy
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "O que é isso?"
 
  hide Yvvy
+ hide Lucy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -111,30 +114,29 @@ label ancient_dragon:
  anna "Mas não me disseram nada sobre o ajudante."
 
  hide Anna
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Só de pensar nele já me sobe um frio na espinha."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Ele é o último da espécie."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at TalkingRight
 
  chY "A razão de termos feito do templo secreto um templo secreto para incício de conversa."
 
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at TalkingLeft
 
  chL "Não chegue perto dele!"
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -198,8 +200,8 @@ label tree_barrier:
  anna "Você lincou sua vida com uma árvore?"
 
  hide Anna
- show GBody
- show GAngry
+ show GBody at left
+ show GAngry at left
  with dissolve
 
  chG "Eu e mais dois amigos."
