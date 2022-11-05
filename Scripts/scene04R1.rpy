@@ -1,7 +1,7 @@
 label talk_tree:
 
  $sc04 = False
- 
+ #TODO: Conferir flow da moral
  if moral < 90:
   jump grandma_again
  else:
@@ -75,18 +75,19 @@ label talk_tree:
 
  hide GBody
  hide GHappy
- show Yvvy at right
+ show Yvvy LMY at trueright
  with moveinright
 
  chY "Entãoooo..."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
+ with dissolve
 
  chL "O que aconteceu?"
 
  hide Lucy
+ hide Yvvy
  show Anna AAngry AMA at trueright
  with dissolve
 
@@ -94,18 +95,19 @@ label talk_tree:
  anna "o verdadeiro salvador saberá o que fazer."
 
  hide Anna
- show Lucy at left
+ show Lucy AML ScaredEyes_Lucy at trueleft
  with dissolve
 
  chL "Você falou {i}mesmo{/i} com a árvore?"
 
- hide Lucy
- show Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy LMY at trueright
  with dissolve
 
  chY "[anna] {i}é{/i} nossa salvadora."
 
  hide Yvvy
+ hide Lucy
  show Anna AScared AMA at trueright
  with dissolve
 
@@ -120,18 +122,19 @@ label talk_tree:
 
  hide GBody
  hide GAngry
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Mas ela falou com a árvore. Nem os magos mais poderosos conseguiram."
 
- hide Lucy
- show Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with dissolve
 
  chY "{i}E{/i} ela tem aquela coisa amarrada no pescoço... Quais são as chances?"
 
  hide Yvvy
+ hide Lucy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -146,36 +149,34 @@ label talk_tree:
 
 label grandma_again:
 
- show Yvvy at right
+ show Yvvy AngryEyes_Yvvy at trueright
  with moveinright
 
  chY "..."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Não aconteceu nada."
 
- hide Lucy
- show Yvvy AngryEyes_Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AMY at TalkingRight
 
  chY "Alguma coisa deve ter dado errado."
 
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AML at TalkingLeft
 
  chL "Talvez ela não faça parte da profecia."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy ScaredEyes_Yvvy AMY at TalkingRight
 
  chY "Mas o colar..."
 
  hide Yvvy
+ hide Lucy
  show Anna AScared AMA at trueright
  with moveinright
 
