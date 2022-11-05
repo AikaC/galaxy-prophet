@@ -16,7 +16,7 @@ label to_grandma:
  anna "Eu-"
 
  hide Anna
- show Lucy at left
+ show Lucy AngryEyes_Lucy AML at trueleft
  with moveinleft
 
  chL "Estávamos no templo secreto e {i}essa coisa{/i}..."
@@ -28,18 +28,19 @@ label to_grandma:
  anna "Garota... sou uma garota..."
 
  hide Anna
- show Lucy at left
- with moveinleft
+ show Lucy ScaredEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "O que é uma garota?"
 
- hide Lucy
- show Yvvy at right
- with moveinright
+ show Lucy ScaredEyes_Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "Enfim, {i} essa garota{/i} apareceu literalmente do nada."
 
  hide Yvvy
+ hide Lucy
  show Colar at truecenter
 
  chY "E olha isso!"
@@ -74,18 +75,19 @@ label first:
  anna "Eu quero algumas respostas primeiro."
 
  hide Anna
- show Yvvy at right
+ show Yvvy AngryEyes_Yvvy LMY at trueright
  with moveinright
 
  chY "{i}A garota{\i} tem coragem."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy LML at trueleft
+ with dissolve
 
  chL "Devemos reconhecer isso."
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -106,18 +108,19 @@ label first:
  anna "Quem é essa rainha má que vocês falam o tempo todo?"
 
  hide Anna
- show Yvvy AngryEyes_Yvvy at right
+ show Yvvy AngryEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Fala baixo..."
 
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Eles podem te ouvir..."
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GHappy at left
  with dissolve
@@ -131,18 +134,19 @@ label first:
 
  hide GBody
  hide GAngry
- show Yvvy AngryEyes_Yvvy at right
+ show Yvvy AngryEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Mesmo que ela {b}seja {/b}a rainha má."
 
- hide Yvvy
- show Lucy AngryEyes_Lucy ClosedMouth_Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy at trueleft
+ with dissolve
 
  chL "..."
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -153,42 +157,43 @@ label first:
 
  hide GBody
  hide GAngry
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with moveinleft
 
  chL "Temos medo dela desde então."
 
- hide Lucy
- show Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy LMY at trueright
+ with dissolve
 
  chY "Você deve ser a heroína que veio nos salvar do mal que nos assombra."
  
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at TalkingLeft
 
  chL "Mas isso é estranho, ela não fez nada ainda. Por que você está aqui?"
 
  hide Lucy
+ hide Yvvy
  show Anna AAngry AMA rope at trueright
  with dissolve
  
  anna "Estou morrendo de vontade de saber também..."
 
  hide Anna
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Calma, por favor, não morra..."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
+ with dissolve
 
  chL "... ainda."
 
  hide Lucy
+ hide Yvvy
  show Anna AMA rope at trueright
  with dissolve
 
@@ -196,18 +201,19 @@ label first:
  anna "Por que a chamam de rainha má?"
 
  hide Anna
- show Lucy AngryEyes_Lucy at left
+ show Lucy AngryEyes_Lucy AML at trueleft
  with moveinleft
  
  chL "Porque ela jogou o rei de verdade na masmorra."
 
- hide Lucy
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "Ele não merecia isso."
 
  hide Yvvy
+ hide Lucy
  show GBody at left
  show GAngry at left
  with dissolve
