@@ -6,18 +6,19 @@ label prophecy:
  anna "Obrigada por me soltarem."
 
  hide Anna
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chL "Ainda estamos de olho."
 
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chY "Você é muito suspeita."
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -27,8 +28,8 @@ label prophecy:
 
  hide GBody
  hide GAngry
- show Yvvy at right
- show Lucy at left
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chYL "Sim, vovó..."
@@ -49,18 +50,19 @@ label prophecy:
  anna "[anna]."
 
  hide Anna
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "Você é uma \“garota\” ou uma \“[anna]\”?"
 
- hide Yvvy
- show Lucy AngryEyes_Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Poderia, por favor se decidir, {i}querida convidada?{/i}"
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -69,8 +71,8 @@ label prophecy:
 
  hide GBody
  hide GAngry
- show Yvvy at right
- show Lucy at left
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chYL "Desculpa, vovó..."
@@ -191,9 +193,6 @@ label prophecy:
    jump so_sure
   "Sim":
    jump yhelp
-   else:
-    $moral += 10
-    jump yhelp
   "Não":
    $moral -= 10
    jump nhelp
@@ -210,7 +209,7 @@ label so_sure:
 
  hide Anna
  hide screen noframe_special
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Meia geração até agora..."
@@ -222,43 +221,43 @@ label so_sure:
  anna "Ela já fez algo de ruim {b}depois{/b} de pegar a coroa?"
 
  hide Anna
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with moveinleft
 
  chL "Ainda não..."
 
- hide Lucy
- show Yvvy AngryEyes_Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "Aprisionar o rei já não é ruim o bastante?"
 
  hide Yvvy
+ hide Lucy
  show Anna AScared AMA at trueright
  with dissolve
 
  anna "É... {w}Mas eu não vejo um período sombrio saindo só disso."
 
  hide Anna
- show Yvvy at right
- show Lucy at left
+ show Yvvy LMY at trueright
+ show Lucy LML at trueleft
  with dissolve
 
  chYL "Isso nós podemos explicar."
 
- hide Yvvy
- with dissolve
+ show Yvvy DMY at SilenceRight
 
  chL "Nós servíamos ao antigo rei, então estávamos lá quando tudo aconteceu."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at TalkingRight
 
  chY "Mas ainda não sabemos como a rainha Selyna e aquela criatura terrível terminaram juntos."
 
  hide screen noframe_moral
  hide Yvvy
+ hide Lucy
  with dissolve
 
  stop music fadeout 1.0
@@ -319,49 +318,44 @@ label so_sure:
  queue music "audio/AnnaLoop.ogg"
 
  show screen noframe_moral
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with moveinleft
 
  chL "Parece que a rainha Selyna e o antigo rei já se conheciam."
 
- hide Lucy
- show Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "Mas isso não seria uma surpresa."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at TalkingLeft
 
  chL "Verdade.{p}O antigo rei costumava andar muito por outras galáxias."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at TalkingRight
 
  chY "Não sabemos como, antes que você pergunte."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at TalkingLeft
 
  chL "A rainha Selyna com certeza fez aquilo por vingança."
 
- hide Lucy
- show Yvvy at right
- with dissolve
-
+ show Lucy DML at SilenceLeft
+ show Yvvy ScaredEyes_Yvvy AMY at TalkingRight
 
  chY "Quem sabe o que ela planeja fazer com o antigo rei?"
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at TalkingLeft
  with dissolve
 
  chL "... Ou mesmo conosco."
 
- show Yvvy at right
+ show Yvvy AMY at TalkingRight
  with dissolve
 
  chYL "Vai nos ajudar?"
