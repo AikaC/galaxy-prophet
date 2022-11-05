@@ -1,4 +1,4 @@
-﻿label castle_his:
+label castle_his:
 
  show Anna AHappy AMH at trueright
  with moveinright
@@ -6,55 +6,56 @@
  anna "Como era lá?"
 
  hide Anna
- show Lucy at left
+ show Lucy ScaredEyes_Lucy LML at trueleft
  with moveinleft
 
  chL "Era bem pacífico."
 
- hide Lucy
- show Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy ClosedEyes_Yvvy LMY at trueright
+ with dissolve
 
  chY "Não era?"
 
- #show Twins DefaultEyes_Yvvy
- #with dissolve
+ show Yvvy FaceYvvy at trueright with dissolve
 
  chY "Nosso trabalho era deixar as coisas mais divertidas."
 
  hide Yvvy
+ hide Lucy
  show Anna AMH at trueright
  with dissolve
 
  anna "De que forma?"
 
  hide Anna
- show Lucy at left
+ show Lucy LML ClosedEyes_Lucy at trueleft
  with dissolve
 
  chL "Com música!"
 
- hide Lucy
- show Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy LMY ClosedEyes_Yvvy at trueright
  with dissolve
 
  chY "Quer ouvir?"
 
  hide Yvvy
+ hide Lucy
  show Anna AHappy AMH at trueright
  with dissolve
 
  anna "Sim!"
 
  hide Anna
- show Yvvy at right
+ show Yvvy LMY at trueright
  with dissolve
 
  chY "Então você terá que nos visitar mais uma vez."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
+ with dissolve
 
  chL "Estaremos esperando."
 
@@ -72,30 +73,29 @@ label last_king:
  anna "Como ele era?"
 
  hide Anna
- show Yvvy at right
+ show Yvvy AngryEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Não diga isso no passado!"
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "O rei ainda está vivo, só está preso."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AMY at TalkingRight
 
  chY "Ainda nos falamos em segredo."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at TalkingLeft
 
  chL "Ele é como um pai para nós."
 
  hide Lucy
+ hide Yvvy
  with dissolve
  
  jump meet_Paithyn
@@ -106,8 +106,8 @@ label meet_Paithyn:
  $ extra == True
 
  show BGPaithyn
- show Yvvy at right
- show Lucy at left
+ show Yvvy LMY at trueright
+ show Lucy LML at trueleft
  with dissolve
 
  stop music fadeout 1.0
@@ -136,8 +136,8 @@ label meet_Paithyn:
  anna "Quem?"
 
  hide Anna
- show Yvvy at right
- show Lucy at left
+ show Yvvy AMY at trueright
+ show Lucy AML at trueleft
  with dissolve
 
  chYL "Vovó."
@@ -229,8 +229,8 @@ label meet_Paithyn:
  with dissolve
 
  anna "Espera o que é is-{w} e se foram..."
- 
- show Anna AHappy AMH at truecenter
+
+ show Anna AHappy AMH at trueright
 
  anna "Beleza! Hora de fazer as malas!"
 
