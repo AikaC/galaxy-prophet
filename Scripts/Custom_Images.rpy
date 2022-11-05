@@ -118,26 +118,28 @@ layeredimage Lucy:
   "LY/BodyLucy.png"
   xzoom -1
 
- group LEyes:
-  attribute DefaultEyes_Lucy default:
-   "LY/DefaultEyes.png"
+ group LFace:
+  attribute FaceLucy default:
+   "LY/FaceDefault.png"
    xzoom -1
   attribute ClosedEyes_Lucy:
-   "LY/EyesClosed.png"
+   "LY/FaceLaugh.png"
    xzoom -1
   attribute AngryEyes_Lucy:
-   "LY/EyesAngry.png"
+   "LY/FaceAngry.png"
+   xzoom -1
+  attribute ScaredEyes_Lucy:
+   "LY/FaceScared.png"
    xzoom -1
 
  group LMouth:
-  attribute DefaultMouth_Lucy default:
-   "LY/DefaultMouth.png"
+  attribute DML default:
+   "None.png"
+  attribute LML:
+   "LY/MouthHappy.png"
    xzoom -1
-  attribute LaughingLucy:
-   "LY/Laughing.png"
-   xzoom -1
-  attribute ClosedMouth_Lucy:
-   "LY/ClosedMouth.png"
+  attribute AML:
+   "LY/MouthAngry.png"
    xzoom -1
 
  group Lacessories:
@@ -153,21 +155,23 @@ layeredimage Yvvy:
  always:
   "LY/BodyYvvy.png"
 
- group YEyes:
-  attribute DefaultEyes_Yvvy default:
-   "LY/DefaultEyes.png"
+ group YFace:
+  attribute FaceYvvy default:
+   "LY/FaceDefault.png"
   attribute ClosedEyes_Yvvy:
-   "LY/EyesClosed.png"
+   "LY/FaceLaugh.png"
   attribute AngryEyes_Yvvy:
-   "LY/EyesAngry.png"
+   "LY/FaceAngry.png"
+  attribute ScaredEyes_Yvvy:
+   "LY/FaceScared.png"
 
  group YMouth:
-  attribute DefaultMouth_Yvvy default:
-   "LY/DefaultMouth.png"
-  attribute LaughingYvvy:
-   "LY/Laughing.png"
-  attribute ClosedMouth_Yvvy:
-   "LY/ClosedMouth.png"
+  attribute DMY default:
+   "None.png"
+  attribute LMY:
+   "LY/MouthHappy.png"
+  attribute AMY:
+   "LY/MouthAngry.png"
 
  group Yacessories:
   attribute none default:
