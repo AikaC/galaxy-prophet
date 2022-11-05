@@ -20,18 +20,19 @@ label route_01:
  anna "Então elas não poderiam só ter te chamado ao invés de me trazer aqui?"
 
  hide Anna
- show Yvvy at right
+ show Yvvy LMY at trueright
  with moveinright
 
  chY "Tsk, tsk, tsk."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
+ with dissolve
 
  chL "Assim não tem graça."
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -98,7 +99,7 @@ label route_01p02:
  with moveinright
 
  anna "Sim... {w}Não percebi da primeira vez que vi,"
- 
+
  show Anna AHappy AMH at trueright
 
  anna "... mas ela é linda."
@@ -122,18 +123,19 @@ label route_01p02:
  anna "Quem está falando?"
 
  hide Anna
- show Yvvy at right
- with moveinright
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
+ with dissolve
 
  chY "O quê?"
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Ninguém está aqui."
 
  hide Lucy
+ hide Yvvy
  with dissolve
 
  chNull "[anna]!"
@@ -148,18 +150,19 @@ label route_01p02:
  pause
 
  hide Anna
- show Yvvy at right
- with moveinright
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
+ with dissolve
  
  chY "Espera, [anna]!"
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Aonde vai, garota?"
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
