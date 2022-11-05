@@ -1,4 +1,4 @@
-﻿label yhelp:
+label yhelp:
 
  show Anna AHappy AMH at trueright
  with dissolve
@@ -6,22 +6,23 @@
  anna "Claro, por que não?"
 
  show Anna AMA at trueright
- 
+
  anna "Não é como se eu conseguisse voltar para casa mesmo."
 
  hide Anna
- show Yvvy at right
+ show Yvvy ClosedEyes_Yvvy LMY at trueright
  with moveinright
 
  chY "Obrigada, [anna]."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ClosedEyes_Lucy LML at trueleft
+ with dissolve
 
  chL "Você é uma boa garota\/[anna], ou sejá lá o que for."
 
  hide Lucy
+ hide Yvvy
  show Anna at trueright
  with dissolve
 
@@ -53,18 +54,19 @@ label nhelp:
  anna "Não sou nenhuma guerreira, nem nasci aqui."
 
  hide Anna
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Isso é verdade mas..."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Tem que ter alguma coisa..."
 
  hide Lucy
+ hide Yvvy
  show Anna AScared AMA at trueright
  with dissolve
 
@@ -116,29 +118,30 @@ label nhelp:
 
  hide GBody
  hide GHappy
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with moveinright
 
  chY "Mas..."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Sim... Vovó."
 
- show Lucy AngryEyes_Lucy at left
+ show Lucy AngryEyes_Lucy at trueleft
 
  chL "*sussurro* {color=F4C2C2}{i}Se [anna] faz mesmo parte da profecia, ela não vai voltar."
 
- hide Lucy
- show Yvvy AngryEyes_Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at TalkingRight
  with dissolve
 
  chY "Ugh..."
  chY "Então vamos."
 
  hide Yvvy
+ hide Lucy
  with dissolve
 
  jump route_02
