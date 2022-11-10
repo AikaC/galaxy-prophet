@@ -19,16 +19,16 @@ label training:
  show Anna AScared at trueright
 
  anna "..."
- 
+
  show Anna AScared AMH at trueright
 
  anna "aha"
  anna "ahahaha"
- 
+
  show Anna AMA at trueright
 
  anna "Eu acho que vou surtar."
- 
+
  show Anna AAngry AMA at trueright
 
  anna "Já pode acordar, [anna]."
@@ -56,12 +56,12 @@ label training:
  with dissolve
 
  anna "Eu não sou a-"
- 
+
  show Anna AMA at trueright
 
  anna "Ah... esquece."
  anna "As notícias se espalham {i}mesmo{/i} rápido por aqui."
- 
+
  show Anna AHappy AMH at trueright
 
  anna "Prazer em te conhecer, Ivan."
@@ -117,19 +117,18 @@ label training:
  queue music "audio/AnnaLoop.ogg"
 
  show BGIvan
- show Yvvy at right
+ show Yvvy ClosedEyes_Yvvy AMY at trueright
  with dissolve
 
  chY "Garota! Quanto tempo!"
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy ClosedEyes_Lucy LML at trueleft
+ with dissolve
 
  chL "Meses!"
 
- show Yvvy at right
- with dissolve
+ show Yvvy AMY at TalkingRight
 
  chYL "Sentimos saudades!"
 
@@ -142,54 +141,49 @@ label training:
  anna "Como vocês estão?"
 
  hide Anna
- show Yvvy at right
+ show Yvvy LMY at trueright
  with dissolve
 
  chY "Tão ocupadas quanto você."
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at trueleft
  with dissolve
 
  chL "O ajudante da rainha está te procurando por todos os lados."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy ScaredEyes_Yvvy AMY at TalkingRight
 
  chY "Tivemos um trabalhão para despistar ele."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy AML at TalkingLeft
 
  chL "Ele é muito assustador..."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy FaceYvvy LMY at TalkingRight
  
  chY "Vovó mandou a gente perguntar como você está."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at TalkingLeft
 
  chL "Sem querer te apressar..."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy LMY at TalkingRight
  
  chY "Mas estamos com pressa."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy LML at TalkingLeft
 
  chL "Quando você volta?"
 
  hide Lucy
+ hide Yvvy
  show Ivan at left
  with dissolve
 
@@ -204,18 +198,19 @@ label training:
  anna "Obrigada."
 
  hide Anna
- show Yvvy at right
+ show Yvvy AMY at trueright
  with dissolve
 
  chY "Você aprendeu a lutar?"
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy AML at trueleft
  with dissolve
 
  chL "Já?!"
 
  hide Lucy
+ hide Yvvy
  show Anna AMH at trueright
  with dissolve
 
@@ -237,7 +232,7 @@ label training:
  hide Power
  with flashbulb
 
- show Lucy at left
+ show Lucy LML at trueleft
  with moveinleft
 
  chL  "Legal!"
@@ -249,24 +244,23 @@ label training:
  anna "De volta para a vovó?"
 
  hide Anna
- show Yvvy at right
- show Lucy at left
+ show Yvvy ClosedEyes_Yvvy LMY at trueright
+ show Lucy ClosedEyes_Lucy LML at trueleft
  with dissolve
 
  chYL "Não."
 
- hide Lucy
- with dissolve
+ show Lucy DML at SilenceLeft
 
  chY "Vamos ver a árvore sagrada primeiro."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at TalkingLeft
 
  chL "Também precisamos conversar no caminho."
 
  hide Lucy
+ hide Yvvy
  show Anna AWeird AMA at trueright
  with dissolve
 
@@ -281,25 +275,26 @@ label training:
  anna "Então... O que era?"
 
  hide Anna
- show Yvvy at right
+ show Yvvy AngryEyes_Yvvy AMY at trueright
  with moveinright
 
- chY "Bem...{w} Braxton, o ajudante da rainha, acabou descobrindo sobre o seu colar."
+ chY "Bem...{w} Braxton, o ajudante da rainha, acabou descobrindo sobre o seu pingente."
 
- hide Yvvy
- show Lucy at left
- with moveinleft
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
+ with dissolve
 
  chL "Isso quer dizer que a rainha Selyna também sabe sobre a profecia."
 
  hide Lucy
+ hide Yvvy
  show Anna AScared AMA at trueright
  with dissolve
 
  anna "Oh..."
 
  hide Anna
- show Lucy at left
+ show Lucy AngryEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Sim, \'oh...\'"
@@ -311,91 +306,82 @@ label training:
  anna "Quão ruim isso é?"
 
  hide Anna
- show Lucy at left
- show Yvvy at right
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Só temos duas escolhas agora..."
 
- hide Lucy
- show Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with dissolve
 
  chY "Salvar o rei em segredo..."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AML at TalkingLeft
 
  chL "Ou derrotar a rainha."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AMY at TalkingRight
 
  chY "Vovó disse que é muito cedo para enfrentar a rainha Selyna."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AML at TalkingLeft
 
  chL "Então vamos invadir o castelo para salvar o rei."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy FaceYvvy LMY at TalkingRight
 
  chY "Quando estivermos todos a salvo, poderemos planejar os próxios passos."
 
  hide Yvvy
+ hide Lucy
  show Anna AScared AMA at trueright
  with dissolve
 
  anna "\'Nós\' como em nós três?"
 
  hide Anna
- show Lucy at left
+ show Lucy ClosedEyes_Lucy LML at trueleft
  with dissolve
 
  chL "É claro, bobinha."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy ClosedEyes_Yvvy LMY at TalkingRight
 
  chY "Você é parte da profecia."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy FaceLucy LML at TalkingLeft
 
  chL "Deve vir conosco dessa vez."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy FaceYvvy LMY at TalkingRight
 
  chY "Por isso estamos indo ver a árvore sagrada primeiro."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AML at TalkingLeft
 
  chL "Você precisa da ajuda dela."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy ClosedEyes_Yvvy LMY at TalkingRight
 
  chY "Sabe como é, essa parada de comunicação com a natureza e tals."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy ClosedEyes_Lucy LML at TalkingLeft
 
  chL "é só fazer o seu lance."
 
  hide Lucy
+ hide Yvvy
  show Anna AAwkward AMH at trueright
  with dissolve
 
