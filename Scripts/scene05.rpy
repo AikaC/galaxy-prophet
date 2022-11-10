@@ -127,7 +127,7 @@ label back_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Lucy at left
+ show Lucy ClosedEyes_Lucy LML at trueleft
  with moveinleft
 
  chL "O caldeirão está pronto!"
@@ -158,26 +158,27 @@ label back_Paithyn:
  anna "Eu sinto..."
 
  hide Anna
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Se sente..."
 
- hide Lucy
- show Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with dissolve
 
  chY "Se sente..."
 
  hide Yvvy
+ hide Lucy
  show Anna AScared AMA at trueright
  with dissolve
 
  anna "Nada."
 
  hide Anna
- show Yvvy at right
- show Lucy at left
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chYL "Ugh..."
@@ -224,18 +225,19 @@ label back_Paithyn:
  hide PBody
  hide PHappy
  hide PMove
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy LMY at trueright
  with dissolve
 
  chY "De volta à vovó pelo que parece!"
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy ScaredEyes_Lucy LML at trueleft
  with dissolve
 
  chL "Parece que você se prendeu com a gente por um tempo, [anna]!"
 
  hide Lucy
+ hide Yvvy
  hide BGPaithyn
  show star
  show BGGrandma
@@ -251,18 +253,19 @@ label back_Paithyn:
 
  hide GBody
  hide GHappy
- show Lucy at left
+ show Lucy AngryEyes_Lucy AML at trueleft
  with moveinleft
 
  chL "Nada de novo..."
  
- hide Lucy
- show Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ with dissolve
  
  chY "Entediante..."
  
  hide Yvvy
+ hide Lucy
  show Anna AScared AMA at trueright
  with moveinright
 
@@ -284,8 +287,8 @@ label back_Paithyn:
  anna "E também me encontrei com alguém enquanto colhia os ingredientes."
  
  hide Anna
- show Yvvy at right
- show Lucy at left
+ show Yvvy AngryEyes_Yvvy AMY at trueright
+ show Lucy AngryEyes_Lucy AML at trueleft
  with dissolve
 
  chYL "Quem?"
@@ -302,26 +305,27 @@ label back_Paithyn:
   anna "Alguém que trabalhava para a rainha."
   
   hide Anna
-  show Yvvy at right
+  show Yvvy ScaredEyes_Yvvy AMY at trueright
   with dissolve
 
   chY "Oh não! Só pode ser uma criatura."
   
-  hide Yvvy
-  show Lucy at left
+  show Yvvy DMY at SilenceRight
+  show Lucy AngryEyes_Lucy AML at trueleft
   with dissolve
 
   chL "Como ele era?"
   
   hide Lucy
+  hide Yvvy
   show Anna AScared AMA at trueright
   with dissolve
 
   anna "Um guarda de cabelo comprido e olhos assustadores."
   
   hide Anna
-  show Yvvy at right
-  show Lucy at left
+  show Yvvy ScaredEyes_Yvvy AMY at trueright
+  show Lucy ScaredEyes_Lucy AML at trueleft
   with dissolve
 
   chYL "É o Braxton!"
@@ -333,18 +337,19 @@ label back_Paithyn:
   pass
  
  hide Anna
- show Yvvy at right
+ show Yvvy ScaredEyes_Yvvy AMY at trueright
  with dissolve
 
- chY "Por que não nos disse Isso antes?"
+ chY "Por que não nos disse isso antes?"
  
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Ou melhor! O que {i}você{/i} disse para {i}ele?{/i}"
  
  hide Lucy
+ hide Yvvy
  show Anna AAngry AMA at trueright
  with dissolve
 
@@ -359,18 +364,19 @@ label back_Paithyn:
  
  hide GBody
  hide GAngry
- show Yvvy at right
+ show Yvvy ClosedEyes_Yvvy LMY at trueright
  with dissolve
 
  chY "Partiu!"
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy ClosedEyes_Lucy LML at trueleft
  with dissolve
 
  chL "Para o vovô!"
 
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GAngry at left
  with dissolve
@@ -379,18 +385,19 @@ label back_Paithyn:
  
  hide GBody
  hide GAngry
- show Yvvy at right
+ show Yvvy AngryEyes_Yvvy AMY at trueright
  with dissolve
 
  chY "Booo..."
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Sem graça!"
  
  hide Lucy
+ hide Yvvy
  show GBody at left
  show GHappy at left
  with dissolve
