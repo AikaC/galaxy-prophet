@@ -168,7 +168,7 @@ label prision:
 label castle:
  
  show arvore brilha
- show Lucy at left
+ show Lucy LML at trueleft
  with moveinleft
 
  stop music fadeout 1.0
@@ -185,7 +185,7 @@ label castle:
  anna "Sim."
 
  hide Anna
- show Yvvy at right
+ show Yvvy LMY at trueright
  with moveinright
 
  chY "O que ela disse?"
@@ -198,36 +198,34 @@ label castle:
  anna "Mas eu devo procurar o rei sob uma pedra."
 
  hide Anna
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  chL "Sob uma pedra? Como a profecia?"
 
- hide Lucy
- show Yvvy at right
+ show Lucy DML at SilenceLeft
+ show Yvvy AngryEyes_Yvvy AMY at trueright
  with dissolve
 
  chY "\'Lute contra a loucura que uma vez ajudou certo viajante sob uma pedra.\'"
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy AML at TalkingLeft
 
  chL "[anna] é uma viajante..."
 
- hide Lucy
- show Yvvy at right
- with dissolve
+ show Lucy DML at SilenceLeft
+ show Yvvy AMY at TalkingRight
 
  chY "E o rei está sob uma pedra... {w=1}nas masmorras."
 
- hide Yvvy
- show Lucy at left
- with dissolve
+ show Yvvy DMY at SilenceRight
+ show Lucy FaceLucy AML at TalkingLeft
 
  chL "Acho que finalmente estamos chegando em algum lugar!"
 
  hide Lucy
+ hide Yvvy
  show Anna AScared AMA at trueright
  with dissolve
  
@@ -239,33 +237,34 @@ label castle:
 
  chY "Um passo de cada vez."
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy AngryEyes_Lucy LML at trueleft
  with dissolve
  
  chL "Primeiro vamos salvar o rei."
 
  hide Lucy
+ hide Yvvy
  show Anna AAngry AMA at trueright
  with dissolve
 
  anna "E como vamos entrar lá?"
 
  hide Anna
- show Yvvy at right
+ show Yvvy ClosedEyes_Yvvy LMY at trueright
  with dissolve
 
  chY "Deixe os disfarces comigo!"
  chY "A rainha costuma deixar sua guarda baixa durante a noite."
 
- hide Yvvy
- show Lucy at left
+ show Yvvy DMY at SilenceRight
+ show Lucy ClosedEyes_Lucy LML at trueleft
  with dissolve
  
  chL "Vamos entrar lá e pegar o rei antes que alguém consiga sequer notar alguma coisa."
 
  hide Lucy
-
+ hide Yvvy
  #call screen king_frame
 
  #show Lucy at left
@@ -293,19 +292,19 @@ label castle:
  chGR "Sim, senhora."
 
  #todas estão disfarçadas
- show Yvvy Ymascara at right
+ show Yvvy AMY at trueright
  with dissolve
 
  chY "{color=F4C2C2}\*Sussurra\* As masmorras são por aqui."
 
- hide Yvvy
- show Lucy Lmascara at left
+ show Yvvy DMY at SilenceRight
+ show Lucy AML at trueleft
  with dissolve
  
- chL "Eles deixam o rei na cela mais distante."
+ chL "{color=F4C2C2}\*Sussurra\* Eles deixam o rei na cela mais distante."
 
- show Yvvy Ymascara at right
- with dissolve
+ #show Yvvy Ymascara at right
+ #with dissolve
 
  #chYL "Consegue se lembrar do mapa que recebeu?"
 
