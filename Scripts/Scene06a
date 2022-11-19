@@ -135,7 +135,7 @@ label historia_rei:
 label castle_ataque:
 
  show Castle01
- show Lucy at left
+ show Lucy ScaredEyes_Lucy AML at trueleft
  with dissolve
 
  stop music fadeout 1.0
@@ -144,13 +144,14 @@ label castle_ataque:
 
  chL "Garota! Aqui!"
 
- hide Lucy
- show Yvvy at right
- with moveinright
+ show Lucy DML at SilenceLeft
+ show Yvvy AMY at trueright
+ with dissolve
 
  chY "Vossa majestade! Fico feliz que esteja bem!"
 
  hide Yvvy
+ hide Lucy
  show Ivan at left
  with moveinleft
 
@@ -176,18 +177,19 @@ label castle_ataque:
  chGR "Em nome da rainha Selyna, ordeno que devolvam os prisioneiros."
 
  hide GR
- show Lucy at left
- with moveinleft
+ show Lucy AngryEyes_Lucy LML at trueleft
+ with dissolve
 
  chL "Não vai rolar..."
 
- hide Lucy
- show Yvvy at left
+ show Lucy DML at SilenceLeft
+ show Yvvy ClosedEyes_Yvvy LMY at trueright
  with dissolve
 
  chY "Desculpa, falou alguma coisa? Não consigo ouvir dessa distância."
 
  hide Yvvy
+ hide Lucy
  show Ivan at left
  with dissolve
 
