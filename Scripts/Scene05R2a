@@ -75,7 +75,7 @@ label training:
  with dissolve
 
  chI "Você deve treinar comigo."
- chI "Agora que a rainha sabe sobre você, nós devemo pelo menos te dar uma chance de autodefesa,"
+ chI "Agora que a rainha sabe sobre você, nós devemos pelo menos te dar uma chance de autodefesa,"
  chI "Já que não conseguimos de ajudar a voltar para casa."
  chI "É o mínimo que podemos fazer por você."
  chI "Já praticou algum estilo de luta antes, [anna]?"
